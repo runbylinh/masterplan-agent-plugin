@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+# Dữ liệu làm việc thật không đưa lên GitHub
+cau-hinh.json
+/danh-gia-kenh/
+/lead-hoi-thoai/
+/doi-thu/
+/kinh-doanh/
+/chi-phi-ads/
+nhap/
+bang-chung/

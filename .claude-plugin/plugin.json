@@ -1,0 +1,15 @@
+{
+  "name": "masterplan-agent",
+  "version": "0.1.0",
+  "description": "Agent Masterplan Marketing (Run By Linh): tự nghiên cứu thị trường, đối thủ, nội bộ doanh nghiệp để lập Marketing Masterplan và kế hoạch quý/tháng. Skill đầu tiên: đánh giá hiệu quả các kênh social (Facebook Page/Group, TikTok, Instagram, Threads, YouTube, Zalo OA), so với đối thủ, kết luận Giữ / Đẩy mạnh / Tối ưu / Bỏ có căn cứ.",
+  "author": {
+    "name": "Run By Linh"
+  },
+  "keywords": [
+    "masterplan",
+    "marketing plan",
+    "social media audit",
+    "đánh giá kênh",
+    "tiếng Việt"
+  ]
+}

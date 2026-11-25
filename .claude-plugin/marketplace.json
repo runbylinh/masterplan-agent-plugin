@@ -1,0 +1,17 @@
+{
+  "name": "rbl-masterplan-dev",
+  "owner": {
+    "name": "Run By Linh"
+  },
+  "metadata": {
+    "description": "Bản phát triển Agent Masterplan Marketing của Run By Linh"
+  },
+  "plugins": [
+    {
+      "name": "masterplan-agent",
+      "source": "./",
+      "description": "Agent Masterplan Marketing: đánh giá kênh social, nghiên cứu thị trường/đối thủ/nội bộ, lập masterplan và plan quý/tháng.",
+      "version": "0.1.0"
+    }
+  ]
+}

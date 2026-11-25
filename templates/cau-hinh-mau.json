@@ -1,0 +1,62 @@
+{
+  "_huong_dan": "Chép file này thành cau-hinh.json ở thư mục làm việc rồi điền. Kênh không dùng thì xoá khỏi danh sách. Đây là ví dụ Brand mẫu, không phải kênh thật.",
+  "doanh_nghiep": "Brand mẫu",
+  "nganh": "Đào tạo Marketing",
+  "muc_tieu_kinh_doanh": "Tăng lead đăng ký khoá học",
+  "nguon_luc": "1 người làm content, 1 người edit video, ngân sách ads 20 triệu/tháng",
+  "kenh_cua_minh": [
+    {"id": "fb-page", "nen_tang": "facebook_page", "ten": "Brand mẫu", "url": "https://www.facebook.com/brandmau", "vai_tro": "chuyen_doi"},
+    {"id": "fb-group", "nen_tang": "facebook_group", "ten": "Cộng đồng Brand mẫu", "url": "https://www.facebook.com/groups/brandmau", "vai_tro": "tuong_tac"},
+    {"id": "tiktok", "nen_tang": "tiktok", "ten": "@brandmau", "url": "https://www.tiktok.com/@brandmau", "vai_tro": "nhan_biet"},
+    {"id": "instagram", "nen_tang": "instagram", "ten": "brandmau", "url": "https://www.instagram.com/brandmau", "vai_tro": "nhan_biet"},
+    {"id": "threads", "nen_tang": "threads", "ten": "@brandmau", "url": "https://www.threads.net/@brandmau", "vai_tro": "tuong_tac"},
+    {"id": "youtube", "nen_tang": "youtube", "ten": "Brand mẫu", "url": "https://www.youtube.com/@brandmau", "vai_tro": "nhan_biet"},
+    {"id": "zalo-oa", "nen_tang": "zalo_oa", "ten": "Brand mẫu OA", "url": "", "vai_tro": "chuyen_doi"}
+  ],
+  "doi_thu": [
+    {"ten": "Đối thủ A", "kenh": [
+      {"nen_tang": "facebook_page", "url": "https://www.facebook.com/doithua"},
+      {"nen_tang": "tiktok", "url": "https://www.tiktok.com/@doithua"}
+    ]}
+  ],
+  "ads": {
+    "meta_ad_account_id": "",
+    "tiktok_ads_advertiser_id": "",
+    "file_ngan_sach": [],
+    "ghi_chu": "ID tài khoản quảng cáo Meta (chỉ số, không có act_) và TikTok Ads. file_ngan_sach: link Drive hoặc đường dẫn Finder tới file ngân sách/chi tiêu. Để trống nếu không có."
+  },
+  "hop_thu": {
+    "nguon": ["meta_business_suite", "zalo_oa", "zalo_ca_nhan", "tiktok"],
+    "nhan_chot": ["Đã chốt", "Đã chuyển khoản"],
+    "nhan_dang_tu_van": ["Đang tư vấn", "Hẹn lại"],
+    "nhan_khong_phu_hop": ["Không phù hợp", "Spam"],
+    "file_don_hang": [],
+    "ghi_chu": "Nhãn team đang gắn trong hộp thư (Business Suite, Zalo, TikTok). file_don_hang: link Sheet/Drive/Finder tới file đơn hàng hoặc báo cáo sale để đối chiếu lead ra đơn. Có thể dùng LadiWork (connector LadiPage) làm CRM."
+  },
+  "bao_cao_kinh_doanh": {
+    "thu_muc_drive": [],
+    "thu_muc_may": [],
+    "tu_khoa": ["báo cáo", "doanh thu", "kinh doanh", "sales", "KPI", "kết quả"],
+    "muc_tieu_ky": {},
+    "ghi_chu": "Thư mục Drive (link) và thư mục trên máy (đường dẫn) chứa báo cáo kinh doanh. muc_tieu_ky ví dụ {\"2026-Q4\": {\"doanh_thu\": 1500000000, \"don\": 300}}."
+  },
+  "lead": {
+    "nguon": "ladipage",
+    "utm_source_theo_kenh": {
+      "fb-page": ["fanpage"],
+      "fb-page-paid": ["fbads"],
+      "fb-group": ["fbgroup"],
+      "tiktok": ["tiktok"],
+      "threads": ["threads"],
+      "instagram": ["instagram", "ig"],
+      "youtube": ["youtube"],
+      "zalo-oa": ["zalo"]
+    },
+    "loai_tru": ["test"],
+    "ghi_chu": "utm_source chứa một trong các từ này thì tính lead cho kênh đó. Từ 'fbads' luôn tính là lead Paid, kể cả khi đi kèm 'fanpage'."
+  },
+  "google_sheets": {
+    "spreadsheet_id": "",
+    "ghi_chu": "Để trống: agent hỏi trước khi tạo file mới hoặc xuất CSV để dán tay."
+  }
+}
