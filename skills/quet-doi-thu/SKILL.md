@@ -10,7 +10,7 @@ argument-hint: "[tên đối thủ | tất cả]"
 Cần `cau-hinh.json` mục `doi_thu`. Trống thì đề xuất 3–5 đối thủ (có lý do), chờ duyệt, rồi ghi vào cấu hình.
 
 Skill này để **theo dõi đều đặn** nội dung, offer, khuyến mãi, ads. Muốn nghiên cứu sâu 3C (khách hàng, định vị, cơ hội)
-thì dùng `/research-agent:research`.
+thì dùng `/masterplan-agent:research` (3C theo chủ đề) hoặc `/masterplan-agent:nghien-cuu-thi-truong` (Market Research năm).
 
 ## Bước 0 – Chốt phạm vi
 1. Đối thủ (mặc định tất cả trong cấu hình) và kênh của từng đối thủ: Facebook Page, TikTok, Instagram, YouTube,

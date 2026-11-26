@@ -17,6 +17,7 @@ argument-hint: "[yêu cầu, ví dụ: tổng thể 2027]"
 | 2 · Market Research | `nghien-cuu-thi-truong` (dùng `quet-doi-thu` cho đơn vị cùng ngành đang theo dõi) | MR: ngành, khách hàng, đơn vị cùng ngành |
 | 3 · Dự báo | `du-bao-xu-huong` | Tín hiệu + dự báo năm kế hoạch |
 | 4 · Định hướng | `dinh-huong-chien-luoc` | Strategic Marketing Direction |
+| Theo chủ đề | `research` (3C: Brief → Khách hàng + Đối thủ → Cơ hội → Giao việc) | Cơ hội và việc cần làm cho một dịp/bài toán |
 | Sau | Lập Masterplan, plan quý/tháng | (chưa có skill) |
 
 | Người dùng nói | Chạy |
@@ -27,11 +28,12 @@ argument-hint: "[yêu cầu, ví dụ: tổng thể 2027]"
 | "Dự báo xu hướng năm sau" | `du-bao-xu-huong` |
 | "Nên tập trung cơ hội nào", "chọn hướng đi" | `dinh-huong-chien-luoc` |
 | "Nghiên cứu tổng thể để chuẩn bị Masterplan" | Phần 1 → 4 theo thứ tự |
+| "Research mùa lễ / dịp X", "vì sao doanh thu giảm", "tìm cơ hội cho sản phẩm Y" | `research [chủ đề]` (dùng lại Audit, Market Research nếu cùng kỳ) |
 
 ## Bước 1 – Đọc trạng thái
 1. Có `cau-hinh.json` và `company-context.md` chưa? Chưa → chạy `setup` trước.
 2. Quét thư mục làm việc: `danh-gia-kenh/`, `lead-hoi-thoai/`, `thuong-hieu/`, `kinh-doanh/`, `chi-phi-ads/`, `doi-thu/`,
-   `review/`, `thi-truong/`, `du-bao/`, `chien-luoc/`. Mỗi mục: lần chạy mới nhất, kỳ dữ liệu, có `bao-cao.md` chưa.
+   `review/`, `thi-truong/`, `du-bao/`, `chien-luoc/`, `research-3c/`. Mỗi mục: lần chạy mới nhất, kỳ dữ liệu, có `bao-cao.md` chưa.
 3. Kết quả **còn dùng được** khi: cùng năm review/kế hoạch, kỳ phủ đủ (Review: ưu tiên cả năm), không quá 60 ngày
    (riêng `doi-thu` không quá 30 ngày). Nếu người dùng nói đã có thay đổi lớn thì coi là cũ.
 4. Mẫu trống để người dùng tự điền: `xuat_bo_mau.py <mau> --nam <năm>` (không `--ket-qua`); bối cảnh dùng `templates/company-context-mau.md`.

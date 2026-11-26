@@ -23,6 +23,8 @@ Một agent điều phối các skill; skill là cách làm từng việc, MCP/C
 | 1 Review | `/masterplan-agent:review-nam` | Có | Tổng hợp một bản Marketing Audit năm |
 | 2 Research | `/masterplan-agent:nghien-cuu-thi-truong` | Có | Ngành hàng, khách hàng, đơn vị cùng ngành, tổng hợp |
 | 2 Research | `/masterplan-agent:quet-doi-thu` | Có | Theo dõi định kỳ nội dung, offer, khuyến mãi, ads đối thủ |
+| Research 3C | `/masterplan-agent:research [chủ đề]` | Có | 3C theo chủ đề/dịp: Brief → Khách hàng + Đối thủ → Cơ hội → Giao việc (quy tắc riêng `quy-tac-3c.md`) |
+| Research 3C | `company-analysis` · `customer-research` · `competitor-research` · `marketing-opportunities` · `marketing-recommendations` | Có | Từng giai đoạn 3C chạy lẻ; subagent `customer-researcher`, `competitor-researcher` chạy song song |
 | 3 Dự báo | `/masterplan-agent:du-bao-xu-huong` | Có | Tín hiệu thị trường, dự báo năm kế hoạch, phản biện |
 | 4 Định hướng | `/masterplan-agent:dinh-huong-chien-luoc` | Có | 2–3 cơ hội, chấm điểm, một hướng đi, phản biện |
 | Sau | Lập Masterplan năm | Sau | Mục tiêu, KPI, ngân sách, chiến dịch từ Định hướng chiến lược |
@@ -72,6 +74,8 @@ không chọn ngay một hướng mà so sánh 2–3 cơ hội trước. Các sk
 | `du-bao/<năm>_YYYY-MM-DD/` | `du-bao-xu-huong`: tín hiệu, dự báo |
 | `chien-luoc/<năm>_YYYY-MM-DD/` | `dinh-huong-chien-luoc`: Strategic Marketing Direction |
 | `tong-hop/<năm>_YYYY-MM-DD/` | `dieu-phoi`: tóm tắt khi chạy tổng thể |
+| `research-3c/YYYY-MM-DD-<chủ-đề>/` | `research`: `01-brief.md` … `05-giao-viec.md`, `06-bang-dan-vao-sheets.csv` |
+| `ho-so-doanh-nghiep.md` | Phần hồ sơ bổ sung riêng cho Research 3C (mốc so sánh, bài toán, dịp) |
 | `bang-chung/` | Ảnh chụp màn hình số liệu, tên `YYYY-MM-DD_kenh_noi-dung.png` |
 
 Mọi skill dùng chung cách làm: lấy số có nguồn → ghi file JSON chuẩn → chạy script trong `${CLAUDE_PLUGIN_ROOT}/scripts/`

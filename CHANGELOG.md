@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.5.0 – 2026-11-26
+Gộp plugin **research-agent** (Agent Research Marketing 3C, 0.1.0) vào masterplan-agent.
+- 6 skill: `research` (điều phối 3C theo chủ đề/dịp), `company-analysis`, `customer-research`, `competitor-research`,
+  `marketing-opportunities`, `marketing-recommendations`; 2 subagent `customer-researcher`, `competitor-researcher` (thư mục `agents/`).
+- Quy tắc riêng `references/quy-tac-3c.md` (ngưỡng xác minh 3 nguồn, 2 mốc thời gian, 9 cột Sheets); hồ sơ mẫu `templates/3c/`
+  (hồ sơ trống, case giả định LÁ É QUÁN).
+- Dùng chung `company-context.md` làm hồ sơ; `ho-so-doanh-nghiep.md` chỉ chứa phần bổ sung. Kết quả lưu `research-3c/`,
+  Sheets ghi vào file Masterplan chung (tab `3C – ...`).
+- `dieu-phoi`, `quy-tac.md`, `quet-doi-thu`, README, HUONG-DAN nối nhóm Research 3C vào quy trình.
+- Lệnh cũ `/research-agent:...` đổi thành `/masterplan-agent:...` (giữ nguyên tên skill).
+
 ## 0.4.1 – 2026-11-26
 - Zalo cá nhân bản web là hộp thư riêng (khác Zalo OA): đồng bộ tin nhắn trước khi đếm, đếm riêng "Tin nhắn từ người lạ" (`tu_nguoi_la`),
   đếm theo thẻ phân loại, bỏ nhóm/chat nội bộ, nhiều số thì quét QR lần lượt (`zalo_web`, `zalo_web_2`...).

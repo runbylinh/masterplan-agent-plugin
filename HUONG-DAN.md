@@ -106,6 +106,21 @@ Agent đọc thư mục, cho biết phần nào đã có, phần nào thiếu, p
 
 Gõ lệnh không kèm tham số cũng được, agent sẽ hỏi kỳ.
 
+**Research 3C theo chủ đề hoặc dịp** (gộp từ agent Research Marketing cũ): dùng khi có một bài toán cụ thể, không phải lập Masterplan năm.
+```
+/masterplan-agent:research mùa lễ cuối năm
+```
+| Giai đoạn | Kết quả trong `research-3c/<ngày>-<chủ đề>/` | Bạn làm gì |
+| --- | --- | --- |
+| 1 Company | `01-brief.md` | Duyệt Brief |
+| 2 Customer + Competitor (2 subagent chạy song song) | `02-customer.md`, `03-competitor.md` | Duyệt bảng, hoặc yêu cầu đọc thêm nguồn |
+| 3 Tổng hợp 3C | `04-tong-hop-3c.md` | Chọn cơ hội đi tiếp |
+| 4 Giao việc | `05-giao-viec.md` (giữ / sửa / bổ sung / giảm ưu tiên) | Duyệt việc |
+| 5 Lưu | Sheets tab `3C – ...` hoặc `06-bang-dan-vao-sheets.csv` | — |
+Agent dùng `company-context.md` làm hồ sơ và chỉ hỏi thêm phần thiếu: mốc so sánh, bài toán, dịp. Muốn tập thử trước,
+chọn **case mẫu LÁ É QUÁN** (case giả định) khi agent hỏi. Chạy lẻ từng bước: `company-analysis`, `customer-research`,
+`competitor-research`, `marketing-opportunities`, `marketing-recommendations`.
+
 ### B3. Mỗi skill chạy thế nào
 1. **Chốt phạm vi.** Agent hỏi kỳ, kênh, nguồn rồi DỪNG chờ bạn trả lời "Bắt đầu".
 2. **Lấy số.** Agent mở trang trên Chrome (chỉ đọc), gọi connector, đọc file. Gặp đăng nhập, mã OTP hay CAPTCHA thì agent nhờ bạn tự làm.

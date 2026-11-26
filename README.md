@@ -44,6 +44,8 @@ rồi tạo `cau-hinh.json`. Sau đó gõ `/masterplan-agent:dieu-phoi` để ag
 | 2 | `/masterplan-agent:nghien-cuu-thi-truong` | Ngành hàng, khách hàng, 5–10 đơn vị cùng ngành, tổng hợp có mức tin cậy | Web, Google Trends, Social, Google Maps, sàn, Meta Ads Library |
 | 2 | `/masterplan-agent:quet-doi-thu` | Theo dõi nội dung, offer, khuyến mãi, quảng cáo đối thủ; báo "có gì mới" | Chrome (trang đối thủ, Meta Ads Library, Google Ads Transparency) |
 | 3 | `/masterplan-agent:du-bao-xu-huong [năm]` | Tín hiệu thị trường → phản ứng khách → dự báo → tự phản biện | Nguồn chính thức, báo cáo ngành, Trends, Social, sàn |
+| 3C | `/masterplan-agent:research [chủ đề]` | Research 3C theo chủ đề/dịp (gộp từ research-agent): Brief → Khách hàng + Đối thủ (2 subagent song song) → Cơ hội → Giao việc | Web, Chrome, hồ sơ doanh nghiệp |
+| 3C | `company-analysis` · `customer-research` · `competitor-research` · `marketing-opportunities` · `marketing-recommendations` | Chạy lẻ từng giai đoạn 3C | như trên |
 | 4 | `/masterplan-agent:dinh-huong-chien-luoc [năm]` | 2–3 khoảng trống → chấm 5 tiêu chí → một câu định hướng → phản biện → tài liệu một trang | Kết quả phần 1–3 |
 
 Mỗi skill xuất: `bao-cao.md` (bản chữ), `bao-cao.html` (có biểu đồ/bảng), `sheets/*.csv` (ghi vào Google Sheets sau khi bạn duyệt).
@@ -67,7 +69,8 @@ script báo cảnh báo khi một dòng thiếu nguồn.
 ## Cấu trúc plugin
 ```
 .claude-plugin/   plugin.json, marketplace.json
-skills/           dieu-phoi, setup + 11 skill theo 4 phần
+skills/           dieu-phoi, huong-dan, setup, 11 skill theo 4 phần + 6 skill Research 3C
+agents/           customer-researcher, competitor-researcher (subagent của Research 3C)
 references/       quy-tac.md, quy-tac-bang-chung.md, ket-qua-json.md, khung-danh-gia.md, nguong.json,
                   hướng dẫn từng skill (thu-thap, thuong-hieu, review-nam, thi-truong, du-bao, chien-luoc...)
 scripts/          tính chỉ số và dựng báo cáo (Python, không cần thư viện ngoài trừ openpyxl)
