@@ -43,4 +43,5 @@ Ghi bảng trạng thái: nguồn nào sẵn sàng, nguồn nào thiếu và h�
 
 ## Bước 4 – Kết thúc
 Đọc lại `cau-hinh.json` và `company-context.md` cho người dùng xác nhận (tóm tắt, không dán cả file).
+Nếu kết nối còn thiếu, chỉ người dùng mục A4 trong `${CLAUDE_PLUGIN_ROOT}/HUONG-DAN.md` hoặc lệnh `/masterplan-agent:huong-dan`.
 Gợi ý lệnh tiếp: `/masterplan-agent:dieu-phoi` (xem cả lộ trình) hoặc `/masterplan-agent:danh-gia-kenh 90`.

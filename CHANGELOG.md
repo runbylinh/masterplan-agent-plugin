@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 – 2026-11-26
+- `HUONG-DAN.md`: cài đặt từng bước (Claude Code, plugin, openpyxl, Chrome, Meta Ads, TikTok for Business, LadiPage, Drive, Sheets),
+  tạo thư mục làm việc, thao tác 4 phần, cách duyệt, bộ mẫu, theo dõi định kỳ, việc agent làm/không làm, lỗi thường gặp, mẹo.
+- Skill mới `huong-dan`: kiểm tra máy (plugin, Python, cấu hình, connector), chỉ bước còn thiếu, giải thích lệnh.
+
 ## 0.3.0 – 2026-11-26
 Đưa bộ mẫu Marketing Masterplan (5 file) vào agent làm chuẩn đầu ra.
 - `templates/bo-mau/bo-mau.json`: khuôn Đánh giá hiện trạng, Nghiên cứu thị trường, Dự báo và định hướng, Kế hoạch tổng thể

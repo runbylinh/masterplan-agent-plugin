@@ -9,7 +9,10 @@ Sau mỗi bước, agent **dừng chờ bạn duyệt**.
 claude plugin marketplace add runbylinh/masterplan-agent-plugin
 claude plugin install masterplan-agent@rbl-masterplan-dev
 ```
-Sau khi cài, mở phiên Claude Code mới (hoặc chạy `/reload-plugins`).
+Cài thêm thư viện đọc Excel: `python3 -m pip install openpyxl`. Sau khi cài, mở phiên Claude Code mới (hoặc chạy `/reload-plugins`).
+
+**Hướng dẫn đầy đủ** (chuẩn bị, kết nối Chrome/Meta/TikTok/LadiPage/Drive/Sheets, thao tác từng lệnh, lỗi thường gặp):
+[HUONG-DAN.md](HUONG-DAN.md). Trong Claude Code gõ `/masterplan-agent:huong-dan` để agent tự kiểm tra máy và chỉ bước còn thiếu.
 
 ## Bắt đầu
 Mở Claude Code trong một thư mục làm việc riêng cho doanh nghiệp (ví dụ `masterplan-brand/`), rồi gõ:
@@ -28,6 +31,7 @@ rồi tạo `cau-hinh.json`. Sau đó gõ `/masterplan-agent:dieu-phoi` để ag
 ## Các skill
 | Phần | Lệnh | Việc | Nguồn số |
 | --- | --- | --- | --- |
+| – | `/masterplan-agent:huong-dan` | Kiểm tra cài đặt, giải thích cách dùng, xử lý lỗi | Máy, connector |
 | – | `/masterplan-agent:dieu-phoi` | Đọc trạng thái, chọn skill, chạy đúng thứ tự, không chạy lại phần còn dùng được | Thư mục làm việc |
 | 0 | `/masterplan-agent:setup` | Khai báo doanh nghiệp (`company-context.md`), kênh, đối thủ, nguồn số | — |
 | 1 | `/masterplan-agent:danh-gia-kenh [kỳ]` | Đánh giá Page, Group, TikTok, IG, Threads, YouTube, Zalo OA theo vai trò trong phễu, so kỳ trước và đối thủ, kết luận Giữ / Đẩy mạnh / Tối ưu / Bỏ | Chrome (Business Suite, TikTok Studio...), file xuất, Meta Ads, LadiPage |

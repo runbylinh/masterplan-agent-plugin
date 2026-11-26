@@ -12,6 +12,7 @@ Bám quy trình 4 phần: **Review doanh nghiệp → Market Research → Dự b
 Một agent điều phối các skill; skill là cách làm từng việc, MCP/Chrome/file là đường lấy dữ liệu.
 | Phần | Skill | Trạng thái | Việc |
 | --- | --- | --- | --- |
+| Hướng dẫn | `/masterplan-agent:huong-dan` | Có | Kiểm tra cài đặt, giải thích thao tác (`HUONG-DAN.md`) |
 | Điều phối | `/masterplan-agent:dieu-phoi` | Có | Đọc trạng thái, chọn skill, chạy đúng thứ tự |
 | 0 | `/masterplan-agent:setup` | Có | `cau-hinh.json` + `company-context.md`, kiểm tra kết nối |
 | 1 Review | `/masterplan-agent:danh-gia-kenh` | Có | Hiệu quả kênh social, so đối thủ, kết luận từng kênh |
