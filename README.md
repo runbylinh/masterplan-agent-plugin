@@ -16,38 +16,55 @@ Mở Claude Code trong một thư mục làm việc riêng cho doanh nghiệp (v
 ```
 /masterplan-agent:setup
 ```
-Agent hỏi kênh, đối thủ, tài khoản quảng cáo, hộp thư, thư mục báo cáo, rồi tạo `cau-hinh.json`.
+Agent hỏi thông tin doanh nghiệp (tạo `company-context.md`), kênh, đối thủ, tài khoản quảng cáo, hộp thư, thư mục báo cáo,
+rồi tạo `cau-hinh.json`. Sau đó gõ `/masterplan-agent:dieu-phoi` để agent đọc trạng thái và đề xuất chạy gì tiếp.
+
+## Quy trình 4 phần
+```
+1 Review doanh nghiệp  →  2 Market Research  →  3 Dự báo xu hướng  →  4 Định hướng chiến lược  →  Masterplan (sau)
+   Marketing Audit         ngành · khách · đơn vị    tín hiệu · dự báo        2–3 cơ hội → 1 hướng đi
+```
 
 ## Các skill
-| Lệnh | Việc | Nguồn số |
-| --- | --- | --- |
-| `/masterplan-agent:setup` | Khai báo doanh nghiệp, kênh, đối thủ, nguồn số | — |
-| `/masterplan-agent:danh-gia-kenh [kỳ]` | 1 · Đánh giá Page, Group, TikTok, IG, Threads, YouTube, Zalo OA theo vai trò trong phễu, so kỳ trước và đối thủ, kết luận Giữ / Đẩy mạnh / Tối ưu / Bỏ | Chrome (Business Suite, TikTok Studio...), file xuất, Meta Ads, LadiPage |
-| `/masterplan-agent:lead-hoi-thoai [kỳ]` | 2 · Số hội thoại, tốc độ phản hồi, chất lượng lead, tỷ lệ chốt qua tin nhắn, lý do không chốt | Chrome (Business Suite, Zalo OA, Zalo web, TikTok), nhãn hộp thư, file đơn / LadiWork |
-| `/masterplan-agent:quet-doi-thu` | 3 · Nội dung, offer, khuyến mãi, quảng cáo đối thủ; báo "có gì mới" so với lần quét trước | Chrome (trang đối thủ, Meta Ads Library, Google Ads Transparency) |
-| `/masterplan-agent:bao-cao-kinh-doanh [kỳ]` | 4 · Doanh thu, đơn theo tháng, theo sản phẩm, theo kênh, so KPI | Google Drive, thư mục trên máy |
-| `/masterplan-agent:chi-phi-ads [kỳ]` | 5 · Chi phí Meta + TikTok Ads theo tháng/mục tiêu/chiến dịch, so ngân sách, CPL, ROAS | Meta Ads, TikTok Ads Manager, file ngân sách |
+| Phần | Lệnh | Việc | Nguồn số |
+| --- | --- | --- | --- |
+| – | `/masterplan-agent:dieu-phoi` | Đọc trạng thái, chọn skill, chạy đúng thứ tự, không chạy lại phần còn dùng được | Thư mục làm việc |
+| 0 | `/masterplan-agent:setup` | Khai báo doanh nghiệp (`company-context.md`), kênh, đối thủ, nguồn số | — |
+| 1 | `/masterplan-agent:danh-gia-kenh [kỳ]` | Đánh giá Page, Group, TikTok, IG, Threads, YouTube, Zalo OA theo vai trò trong phễu, so kỳ trước và đối thủ, kết luận Giữ / Đẩy mạnh / Tối ưu / Bỏ | Chrome (Business Suite, TikTok Studio...), file xuất, Meta Ads, LadiPage |
+| 1 | `/masterplan-agent:lead-hoi-thoai [kỳ]` | Số hội thoại, tốc độ phản hồi, chất lượng lead, tỷ lệ chốt, lý do mua / chưa mua, câu hỏi lặp lại | Chrome (Business Suite, Zalo OA, Zalo web, TikTok), nhãn hộp thư, file đơn / LadiWork |
+| 1 | `/masterplan-agent:ra-soat-thuong-hieu` | Thương hiệu và Website như khách thấy; bình luận, đánh giá Google Maps, sàn | Chrome, trang công khai |
+| 1 | `/masterplan-agent:bao-cao-kinh-doanh [kỳ]` | Doanh thu, đơn theo tháng, sản phẩm, kênh, so KPI | Google Drive, thư mục trên máy |
+| 1 | `/masterplan-agent:chi-phi-ads [kỳ]` | Chi phí Meta/TikTok/Google Ads + chi Marketing khác (KOC, sản xuất, công cụ), so ngân sách, CPL, ROAS | Meta Ads MCP, TikTok for Business MCP / Ads Manager, file ngân sách |
+| 1 | `/masterplan-agent:review-nam [năm]` | Tổng hợp một bản Marketing Audit: 3 điểm mạnh, 3–5 vấn đề ưu tiên | Kết quả các skill phần 1 |
+| 2 | `/masterplan-agent:nghien-cuu-thi-truong` | Ngành hàng, khách hàng, 5–10 đơn vị cùng ngành, tổng hợp có mức tin cậy | Web, Google Trends, Social, Google Maps, sàn, Meta Ads Library |
+| 2 | `/masterplan-agent:quet-doi-thu` | Theo dõi nội dung, offer, khuyến mãi, quảng cáo đối thủ; báo "có gì mới" | Chrome (trang đối thủ, Meta Ads Library, Google Ads Transparency) |
+| 3 | `/masterplan-agent:du-bao-xu-huong [năm]` | Tín hiệu thị trường → phản ứng khách → dự báo → tự phản biện | Nguồn chính thức, báo cáo ngành, Trends, Social, sàn |
+| 4 | `/masterplan-agent:dinh-huong-chien-luoc [năm]` | 2–3 khoảng trống → chấm 5 tiêu chí → một câu định hướng → phản biện → tài liệu một trang | Kết quả phần 1–3 |
 
-Mỗi skill xuất: `bao-cao.md` (bản chữ), `bao-cao.html` (có biểu đồ), `sheets/*.csv` (ghi vào Google Sheets sau khi bạn duyệt).
+Mỗi skill xuất: `bao-cao.md` (bản chữ), `bao-cao.html` (có biểu đồ/bảng), `sheets/*.csv` (ghi vào Google Sheets sau khi bạn duyệt).
 
 ## Luồng chung
 ```
-Chốt phạm vi → Lấy số (có nguồn, ngày) → Script tính chỉ số → Agent nhận định
+Chốt phạm vi → Lấy số (có nguồn, ngày) → Script tính / dựng bảng → Agent nhận định
 → Báo cáo .md + .html → [bạn duyệt] → Ghi Google Sheets ("Chờ duyệt")
 ```
+Các skill nghiên cứu tách rõ **dữ kiện / nhận định / giả định** và chấm **mức tin cậy Cao / Trung bình / Thấp**;
+script báo cảnh báo khi một dòng thiếu nguồn.
 
 ## Cần chuẩn bị
 - **Claude in Chrome**, đăng nhập sẵn Meta Business Suite, TikTok Studio, TikTok Ads, Zalo OA, Zalo web, YouTube Studio.
-- Connector **Meta Ads**, **LadiPage** (lead), **Google Drive**, **Google Sheets** (không bắt buộc đủ hết; thiếu nguồn nào agent ghi rõ).
+- Connector **Meta Ads** (`https://mcp.facebook.com/ads`), **TikTok for Business** (`https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer`,
+  cấp lại quyền sau 30 ngày), **LadiPage** (lead), **Google Drive**, **Google Sheets** (không bắt buộc đủ hết; thiếu nguồn nào agent ghi rõ).
 - Python 3 có `openpyxl` (đọc file Excel).
 
 ## Cấu trúc plugin
 ```
 .claude-plugin/   plugin.json, marketplace.json
-skills/           setup + 5 skill
-references/       quy-tac.md (quy tắc chung), khung-danh-gia.md, nguong.json, và hướng dẫn lấy số từng skill
+skills/           dieu-phoi, setup + 11 skill theo 4 phần
+references/       quy-tac.md, quy-tac-bang-chung.md, ket-qua-json.md, khung-danh-gia.md, nguong.json,
+                  hướng dẫn từng skill (thu-thap, thuong-hieu, review-nam, thi-truong, du-bao, chien-luoc...)
 scripts/          tính chỉ số và dựng báo cáo (Python, không cần thư viện ngoài trừ openpyxl)
-templates/        cau-hinh-mau.json (ví dụ Brand mẫu)
+templates/        cau-hinh-mau.json, company-context-mau.md (ví dụ Brand mẫu)
 ```
 
 ## Lưu ý

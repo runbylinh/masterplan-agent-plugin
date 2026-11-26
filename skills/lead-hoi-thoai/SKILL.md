@@ -52,6 +52,10 @@ Ra `chi-so-lead.json`, `bao-cao.html`, `sheets/*.csv`. Đọc kết quả, viế
 - Chất lượng lead theo kênh và theo nguồn (quảng cáo vs tự nhiên).
 - Tốc độ phản hồi và tác động lên tỷ lệ chốt (nếu mẫu đủ).
 - Top lý do không chốt, top câu hỏi, gợi ý sửa kịch bản tư vấn / FAQ / nội dung.
+- **Bảng phản hồi khách** (đầu vào cho Marketing Audit và Market Research): Chủ đề (giá, sản phẩm, chất lượng, chính sách,
+  giao hàng/lịch, dịch vụ) · Nội dung khách thường hỏi/nói · Ví dụ đã ẩn danh, viết lại ngắn · Số lần / cỡ mẫu ·
+  Vấn đề Marketing hoặc bán hàng · Gợi ý cải thiện. Thêm **lý do mua** (với hội thoại đã chốt) bên cạnh lý do chưa mua,
+  và nhu cầu chưa được giải đáp.
 - Số nào đến từ nhãn, số nào từ mẫu đọc chat (ghi cỡ mẫu), số nào từ file đơn.
 
 DỪNG. Báo cáo 5 dòng, hỏi duyệt. Sau duyệt ghi Google Sheets tab `Lead & hội thoại` (append, `Duyệt = Chờ duyệt`).
@@ -60,3 +64,4 @@ DỪNG. Báo cáo 5 dòng, hỏi duyệt. Sau duyệt ghi Google Sheets tab `Lea
 - Gửi, trả lời, xoá, lưu trữ, gắn/bỏ nhãn tin nhắn; đánh dấu chưa đọc/đã đọc có chủ đích.
 - Lưu tên, SĐT, email, ảnh, link hồ sơ, nội dung chat nguyên văn của khách vào file.
 - Suy ra tỷ lệ chốt toàn kênh từ mẫu quá nhỏ (< 20 hội thoại) mà không ghi rõ.
+- Coi một mẫu hội thoại là đại diện cả năm. Luôn ghi phạm vi: số hội thoại đã đọc, kênh, khoảng thời gian.

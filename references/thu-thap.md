@@ -18,9 +18,12 @@ Chụp màn hình bảng số chính vào `bang-chung/` khi có thể.
 - Người dùng có thể xuất CSV ở Insights → Xuất dữ liệu, bỏ vào `nhap/` rồi chạy `doc_file_xuat.py`.
 
 ### Facebook Group
-- **Nhóm → Thông tin chi tiết về nhóm (Group insights)**: thành viên mới, bài viết, bình luận, cảm xúc,
-  thành viên hoạt động. Group không có reach: dùng **thành viên hoạt động** thay reach, ghi rõ trong `ghi_chu`.
-- Danh sách bài nổi bật: Insights → Tương tác → Bài viết hàng đầu.
+- **Nhóm → Thông tin chi tiết về nhóm (Group insights)**, chọn "7/28 ngày qua" hoặc khoảng ngày: thành viên mới, bài viết,
+  bình luận, cảm xúc, **người đã xem**, người đăng & bình luận. Dùng **người đã xem** làm `reach` (ghi rõ trong `ghi_chu`).
+  KHÔNG dùng "thành viên hoạt động" làm reach: con số này nhỏ hơn số tương tác nên ER sẽ vượt 100%.
+- Insights chỉ hiện % thay đổi so kỳ trước: tính ngược số kỳ trước = kỳ này / (1 + %), màu mũi tên cho biết tăng/giảm; ghi rõ là số tính ngược.
+- Danh sách bài nổi bật: Insights → Tương tác → Bài viết hàng đầu (danh sách này lấy theo 28 ngày, phải lọc lại theo ngày đăng trong kỳ).
+  Muốn đủ từng bài thì nhờ người dùng xuất CSV Insights vào `nhap/`.
 
 ### TikTok
 - **TikTok Studio → Phân tích (Analytics)**: lượt xem video, lượt xem hồ sơ, thích, bình luận, chia sẻ,
@@ -102,4 +105,4 @@ Ghi vào `danh-gia-kenh/<thư mục kỳ>/so-lieu.json`. Mọi số không có t
 ```
 - `cua`: `minh` hoặc `doi_thu`. Kênh đối thủ: `doi_thu` = tên đối thủ, `vai_tro` = vai trò cùng nền tảng của mình.
 - `tuong_tac` = thích + bình luận + chia sẻ (+ lưu nếu nền tảng có). Nếu chỉ có từng bài, script tự cộng từ `bai`.
-- Group dùng `reach` = thành viên hoạt động; Zalo OA dùng `luot_xem` = lượt xem bài. Ghi vào `ghi_chu`.
+- Group dùng `reach` = người đã xem; Zalo OA dùng `luot_xem` = lượt xem bài. Ghi vào `ghi_chu`.

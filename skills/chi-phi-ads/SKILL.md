@@ -21,8 +21,16 @@ Cần `cau-hinh.json` mục `ads`.
   mục tiêu chiến dịch. Theo `references/chi-phi-ads.md`.
 - **TikTok Ads**: ads.tiktok.com → Báo cáo (Reporting) → theo chiến dịch, theo ngày/tháng; hoặc file xuất CSV
   (đọc bằng `doc_file_xuat.py --xem`). Gặp đăng nhập/xác minh: nhờ người dùng.
+- **TikTok qua MCP** (nếu đã nối TikTok for Business MCP): liệt kê tài khoản nhà quảng cáo, đọc chi phí/kết quả theo tháng và
+  chiến dịch, chỉ dùng công cụ đọc. Không có MCP thì dùng Chrome/file như trên.
+- **Google Ads** (nếu doanh nghiệp có): file xuất báo cáo chi phí trong `nhap/` hoặc Chrome, chỉ đọc.
 - **File ngân sách**: Drive (`read_file_content`/`get_values`) hoặc Finder (`doc_file_xuat.py --xem`).
-  Lấy kế hoạch và thực chi theo tháng, hạng mục (Meta, TikTok, KOC, khác). Hạng mục ngoài quảng cáo chỉ ghi nếu file có.
+  Lấy kế hoạch và thực chi theo tháng, hạng mục (Meta, TikTok, Google, KOC/booking, sản xuất nội dung, công cụ, thuê ngoài).
+- **Chi phí Marketing ngoài quảng cáo** (KOC/booking, quay chụp, thiết kế, công cụ/phần mềm, thuê ngoài): nếu không có trong
+  file ngân sách, hỏi người dùng bảng đơn giản **Tháng – Khoản chi – Số tiền**, ghi vào `ngan_sach` với `hang_muc` tương ứng
+  và `ke_hoach: null`. Không tự điền khoản thiếu.
+- **Kiểm trùng trước khi cộng**: chi phí trên nền tảng, số tiền thanh toán (hoá đơn, sao kê, đại lý) và dòng "Meta/TikTok" trong
+  file ngân sách có thể là cùng một khoản. Chỉ ra chỗ có thể trùng và hỏi người dùng trước khi tính tổng chi Marketing.
 - **Ghép kết quả kinh doanh** (nếu đã có): lead từ `lead-hoi-thoai/*/chi-so-lead.json` hoặc LadiPage,
   doanh thu/đơn từ `kinh-doanh/*/chi-so-kd.json` (`theo_kenh`). Không có thì bỏ, không ước tính.
 Ghi `chi-phi.json` theo `references/chi-phi-ads.md`.
@@ -37,6 +45,10 @@ Ra `chi-so-chi-phi.json`, `bao-cao.html`, `sheets/*.csv`. Đọc kết quả, vi
 - Kế hoạch vs thực chi: lệch bao nhiêu, tháng nào vượt/thiếu.
 - Hiệu quả: chi phí/kết quả theo nền tảng và mục tiêu; CPL, chi phí/đơn, ROAS khi ghép được. Ghi rõ ROAS tính trên doanh thu
   nào (doanh thu kênh quảng cáo trong báo cáo kinh doanh) vì doanh thu có thể đến từ nhiều nguồn.
+  Tổng chi quảng cáo / tổng doanh thu **không gọi là ROAS** (gọi là "tỷ lệ chi quảng cáo trên doanh thu").
+  Không kết luận sinh lời khi thiếu doanh thu quy cho quảng cáo, giá vốn và chi phí liên quan.
+- Tổng chi Marketing = quảng cáo các nền tảng + chi phí ngoài quảng cáo, sau khi đã kiểm trùng; tách ba dòng: chi trên nền tảng,
+  thực thanh toán, chi Marketing khác. Khoản chi chưa có kết quả đi kèm (ví dụ booking không đo được) ghi riêng.
 - Chiến dịch tốn nhiều mà kết quả thấp (top 5), chiến dịch hiệu quả nhất.
 - Đầu vào cho plan: mức chi đề xuất theo tháng/nền tảng dựa trên hiệu quả thực tế (chỉ đề xuất, người dùng quyết).
 

@@ -15,7 +15,10 @@ description: Cài Agent Masterplan cho một doanh nghiệp — tạo thư mục
 - Chưa có: chép `${CLAUDE_PLUGIN_ROOT}/templates/cau-hinh-mau.json` thành `cau-hinh.json`, xoá dữ liệu mẫu.
 
 ## Bước 2 – Hỏi theo nhóm (mỗi nhóm một lần hỏi, không tự điền)
-1. **Doanh nghiệp**: tên, ngành, khu vực, mục tiêu kinh doanh năm/quý, nguồn lực marketing (người, ngân sách).
+1. **Doanh nghiệp → `company-context.md`**: chép `${CLAUDE_PLUGIN_ROOT}/templates/company-context-mau.md` thành
+   `company-context.md` rồi hỏi lần lượt 7 nhóm (doanh nghiệp, sản phẩm và giá, khách hàng, kênh, mục tiêu, nhân sự và nguồn lực,
+   vấn đề muốn giải quyết), mỗi lần một nhóm câu ngắn. Người dùng có sẵn tài liệu (Business Context, file Drive) thì đọc và điền
+   từ đó, hỏi lại phần thiếu. Không có số thì ghi "chưa có". Tóm tắt ngắn sang `cau-hinh.json` (`nganh`, `muc_tieu_kinh_doanh`, `nguon_luc`).
 2. **Kênh của mình**: link từng kênh đang dùng (Page, Group, TikTok, IG, Threads, YouTube, Zalo OA)
    và vai trò (gợi ý mặc định theo `khung-danh-gia.md`, người dùng sửa).
 3. **Đối thủ**: 3–5 đối thủ + link kênh. Chưa có thì để trống, skill `danh-gia-kenh` / `quet-doi-thu` sẽ đề xuất.
@@ -31,12 +34,13 @@ description: Cài Agent Masterplan cho một doanh nghiệp — tạo thư mục
 | Nguồn | Cách kiểm | Dùng cho skill |
 | --- | --- | --- |
 | Claude in Chrome | `tabs_context_mcp` | 1, 2, 3, 5 |
-| Meta Ads | `ads_get_ad_accounts` | 1, 2, 5 |
+| Meta Ads (MCP `https://mcp.facebook.com/ads`) | `ads_get_ad_accounts` | 1, 2, 5 |
+| TikTok for Business (MCP `https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer`, quyền hết hạn sau 30 ngày) | liệt kê tài khoản nhà quảng cáo | 5 |
 | LadiPage (lead, LadiWork) | `report_leads_by_campaign` kỳ 7 ngày | 1, 2 |
 | Google Drive | `search_files` một từ khoá trong thư mục đã khai | 4, 5 |
 | Google Sheets | `get_spreadsheet` nếu đã có link | mọi skill |
 Ghi bảng trạng thái: nguồn nào sẵn sàng, nguồn nào thiếu và hệ quả. Không bắt người dùng nối hết mới chạy.
 
 ## Bước 4 – Kết thúc
-Đọc lại `cau-hinh.json` cho người dùng xác nhận (tóm tắt, không dán cả file).
-Gợi ý lệnh tiếp: `/masterplan-agent:danh-gia-kenh 90`.
+Đọc lại `cau-hinh.json` và `company-context.md` cho người dùng xác nhận (tóm tắt, không dán cả file).
+Gợi ý lệnh tiếp: `/masterplan-agent:dieu-phoi` (xem cả lộ trình) hoặc `/masterplan-agent:danh-gia-kenh 90`.

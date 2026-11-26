@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.2.0 – 2026-11-26
+Bổ sung quy trình nghiên cứu 4 phần (Review → Market Research → Dự báo → Định hướng chiến lược).
+- Skill mới `dieu-phoi`: đọc trạng thái thư mục làm việc, chọn và chạy skill đúng thứ tự, kiểm đầu ra trước khi chuyển bước.
+- Skill mới `ra-soat-thuong-hieu`: thương hiệu, Website, bình luận và đánh giá công khai.
+- Skill mới `review-nam`: tổng hợp một bản Marketing Audit năm.
+- Skill mới `nghien-cuu-thi-truong`: ngành hàng, khách hàng, 5–10 đơn vị cùng ngành (trực tiếp / thay thế), tổng hợp.
+- Skill mới `du-bao-xu-huong`: 6 nhóm tín hiệu, kiểm phản ứng khách, dự báo, tự phản biện.
+- Skill mới `dinh-huong-chien-luoc`: 2–3 khoảng trống, chấm 5 tiêu chí, một câu định hướng, phản biện 4 tiêu chí, tài liệu một trang.
+- `references/quy-tac-bang-chung.md` (dữ kiện / nhận định / giả định, mức tin cậy, nhầm lẫn bị cấm), `ket-qua-json.md`,
+  và hướng dẫn `thuong-hieu.md`, `review-nam.md`, `thi-truong.md`, `du-bao.md`, `chien-luoc.md`.
+- Script `dung_bao_cao_nghien_cuu.py`: dựng HTML, CSV, bản nháp .md từ `ket-qua.json`, cảnh báo dòng thiếu nguồn.
+- `setup` tạo `company-context.md` (mẫu `templates/company-context-mau.md`), kiểm thêm TikTok for Business MCP.
+- `chi-phi-ads`: TikTok MCP, Google Ads, chi Marketing ngoài quảng cáo, kiểm trùng trước khi cộng, không gọi chi/doanh thu là ROAS.
+- `lead-hoi-thoai`: bảng phản hồi khách, lý do mua, ghi phạm vi mẫu.
+- Sửa: reach của Facebook Group là "người đã xem" (không phải thành viên hoạt động); cách tính ngược số kỳ trước từ %.
+
 ## 0.1.0 – 2026-11-25
 - Skill `setup`: tạo thư mục làm việc và `cau-hinh.json`, kiểm tra Chrome và connector.
 - Skill 1 `danh-gia-kenh`: đánh giá 7 kênh social theo khung Phễu + vai trò, so kỳ trước, so đối thủ bằng số công khai,
