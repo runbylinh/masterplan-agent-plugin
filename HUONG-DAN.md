@@ -1,5 +1,7 @@
 # Hướng dẫn cài đặt và sử dụng Agent Masterplan Marketing
 
+**Cài lần đầu? Làm theo [CAI-DAT-LAN-DAU.md](CAI-DAT-LAN-DAU.md) (14 bước, có kiểm tra sau mỗi bước).**
+
 Tài liệu cho người làm Marketing, không cần biết lập trình. Làm lần lượt Phần A (cài một lần), rồi dùng Phần B mỗi khi làm việc.
 Đã cài xong nhưng chưa chắc đủ? Mở Claude Code và gõ `/masterplan-agent:huong-dan`. Agent tự kiểm tra máy và chỉ ra chỗ còn thiếu.
 
@@ -92,7 +94,7 @@ Agent đọc thư mục, cho biết phần nào đã có, phần nào thiếu, p
 | Phần | Lệnh | Khi nào dùng | Bạn cần chuẩn bị |
 | --- | --- | --- | --- |
 | 1 | `/masterplan-agent:danh-gia-kenh 90` | Kênh social nào hiệu quả, nên giữ/đẩy/tối ưu/bỏ | Đăng nhập Business Suite, TikTok Studio... |
-| 1 | `/masterplan-agent:lead-hoi-thoai 30` | Lead chất lượng không, chốt qua inbox bao nhiêu, khách hỏi gì | Đăng nhập hộp thư; cho phép mở hội thoại |
+| 1 | `/masterplan-agent:lead-hoi-thoai 30` | Số hội thoại, chất lượng lead, tỷ lệ chốt, khách hỏi gì — trên Messenger fanpage, Instagram, Zalo web, Zalo OA, TikTok tin nhắn web, TikTok Shop/Shopee chat | Mỗi hộp thư một tab Chrome đã đăng nhập (Zalo web quét QR); cho phép mở hội thoại |
 | 1 | `/masterplan-agent:ra-soat-thuong-hieu` | Website, hình ảnh thương hiệu, review Google Maps, bình luận | Link website, tên trên Google Maps |
 | 1 | `/masterplan-agent:bao-cao-kinh-doanh 2026` | Doanh thu, đơn, sản phẩm, kênh, so KPI | File/Sheet doanh thu (tối thiểu: Tháng – Doanh thu – Số đơn) |
 | 1 | `/masterplan-agent:chi-phi-ads năm` | Đã chi bao nhiêu, CPL, ROAS, so ngân sách | Connector Meta/TikTok; bảng chi phí ngoài quảng cáo (Tháng – Khoản chi – Số tiền) |

@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.0 – 2026-11-26
+- `lead-hoi-thoai` đọc đủ các hộp thư: Messenger fanpage (Business Suite hoặc hộp thư Page), Instagram Direct, Zalo bản web
+  (chat.zalo.me, thẻ phân loại, đếm theo mốc thời gian), Zalo OA, TikTok tin nhắn bản web (tiktok.com/messages, mục yêu cầu tin nhắn),
+  TikTok Shop / Shopee chat, chat website. Hướng dẫn từng nền tảng trong `references/lead-hoi-thoai.md`; mỗi tài khoản một dòng.
+- `tinh_lead.py`: thêm mã kênh `zalo_web`, `tiktok_shop`, `shopee`, `website_chat`; nhận tên tài khoản tự đặt (`ten`).
+- `cau-hinh-mau.json`: `hop_thu.tai_khoan` (từng Page, số Zalo, kênh TikTok).
+- `CAI-DAT-LAN-DAU.md`: 14 bước cài cho người mới (tài khoản, Claude Desktop, Git + GitHub CLI, Claude Code, plugin, Python,
+  Claude in Chrome, connector, đăng nhập trang, thư mục làm việc, kiểm tra, setup, chạy thử), có kiểm tra và xử lý kẹt.
+- `huong-dan cai-dat` dẫn từng bước một theo tài liệu này.
+
 ## 0.3.1 – 2026-11-26
 - `HUONG-DAN.md`: cài đặt từng bước (Claude Code, plugin, openpyxl, Chrome, Meta Ads, TikTok for Business, LadiPage, Drive, Sheets),
   tạo thư mục làm việc, thao tác 4 phần, cách duyệt, bộ mẫu, theo dõi định kỳ, việc agent làm/không làm, lỗi thường gặp, mẹo.

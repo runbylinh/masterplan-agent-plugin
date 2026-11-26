@@ -11,6 +11,7 @@ claude plugin install masterplan-agent@rbl-masterplan-dev
 ```
 Cài thêm thư viện đọc Excel: `python3 -m pip install openpyxl`. Sau khi cài, mở phiên Claude Code mới (hoặc chạy `/reload-plugins`).
 
+**Cài lần đầu:** [CAI-DAT-LAN-DAU.md](CAI-DAT-LAN-DAU.md) — 14 bước có kiểm tra.
 **Hướng dẫn đầy đủ** (chuẩn bị, kết nối Chrome/Meta/TikTok/LadiPage/Drive/Sheets, thao tác từng lệnh, lỗi thường gặp):
 [HUONG-DAN.md](HUONG-DAN.md). Trong Claude Code gõ `/masterplan-agent:huong-dan` để agent tự kiểm tra máy và chỉ bước còn thiếu.
 
@@ -35,7 +36,7 @@ rồi tạo `cau-hinh.json`. Sau đó gõ `/masterplan-agent:dieu-phoi` để ag
 | – | `/masterplan-agent:dieu-phoi` | Đọc trạng thái, chọn skill, chạy đúng thứ tự, không chạy lại phần còn dùng được | Thư mục làm việc |
 | 0 | `/masterplan-agent:setup` | Khai báo doanh nghiệp (`company-context.md`), kênh, đối thủ, nguồn số | — |
 | 1 | `/masterplan-agent:danh-gia-kenh [kỳ]` | Đánh giá Page, Group, TikTok, IG, Threads, YouTube, Zalo OA theo vai trò trong phễu, so kỳ trước và đối thủ, kết luận Giữ / Đẩy mạnh / Tối ưu / Bỏ | Chrome (Business Suite, TikTok Studio...), file xuất, Meta Ads, LadiPage |
-| 1 | `/masterplan-agent:lead-hoi-thoai [kỳ]` | Số hội thoại, tốc độ phản hồi, chất lượng lead, tỷ lệ chốt, lý do mua / chưa mua, câu hỏi lặp lại | Chrome (Business Suite, Zalo OA, Zalo web, TikTok), nhãn hộp thư, file đơn / LadiWork |
+| 1 | `/masterplan-agent:lead-hoi-thoai [kỳ]` | Số hội thoại, tốc độ phản hồi, chất lượng lead, tỷ lệ chốt, lý do mua / chưa mua, câu hỏi lặp lại | Chrome: Messenger fanpage, Instagram, Zalo web, Zalo OA, TikTok tin nhắn web, TikTok Shop/Shopee chat; nhãn hộp thư; file đơn / LadiWork |
 | 1 | `/masterplan-agent:ra-soat-thuong-hieu` | Thương hiệu và Website như khách thấy; bình luận, đánh giá Google Maps, sàn | Chrome, trang công khai |
 | 1 | `/masterplan-agent:bao-cao-kinh-doanh [kỳ]` | Doanh thu, đơn theo tháng, sản phẩm, kênh, so KPI | Google Drive, thư mục trên máy |
 | 1 | `/masterplan-agent:chi-phi-ads [kỳ]` | Chi phí Meta/TikTok/Google Ads + chi Marketing khác (KOC, sản xuất, công cụ), so ngân sách, CPL, ROAS | Meta Ads MCP, TikTok for Business MCP / Ads Manager, file ngân sách |

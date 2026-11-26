@@ -26,12 +26,17 @@
     "ghi_chu": "ID tài khoản quảng cáo Meta (chỉ số, không có act_) và TikTok Ads. file_ngan_sach: link Drive hoặc đường dẫn Finder tới file ngân sách/chi tiêu. Để trống nếu không có."
   },
   "hop_thu": {
-    "nguon": ["meta_business_suite", "zalo_oa", "zalo_ca_nhan", "tiktok"],
+    "nguon": ["messenger", "instagram", "zalo_web", "zalo_oa", "tiktok"],
+    "tai_khoan": [
+      {"kenh": "messenger", "ten": "Fanpage Brand mẫu", "url": "https://business.facebook.com/latest/inbox"},
+      {"kenh": "zalo_web", "ten": "Zalo tư vấn 1", "url": "https://chat.zalo.me"},
+      {"kenh": "tiktok", "ten": "@brandmau", "url": "https://www.tiktok.com/messages"}
+    ],
     "nhan_chot": ["Đã chốt", "Đã chuyển khoản"],
     "nhan_dang_tu_van": ["Đang tư vấn", "Hẹn lại"],
     "nhan_khong_phu_hop": ["Không phù hợp", "Spam"],
     "file_don_hang": [],
-    "ghi_chu": "Nhãn team đang gắn trong hộp thư (Business Suite, Zalo, TikTok). file_don_hang: link Sheet/Drive/Finder tới file đơn hàng hoặc báo cáo sale để đối chiếu lead ra đơn. Có thể dùng LadiWork (connector LadiPage) làm CRM."
+    "ghi_chu": "nguon: loại hộp thư (messenger, instagram, zalo_web, zalo_oa, tiktok, tiktok_shop, shopee, website_chat). tai_khoan: mỗi Page/số Zalo/kênh TikTok một dòng, nhiều tài khoản cùng loại thì kenh thêm hậu tố _2. Nhãn/thẻ team đang gắn trong hộp thư (Business Suite, Zalo, TikTok). file_don_hang: link Sheet/Drive/Finder tới file đơn hàng hoặc báo cáo sale để đối chiếu lead ra đơn. Có thể dùng LadiWork (connector LadiPage) làm CRM."
   },
   "bao_cao_kinh_doanh": {
     "thu_muc_drive": [],

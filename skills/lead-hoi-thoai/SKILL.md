@@ -1,6 +1,6 @@
 ---
 name: lead-hoi-thoai
-description: Đánh giá hiệu quả lead và tư vấn qua tin nhắn — tự mở Meta Business Suite (Messenger + Instagram), Zalo OA, Zalo web (chat.zalo.me), TikTok tin nhắn trên Chrome để đếm số hội thoại theo kênh, tốc độ phản hồi, chất lượng lead (nóng/ấm/lạnh/không phù hợp), tỷ lệ chốt qua tin nhắn (theo nhãn, theo nội dung chat, đối chiếu file đơn/CRM), lý do không chốt và câu hỏi khách hay hỏi. Xuất báo cáo .md + HTML + Google Sheets, không lưu thông tin cá nhân khách. Dùng khi người dùng gõ /masterplan-agent:lead-hoi-thoai, nói "đánh giá lead", "chất lượng lead", "tỷ lệ chốt inbox", "sale chốt qua mess thế nào", "bao nhiêu hội thoại".
+description: Đánh giá hiệu quả lead và tư vấn qua tin nhắn trên mọi hộp thư — tự mở Messenger fanpage (Meta Business Suite hoặc hộp thư Page), Instagram Direct, Zalo bản web (chat.zalo.me), Zalo OA, TikTok tin nhắn bản web (tiktok.com/messages), TikTok Shop/Shopee chat nếu có, trên Chrome để đếm số hội thoại theo kênh, tốc độ phản hồi, chất lượng lead (nóng/ấm/lạnh/không phù hợp), tỷ lệ chốt qua tin nhắn (theo nhãn, theo nội dung chat, đối chiếu file đơn/CRM), lý do không chốt và câu hỏi khách hay hỏi. Xuất báo cáo .md + HTML + Google Sheets, không lưu thông tin cá nhân khách. Dùng khi người dùng gõ /masterplan-agent:lead-hoi-thoai, nói "đánh giá lead", "chất lượng lead", "tỷ lệ chốt inbox", "sale chốt qua mess thế nào", "bao nhiêu hội thoại".
 argument-hint: "[kỳ: 7 | 30 | 90 ngày]"
 ---
 
@@ -11,8 +11,16 @@ Cần `cau-hinh.json` (mục `hop_thu`, `lead`); chưa có thì chạy `masterpl
 
 ## Bước 0 – Chốt phạm vi (hỏi một lần)
 1. **Kỳ** (mặc định 30 ngày, kết thúc hôm qua) và kỳ trước cùng độ dài.
-2. **Hộp thư** sẽ đọc: Business Suite (Messenger, Instagram), Zalo OA, Zalo cá nhân (chat.zalo.me), TikTok tin nhắn.
-   Nhờ người dùng đăng nhập sẵn trên Chrome.
+2. **Hộp thư** sẽ đọc — liệt kê từ `cau-hinh.json → hop_thu.nguon` và hỏi bổ sung, mỗi tài khoản một dòng:
+   | Hộp thư | Trang mở | Cách đăng nhập |
+   | --- | --- | --- |
+   | Messenger fanpage (từng Page) | business.facebook.com → đúng Page → Hộp thư → Messenger (hoặc facebook.com/latest/inbox) | Tài khoản Facebook có quyền Page |
+   | Instagram Direct | Business Suite → Hộp thư → Instagram | như trên |
+   | Zalo web (từng số) | chat.zalo.me | Quét mã QR bằng điện thoại của số đó |
+   | Zalo OA | oa.zalo.me → Tin nhắn | Tài khoản quản trị OA |
+   | TikTok tin nhắn web | tiktok.com/messages (hoặc TikTok Business Suite inbox) | Tài khoản kênh TikTok |
+   | TikTok Shop / Shopee chat | Seller Center → Chat | Tài khoản người bán |
+   Mở sẵn mỗi hộp thư một tab trên Chrome và đăng nhập. Hộp thư nào không đăng nhập được thì bỏ qua và ghi vào `thieu`.
 3. **Cách xác định chốt** (dùng cả ba nếu có, ghi rõ con số đến từ cách nào):
    (a) nhãn trong hộp thư theo `hop_thu.nhan_chot`; (b) agent đọc nội dung chat; (c) đối chiếu file đơn / LadiWork.
 4. **Đọc nội dung chat**: hỏi cỡ mẫu (mặc định tối đa 40 hội thoại mỗi kênh, chia đều theo nhãn) và
@@ -23,14 +31,18 @@ Cần `cau-hinh.json` (mục `hop_thu`, `lead`); chưa có thì chạy `masterpl
 DỪNG. Tóm tắt phạm vi, hỏi "Bắt đầu chứ?"
 
 ## Bước 1 – Đếm tổng (không cần mở từng hội thoại)
-Mỗi hộp thư, cả kỳ này và kỳ trước, theo `references/lead-hoi-thoai.md`:
+Làm lần lượt từng hộp thư theo đúng mục của nền tảng đó trong `references/lead-hoi-thoai.md` (1 Messenger/Instagram,
+2 Zalo web, 3 Zalo OA, 4 TikTok, 5 kênh khác). Xong một hộp thư thì báo ngắn ("Messenger Page A: 420 hội thoại, 38 đã chốt…")
+rồi sang hộp tiếp. Cả kỳ này và kỳ trước:
 - Số hội thoại mới, số theo từng nhãn, số chưa trả lời. Dùng bộ lọc ngày + nhãn của hộp thư.
 - Business Suite: thêm số liệu ở **Hộp thư → Thông tin chi tiết** (tỷ lệ phản hồi, thời gian phản hồi) nếu có.
-- Hội thoại đến từ quảng cáo (Business Suite gắn nhãn quảng cáo / Click-to-Messenger): đếm riêng.
+- Hội thoại đến từ quảng cáo (Business Suite gắn nhãn quảng cáo / Click-to-Messenger, quảng cáo nhắn tin TikTok/Zalo): đếm riêng.
+- Hộp thư không lọc được theo ngày (Zalo web, TikTok): cuộn và đếm theo mốc thời gian; kỳ quá dài thì đếm theo thẻ/nhãn và ghi rõ cách đếm.
 - Lead form/landing page: LadiPage `report_leads_by_campaign` theo kênh (như skill đánh giá kênh).
 
 ## Bước 2 – Đọc mẫu hội thoại
 Với từng hội thoại trong mẫu (chỉ đọc, không gõ, không gửi, không gắn/bỏ nhãn):
+- Chia mẫu theo từng hộp thư (mặc định tối đa 40 mỗi hộp thư, chia đều theo nhãn/thẻ; hộp thư không có nhãn thì lấy đều theo ngày).
 - Gán mã `HT-<kênh>-<số>`. KHÔNG ghi tên, SĐT, email, ảnh đại diện, link hồ sơ khách.
 - Ghi: kênh, nguồn (quảng cáo / tự nhiên / không rõ), ngày bắt đầu, thời gian phản hồi đầu (phút),
   số tin, nhãn hiện có, nhu cầu (sản phẩm quan tâm), mức lead, trạng thái, lý do không chốt, câu hỏi chính,

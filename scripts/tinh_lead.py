@@ -16,8 +16,10 @@ from collections import Counter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import html_chung as H  # noqa: E402
 
-TEN_KENH = {"messenger": "Messenger", "instagram": "Instagram", "zalo_oa": "Zalo OA", "zalo_ca_nhan": "Zalo cá nhân",
-            "tiktok": "TikTok", "lead_form": "Form / landing page"}
+TEN_KENH = {"messenger": "Messenger fanpage", "instagram": "Instagram Direct", "zalo_oa": "Zalo OA",
+            "zalo_ca_nhan": "Zalo web (cá nhân)", "zalo_web": "Zalo web (cá nhân)", "tiktok": "TikTok tin nhắn",
+            "tiktok_shop": "TikTok Shop chat", "shopee": "Shopee chat", "website_chat": "Chat website",
+            "lead_form": "Form / landing page"}
 TEN_MUC = {"nong": "Nóng", "am": "Ấm", "lanh": "Lạnh", "khong_phu_hop": "Không phù hợp", "khong_ro": "Không rõ"}
 TEN_LY_DO = {"gia": "Giá", "thoi_gian_lich": "Thời gian / lịch", "chua_tin": "Chưa đủ tin tưởng",
              "chua_ro_loi_ich": "Chưa rõ lợi ích", "so_sanh_doi_thu": "So sánh đối thủ", "phan_hoi_cham": "Phản hồi chậm",
@@ -113,7 +115,7 @@ def main():
         so_ht = hi.get("hoi_thoai")
         mau = [m for m in mau_all if m.get("kenh") == k["kenh"]]
         kenh_ra.append({
-            "kenh": k["kenh"], "ten": TEN_KENH.get(k["kenh"], k["kenh"]),
+            "kenh": k["kenh"], "ten": k.get("ten") or TEN_KENH.get(k["kenh"], k["kenh"]),
             "hoi_thoai": so_ht, "hoi_thoai_ky_truoc": kt.get("hoi_thoai"),
             "tu_quang_cao": hi.get("tu_quang_cao"), "chua_tra_loi": hi.get("chua_tra_loi"),
             "ty_le_phan_hoi_pct": hi.get("ty_le_phan_hoi_pct"), "phan_hoi_tb_phut": hi.get("phan_hoi_tb_phut"),

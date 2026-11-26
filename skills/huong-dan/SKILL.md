@@ -10,7 +10,8 @@ Tài liệu đầy đủ: `${CLAUDE_PLUGIN_ROOT}/HUONG-DAN.md`. Đọc file đó
 
 ## Chọn chế độ
 - `kiem-tra` (mặc định khi không có tham số): kiểm tra máy rồi hướng dẫn bước tiếp.
-- `cai-dat`: trình bày Phần A của HUONG-DAN.md theo từng bước, mỗi lệnh một khối `bash`.
+- `cai-dat`: người mới cài lần đầu → dẫn từng bước theo `${CLAUDE_PLUGIN_ROOT}/CAI-DAT-LAN-DAU.md` (14 bước): mỗi lần đưa MỘT bước,
+  mỗi lệnh một khối `bash`, hỏi kết quả phần **Kiểm tra** rồi mới sang bước sau; bước nào đã xong (kiểm tra được trên máy) thì bỏ qua.
 - `thao-tac`: trình bày Phần B (quy trình 4 phần, bảng lệnh, cách duyệt, bộ mẫu, thư mục).
 - `loi`: hỏi người dùng gặp hiện tượng gì, đối chiếu Phần D, kiểm tra đúng chỗ đó.
 Người dùng hỏi một câu cụ thể thì trả lời đúng câu đó, trích phần liên quan, không dán cả tài liệu.
