@@ -1,0 +1,43 @@
+{
+  "_ghi_chu": "VÍ DỤ GIẢ ĐỊNH để kiểm thử skill competitor-research: thương hiệu thời trang công sở nữ bán online và 1 cửa hàng tại Hà Nội. Tên đơn vị (Đơn vị A, B, C), giá, URL đều là ví dụ, không phải đối thủ hay số liệu thật.",
+  "dot": "@rp",
+  "ban_ghi": [
+    {"tam": "rp", "loai": "RP", "tieu_de": "Cạnh tranh thời trang công sở nữ phân khúc trung", "du_lieu": {
+      "Mục tiêu nghiên cứu": "Hiểu đơn vị cùng phân khúc định vị, giá, thông điệp ra sao và còn khoảng trống nào",
+      "Quyết định cần hỗ trợ": "Chọn điểm khác biệt và ưu đãi cho bộ sưu tập Xuân 2027",
+      "Câu hỏi nghiên cứu": ["Đơn vị cùng phân khúc nhấn lợi ích gì?", "Ưu đãi và chính sách đổi trả thế nào?", "Nhu cầu nào của khách chưa được phục vụ tốt?"],
+      "Phạm vi": "Thời trang công sở nữ · Hà Nội và online · 350–900 nghìn/sản phẩm · 10–11/2026", "Mức nghiên cứu": "Chuyên sâu", "Workflow": "01 Nghiên cứu toàn diện (bước competitor-research)",
+      "Dữ liệu đã có": "DN Kho lợi thế, KH từ customer-research", "Dữ liệu còn thiếu": "Lý do khách chọn bên khác trong inbox",
+      "Nguồn nghiên cứu": ["Google Search", "Website", "Meta Ads Library", "Sàn TMĐT", "TikTok"], "Phương pháp lấy mẫu": "6 đơn vị (4 trực tiếp, 1 gián tiếp, 1 thay thế), cùng khung thu",
+      "Skill và Subagent": ["competitor-research (competitor-researcher)"], "Đầu ra cuối cùng": "DV, UD, TN, KT + Ma trận cạnh tranh",
+      "Điểm chờ duyệt": ["Danh sách đơn vị", "Khoảng trống"], "Tiêu chuẩn hoàn thành": "6 DV đủ khung, ≥ 1 KT có bằng chứng khách, kiem-tra 0 lỗi"}},
+
+    {"tam": "mau1", "loai": "MAU", "tieu_de": "Website, Ads Library, sàn của 6 đơn vị", "lien_ket": ["@rp"], "du_lieu": {
+      "Nguồn": "Website, Meta Ads Library, sàn TMĐT, TikTok", "Phạm vi địa lý": "Hà Nội và bán online toàn quốc", "Khoảng thời gian": "01/10–26/11/2026", "Nhóm khách hàng": "Nữ văn phòng 25–35 tuổi",
+      "Từ khóa": ["đầm công sở hà nội", "set vest nữ công sở", "đồ công sở cho người thấp"], "Phương pháp tìm kiếm": "Top 10 Google + top sàn theo bán chạy; Ads Library lọc Việt Nam, đang hoạt động",
+      "Tiêu chí đưa vào": "Cùng phân khúc giá ±30%, bán đồ công sở nữ", "Tiêu chí loại trừ": "Hàng không thương hiệu, đơn vị chỉ bán sỉ",
+      "Số bản ghi thu thập": 9, "Số bản ghi đọc được": 7, "Số bản ghi sử dụng": 6, "Giới hạn của mẫu": "Chỉ đơn vị hiện trên kết quả tìm kiếm; chưa có đơn vị chỉ bán qua Instagram",
+      "Nguồn không truy cập được": "1 website yêu cầu đăng nhập để xem giá"}},
+
+    {"tam": "e1", "loai": "EVD", "tieu_de": "Website Đơn vị A: bảng size và chính sách", "du_lieu": {"Nguồn": "https://don-vi-a.vidu.vn/chinh-sach", "Nền tảng": "Website", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Bảng size S–XL theo vòng ngực, eo; đổi size 7 ngày; không có hướng dẫn theo chiều cao", "Loại nguồn": "Công khai"}},
+    {"tam": "e2", "loai": "EVD", "tieu_de": "Meta Ads Library: Đơn vị A đang chạy 14 quảng cáo", "du_lieu": {"Nguồn": "https://www.facebook.com/ads/library/?id=vidu-a", "Nền tảng": "Meta Ads Library", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Thông điệp chính \"Chuẩn form, lên dáng thanh lịch\"; ưu đãi mua 2 giảm 10%", "Loại nguồn": "Công khai", "Phạm vi mẫu": "14 quảng cáo đang hoạt động"}},
+    {"tam": "e3", "loai": "EVD", "tieu_de": "Gian hàng sàn Đơn vị B và đánh giá", "du_lieu": {"Nguồn": "https://shopee.vn/vidu-don-vi-b", "Nền tảng": "Sàn TMĐT", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Giá 290–550 nghìn; đánh giá chê dài quá với người thấp (9/40), khen vải mát (15/40)", "Loại nguồn": "Công khai", "Phạm vi mẫu": "40 đánh giá"}},
+    {"tam": "e4", "loai": "EVD", "tieu_de": "Bình luận video phối đồ công sở cho người thấp", "du_lieu": {"Nguồn": "https://www.tiktok.com/@vidu/video/202", "Nền tảng": "TikTok", "Ngày đăng": "2026-10-28", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Nhiều bình luận hỏi chỗ bán đồ công sở vừa người dưới 1m55, kể mua online phải đem đi sửa", "Loại nguồn": "Công khai", "Phạm vi mẫu": "1 video, 50 bình luận"}},
+
+    {"tam": "dn1", "loai": "DN", "tieu_de": "Lợi thế: xưởng may tự sửa độ dài", "lien_ket": ["@rp"], "do_tin_cay": "Cao", "ly_do_tin_cay": "Tài sản thực có, người dùng xác nhận",
+     "du_lieu": {"Bảng": "Kho lợi thế", "Nội dung": "Có xưởng và thợ may sửa độ dài trong 48 giờ", "Lợi thế": "Sửa độ dài theo số đo", "Căn cứ": "company-context.md", "Khách hàng liên quan": "Nữ dáng thấp", "Hướng khai thác": "Bán theo size chiều dài", "Nguồn": "company-context.md"}},
+    {"tam": "k1", "loai": "KH", "tieu_de": "Mua online phải đem đi sửa vì dài", "lien_ket": ["@e3", "@e4"], "du_lieu": {"Nhãn": "Nỗi đau", "Nội dung": "Người dưới 1m55 mua đồ công sở online thường dài, phải tốn thêm tiền sửa", "Nhóm khách": "Nữ văn phòng dáng thấp", "Bối cảnh": "Mua online", "Loại khách": "Quan sát công khai", "Giai đoạn mua": "Sau mua", "Tần suất quan sát": "9/40 đánh giá sàn; 18/50 bình luận TikTok", "Nguồn": "Sàn TMĐT; TikTok"}},
+
+    {"tam": "d1", "loai": "DV", "tieu_de": "Đơn vị A", "lien_ket": ["@e1", "@e2"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Website và Ads Library cùng thời điểm; chưa đọc review",
+     "du_lieu": {"Tên": "Đơn vị A (ví dụ)", "Phân loại": "Trực tiếp", "Lý do chọn": "Cùng phân khúc giá, top Google \"đầm công sở hà nội\"", "Khách hàng": "Nữ văn phòng 25–35 tuổi", "Sản phẩm": "Đầm, set vest công sở", "Giá": "450–890 nghìn (26/11/2026)", "Phân khúc giá": "Trung – cao", "Định vị": "Thanh lịch, chuẩn form", "Lợi ích": "Lên dáng thanh lịch", "Điểm khác biệt": "Bộ sưu tập theo tháng", "Bằng chứng thương hiệu": "Ảnh khách mặc thật trên Fanpage", "Kênh": "Website, Facebook Ads, cửa hàng", "Phản hồi tiêu cực": "Chưa thấy trong mẫu (chưa đọc review)", "Nguồn": "https://don-vi-a.vidu.vn"}},
+    {"tam": "d2", "loai": "DV", "tieu_de": "Đơn vị B", "lien_ket": ["@e3"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Một nguồn sàn, 40 đánh giá",
+     "du_lieu": {"Tên": "Đơn vị B (ví dụ)", "Phân loại": "Gián tiếp", "Lý do chọn": "Đồ basic giá thấp hơn, khách dùng thay đồ công sở", "Khách hàng": "Nữ 22–30 tuổi", "Sản phẩm": "Sơ mi, quần âu basic", "Giá": "290–550 nghìn (26/11/2026)", "Phân khúc giá": "Trung – thấp", "Định vị": "Giá tốt, vải mát", "Lợi ích": "Mặc thoải mái cả ngày", "Kênh": "Sàn TMĐT, TikTok Shop", "Phản hồi tích cực": "Vải mát (15/40)", "Phản hồi tiêu cực": "Dài với người thấp (9/40)", "Nguồn": "https://shopee.vn/vidu-don-vi-b"}},
+    {"tam": "u1", "loai": "UD", "tieu_de": "Đơn vị A: mua 2 giảm 10%", "lien_ket": ["@e2"], "du_lieu": {"Đơn vị": "Đơn vị A (ví dụ)", "Sản phẩm": "Toàn bộ sản phẩm", "Giá": "Giảm 10% khi mua 2", "Combo": "Không có combo cố định", "Chính sách": "Đổi size 7 ngày", "Thời gian": "Đang chạy tại 26/11/2026", "Điều kiện": "Đơn từ 2 sản phẩm", "Cách trình bày": "Quảng cáo ảnh đơn, chữ ưu đãi góc trên", "Nguồn": "https://www.facebook.com/ads/library/?id=vidu-a"}},
+    {"tam": "t1", "loai": "TN", "tieu_de": "Chuẩn form, lên dáng thanh lịch", "lien_ket": ["@e2"], "du_lieu": {"Thông điệp": "Chuẩn form, lên dáng thanh lịch", "Đơn vị": "Đơn vị A (ví dụ)", "Lợi ích": "Trông chuyên nghiệp", "Nhóm khách": "Nữ văn phòng", "Kênh": "Facebook Ads", "Bằng chứng": "Ảnh người mẫu, không có số đo người mẫu", "Nguồn": "https://www.facebook.com/ads/library/?id=vidu-a"}},
+
+    {"tam": "f1", "loai": "FIND", "tieu_de": "4/6 đơn vị nhấn \"chuẩn form\", 0/6 nói về chiều dài theo chiều cao", "lien_ket": ["@e1", "@e2", "@e3"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Đủ 6 đơn vị trong mẫu, 3 loại nguồn",
+     "du_lieu": {"Phát hiện": "Lợi ích \"chuẩn form/lên dáng\" bị khai thác nhiều; chưa đơn vị nào hướng dẫn size theo chiều cao", "Phân loại": "Mẫu lặp", "Nhóm": "Cạnh tranh", "Bằng chứng tóm tắt": "Website, Ads Library, sàn của 6 đơn vị", "Phạm vi": "6 đơn vị, 10–11/2026", "Số lần xuất hiện": "4/6 và 0/6"}},
+    {"tam": "kt1", "loai": "KT", "tieu_de": "Chưa đơn vị nào tư vấn size theo số đo cho dáng người thấp", "lien_ket": ["@d1", "@d2", "@k1", "@f1"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Nhu cầu có ở 2 nền tảng, khoảng trống trong mẫu 6 đơn vị",
+     "du_lieu": {"Nhu cầu": "Mua online vừa dáng người dưới 1m55", "Mức độ được phục vụ": "Thấp: 0/6 đơn vị có bảng size theo chiều cao", "Bằng chứng": "DV-001, DV-002, KH-001, FIND-001", "Giới hạn": "Trong mẫu 6 đơn vị, 11/2026; chưa xét đơn vị chỉ bán Instagram", "Lợi thế doanh nghiệp": "Xưởng sửa độ dài trong 48 giờ (DN-001)", "Điều kiện khai thác": "Đo được 3 size chiều dài cho 10 mẫu bán chạy; chi phí sửa nằm trong biên lợi nhuận"}}
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "_ghi_chu": "VÍ DỤ GIẢ ĐỊNH cho skill format-sang-tao: quán cafe làm việc tại Hà Nội (F&B), thư viện format video và hình ảnh. Không phải kết quả nghiên cứu thật; URL, kênh, số liệu là ví dụ.",
+  "dot": "@rp",
+  "ban_ghi": [
+    {"tam": "rp", "loai": "RP", "tieu_de": "Thư viện format video và hình ảnh quán cafe Hà Nội", "du_lieu": {
+      "Mục tiêu nghiên cứu": "Đúc kết format video và hình ảnh tái sử dụng cho quán cafe làm việc", "Quyết định cần hỗ trợ": "Chọn 3 format video và 1 khuôn carousel cho tháng 12",
+      "Câu hỏi nghiên cứu": ["Video quán cafe thu hút thường có cấu trúc gì?", "Carousel giới thiệu menu trình bày thông tin theo thứ tự nào?"],
+      "Phạm vi": "Cafe · Hà Nội · sinh viên, nhân viên văn phòng · 01/09–26/11/2026", "Mức nghiên cứu": "Nhanh", "Workflow": "03 Content Marketing",
+      "Dữ liệu đã có": "Không", "Dữ liệu còn thiếu": "Nguồn lực quay dựng thực tế của quán",
+      "Nguồn nghiên cứu": ["TikTok", "Instagram"], "Phương pháp lấy mẫu": "18 video, 10 carousel, 3 mức tương tác",
+      "Skill và Subagent": ["format-sang-tao"], "Đầu ra cuối cùng": "Thư viện FMT", "Điểm chờ duyệt": ["Nhóm cấu trúc dự kiến", "Thư viện format"],
+      "Tiêu chuẩn hoàn thành": "Mỗi FMT liên kết ≥ 2 mẫu ở ≥ 2 kênh"}},
+    {"tam": "mau1", "loai": "MAU", "tieu_de": "Mẫu video và carousel quán cafe", "lien_ket": ["@rp"], "du_lieu": {
+      "Nguồn": "TikTok Search, Instagram", "Phạm vi địa lý": "Hà Nội", "Khoảng thời gian": "01/09–26/11/2026", "Nhóm khách hàng": "Sinh viên, nhân viên văn phòng",
+      "Từ khóa": ["quán cafe ngồi làm việc hà nội", "pov đi cafe", "menu cafe carousel"], "Phương pháp tìm kiếm": "Tìm theo từ khóa format + địa bàn, lấy 3 mức tương tác",
+      "Tiêu chí đưa vào": "Video/ảnh do quán hoặc Creator đăng về một quán cụ thể", "Tiêu chí loại trừ": "Video ghép nhiều quán không rõ cấu trúc, bài trùng",
+      "Số bản ghi thu thập": 34, "Số bản ghi đọc được": 30, "Số bản ghi sử dụng": 28, "Giới hạn của mẫu": "3 video tắt tiếng nên không quan sát được âm thanh; chỉ Hà Nội"}},
+    {"tam": "e1", "loai": "EVD", "tieu_de": "Video POV vào quán buổi sáng", "du_lieu": {"Nguồn": "https://www.tiktok.com/@vidu-cafe-a/video/401", "Nền tảng": "TikTok", "Ngày đăng": "2026-11-02", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Quay cầm tay từ cửa vào quầy, món, chỗ ngồi; chữ địa chỉ cuối video; nhạc không lời", "Loại nguồn": "Công khai"}},
+    {"tam": "e2", "loai": "EVD", "tieu_de": "Video POV quán buổi tối", "du_lieu": {"Nguồn": "https://www.tiktok.com/@vidu-review-b/video/402", "Nền tảng": "TikTok", "Ngày đăng": "2026-10-20", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Cùng trình tự cửa → quầy → món → chỗ ngồi; video tắt tiếng nên không quan sát được âm thanh", "Loại nguồn": "Công khai"}},
+    {"tam": "e3", "loai": "EVD", "tieu_de": "Carousel menu mùa đông", "du_lieu": {"Nguồn": "https://www.instagram.com/p/vidu-403", "Nền tảng": "Instagram", "Ngày đăng": "2026-11-10", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Ảnh 1 tiêu đề lớn + món chủ lực; ảnh 2–4 mỗi ảnh một món kèm giá; ảnh cuối địa chỉ và giờ mở cửa", "Loại nguồn": "Công khai"}},
+    {"tam": "e4", "loai": "EVD", "tieu_de": "Carousel menu quán khác", "du_lieu": {"Nguồn": "https://www.instagram.com/p/vidu-404", "Nền tảng": "Instagram", "Ngày đăng": "2026-10-30", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Ảnh 1 câu hỏi tình huống, ảnh giữa món + giá, ảnh cuối bản đồ nhỏ", "Loại nguồn": "Công khai"}},
+    {"tam": "c1", "loai": "CNT", "tieu_de": "POV vào quán ngồi làm việc buổi sáng", "lien_ket": ["@e1"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Đã xem toàn bộ video có tiếng; chỉ số một thời điểm", "du_lieu": {
+      "URL": "https://www.tiktok.com/@vidu-cafe-a/video/401", "Nền tảng": "TikTok", "Kênh": "Quán cafe ~12k theo dõi", "Ngày đăng": "2026-11-02", "Ngày thu thập": "2026-11-26",
+      "Nhóm khách hàng": "Sinh viên, freelancer", "Mục tiêu": "Thu hút", "Chủ đề": "Quán yên tĩnh để làm việc buổi sáng", "Hook": "POV: tìm được quán có ổ cắm mọi bàn",
+      "Góc khai thác": "Trải nghiệm thay người xem", "Thông điệp": "Ngồi lâu làm việc thoải mái", "Cấu trúc nội dung": "Cửa → quầy → món → chỗ ngồi → địa chỉ",
+      "Format": "Video dọc 30 giây POV", "CTA": "Lưu lại cho cuối tuần", "Chỉ số công khai": "48k xem, 2,3k lưu (đọc 26/11/2026); trung vị kênh ~6k xem",
+      "Mức mẫu": "Nổi bật", "Yếu tố có thể học hỏi": "Trình tự đi liên tục như người thật bước vào", "Hướng ứng dụng": "POV theo khung giờ trong ngày"}},
+    {"tam": "c2", "loai": "CNT", "tieu_de": "POV quán buổi tối của Creator review", "lien_ket": ["@e2"], "do_tin_cay": "Thấp", "ly_do_tin_cay": "Video tắt tiếng, không đánh giá được âm thanh", "du_lieu": {
+      "URL": "https://www.tiktok.com/@vidu-review-b/video/402", "Nền tảng": "TikTok", "Kênh": "Creator review quán ~60k theo dõi", "Ngày đăng": "2026-10-20", "Ngày thu thập": "2026-11-26",
+      "Nhóm khách hàng": "Nhân viên văn phòng", "Mục tiêu": "Thu hút", "Chủ đề": "Quán ngồi tối sau giờ làm", "Hook": "POV: tan làm muốn trốn một góc yên",
+      "Góc khai thác": "Trải nghiệm thay người xem", "Thông điệp": "Góc yên sau giờ làm", "Cấu trúc nội dung": "Cửa → quầy → món → chỗ ngồi → địa chỉ",
+      "Format": "Video dọc 28 giây POV", "Chỉ số công khai": "9k xem, 300 lưu (đọc 26/11/2026); trung vị kênh ~10k xem",
+      "Mức mẫu": "Thông thường", "Yếu tố có thể học hỏi": "Cùng trình tự, đổi tình huống mở đầu", "Hướng ứng dụng": "Biến thể POV buổi tối"}},
+    {"tam": "v1", "loai": "FMT", "tieu_de": "POV khách bước vào quán 30 giây", "lien_ket": ["@c1", "@c2"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Cấu trúc lặp ở 2 kênh khác nhau; âm thanh chỉ quan sát được ở 1 mẫu", "du_lieu": {
+      "Loại format": "Video", "Tên format": "POV khách bước vào quán", "Mục tiêu": "Thu hút", "Nhóm khách hàng": "Sinh viên, nhân viên văn phòng tìm quán ngồi lâu",
+      "Nhu cầu hoặc tình huống": "Tìm chỗ ngồi làm việc hoặc thư giãn",
+      "Công thức Hook hoặc tiêu đề": "POV: [tình huống của khách] + cảnh cửa quán trong 2 giây đầu", "Cấu trúc": "Cửa quán → đi qua quầy → món chính cận cảnh → góc ngồi → chữ địa chỉ",
+      "Trình tự phân đoạn và thời lượng": "0–2s cửa; 2–8s quầy; 8–18s món; 18–26s góc ngồi; 26–30s địa chỉ", "Cảnh quay và góc máy": "Cầm tay ngang tầm mắt, đi liên tục",
+      "Nhịp dựng": "Cắt khoảng 2 giây một lần ở mẫu có tiếng", "Chữ trên video": "Một dòng chữ nhỏ đầu video, địa chỉ cuối video",
+      "Âm thanh và hiệu ứng": "Nhạc nền không lời ở CNT-001; CNT-002 không quan sát được (tắt tiếng)", "CTA": "Lưu lại để đi cuối tuần", "Tỷ lệ khung hình": "9:16",
+      "Mẫu tham khảo": "CNT-001, CNT-002", "Yêu cầu nguyên liệu": "Điện thoại có chống rung, quán vắng khách, 1 món chủ lực bày sẵn",
+      "Mức độ khó và nguồn lực": "Thấp: 1 người quay và dựng trong khoảng 2 giờ", "Yếu tố phụ thuộc ngữ cảnh": "Trend âm thanh tại thời điểm đăng",
+      "Hướng ứng dụng": "Mỗi tuần một POV theo khung giờ khác nhau (sáng làm việc, tối hẹn bạn)"}},
+    {"tam": "h1", "loai": "FMT", "tieu_de": "Carousel menu 5 ảnh món kèm giá", "lien_ket": ["@e3", "@e4"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Khuôn bố cục lặp ở 2 tài khoản, mẫu 10 carousel", "du_lieu": {
+      "Loại format": "Hình ảnh", "Tên format": "Carousel menu món kèm giá", "Mục tiêu": "Chuyển đổi", "Nhóm khách hàng": "Khách đã biết quán, đang chọn món",
+      "Công thức Hook hoặc tiêu đề": "Ảnh 1: [mùa/dịp] + [số] món mới hoặc câu hỏi tình huống", "Cấu trúc": "Bìa → mỗi ảnh một món → ảnh cuối địa chỉ, giờ mở cửa",
+      "Bố cục tổng thể": "Món chiếm khoảng 2/3 khung, tên món và giá ở dải dưới", "Thứ tự thông tin": "Tiêu đề → món → giá → địa chỉ",
+      "Hình ảnh chủ đạo": "Ảnh món chụp từ trên xuống, nền bàn gỗ", "Cách thể hiện lợi ích và bằng chứng": "Không có bằng chứng; lợi ích nằm ở tên món",
+      "CTA": "Ghé quán hoặc nhắn đặt bàn", "Tỷ lệ khung hình": "4:5", "Mẫu tham khảo": "EVD-003, EVD-004",
+      "Yêu cầu nguyên liệu": "Ảnh từng món cùng góc, bảng giá cập nhật", "Mức độ khó và nguồn lực": "Thấp: 1 buổi chụp + 1 giờ thiết kế",
+      "Hướng ứng dụng": "Dùng cho menu theo mùa; thêm 1 ảnh phản hồi khách làm bằng chứng"}}
+  ]
+}

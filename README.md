@@ -44,11 +44,26 @@ rồi tạo `cau-hinh.json`. Sau đó gõ `/masterplan-agent:dieu-phoi` để ag
 | 2 | `/masterplan-agent:nghien-cuu-thi-truong` | Ngành hàng, khách hàng, 5–10 đơn vị cùng ngành, tổng hợp có mức tin cậy | Web, Google Trends, Social, Google Maps, sàn, Meta Ads Library |
 | 2 | `/masterplan-agent:quet-doi-thu` | Theo dõi nội dung, offer, khuyến mãi, quảng cáo đối thủ; báo "có gì mới" | Chrome (trang đối thủ, Meta Ads Library, Google Ads Transparency) |
 | 3 | `/masterplan-agent:du-bao-xu-huong [năm]` | Tín hiệu thị trường → phản ứng khách → dự báo → tự phản biện | Nguồn chính thức, báo cáo ngành, Trends, Social, sàn |
-| 3C | `/masterplan-agent:research [chủ đề]` | Research 3C theo chủ đề/dịp (gộp từ research-agent): Brief → Khách hàng + Đối thủ (2 subagent song song) → Cơ hội → Giao việc | Web, Chrome, hồ sơ doanh nghiệp |
-| 3C | `company-analysis` · `customer-research` · `competitor-research` · `marketing-opportunities` · `marketing-recommendations` | Chạy lẻ từng giai đoạn 3C | như trên |
 | 4 | `/masterplan-agent:dinh-huong-chien-luoc [năm]` | 2–3 khoảng trống → chấm 5 tiêu chí → một câu định hướng → phản biện → tài liệu một trang | Kết quả phần 1–3 |
 
 Mỗi skill xuất: `bao-cao.md` (bản chữ), `bao-cao.html` (có biểu đồ/bảng), `sheets/*.csv` (ghi vào Google Sheets sau khi bạn duyệt).
+
+## Agent Market Research (20 năng lực)
+Nói yêu cầu bằng lời, agent tự chọn quy trình: `/masterplan-agent:research tìm cơ hội Marketing dịp Tết`.
+Một lần nghiên cứu → nhiều kết quả phân tích → nhiều tài nguyên Marketing → có bằng chứng → cập nhật và tái sử dụng được.
+
+| Nhóm | Skill | Đầu ra chính (mã trong kho) |
+| --- | --- | --- |
+| Điều phối | `research` (9 workflow, mức Nhanh / Chuyên sâu / Cập nhật, chế độ 3C cũ) | Research Brief `RP` |
+| A · Thu thập | `company-analysis` (01 nội bộ) · `xu-huong-mua-vu` (02) · `customer-research` (03) · `competitor-research` (04) · `tu-khoa` (05) · `nghien-cuu-content` (06) · `format-sang-tao` (07) · `quang-cao-chuyen-doi` (08) · `kenh-cong-dong` (09) | `EVD`, `MAU`, `FIND`, `DN`, `TT/XH/MV/BD/RR`, `KH/SEG/HT`, `DV/UD/TN/KT`, `KEY`, `CNT`, `FMT`, `QC/LP`, `KEN` |
+| B · Chuyển hoá | `insight` (10) · `marketing-opportunities` (11) · `san-pham-uu-dai` (12) · `dinh-vi-thong-diep` (13) · `y-tuong-content` (14) · `y-tuong-quang-cao` (15) · `y-tuong-chien-dich` (16) · `toi-uu-chuyen-doi` (17) · `marketing-recommendations` (giao việc 3C) | `INS`, `OPP`, `OFFER`, `TD`, `IDEA`, `ADS`, `CAM`, `CRO` |
+| C · Hệ thống | `kiem-chung` (19) · `kho-du-lieu` (20) | Trạng thái kiểm chứng, `MT`, `TH`, `GT`; kho 3 lớp |
+| Subagent | `market-researcher` · `customer-researcher` · `competitor-researcher` · `content-researcher` · `research-verifier` | Chạy song song khi nghiên cứu chuyên sâu |
+
+Kho dữ liệu (`kho/` trong thư mục làm việc, công cụ `scripts/kho.py`) giữ chuỗi liên kết
+`EVD → FIND → INS → OPP → IDEA / ADS / CAM`: mở một ý tưởng là truy ngược được Insight, phát hiện, bằng chứng gốc (`kho.py truy-vet IDEA-004`).
+Chi tiết: `references/kho-du-lieu.md`, `references/nghien-cuu/workflow.md`, hướng dẫn 13 nền tảng ở `references/nen-tang/`,
+báo cáo nâng cấp ở `NANG-CAP-MARKET-RESEARCH.md`.
 
 ## Luồng chung
 ```
@@ -69,8 +84,10 @@ script báo cảnh báo khi một dòng thiếu nguồn.
 ## Cấu trúc plugin
 ```
 .claude-plugin/   plugin.json, marketplace.json
-skills/           dieu-phoi, huong-dan, setup, 11 skill theo 4 phần + 6 skill Research 3C
-agents/           customer-researcher, competitor-researcher (subagent của Research 3C)
+skills/           dieu-phoi, huong-dan, setup, 11 skill Masterplan năm, 20 skill Market Research
+agents/           market-, customer-, competitor-, content-researcher, research-verifier
+scripts/kho.py    kho dữ liệu nghiên cứu (mã, liên kết, kiểm tra, truy vết, xuất, báo cáo)
+tests/            kiểm thử cấu trúc, kho và 9 case mô phỏng: python3 -m unittest discover -s tests
 references/       quy-tac.md, quy-tac-bang-chung.md, ket-qua-json.md, khung-danh-gia.md, nguong.json,
                   hướng dẫn từng skill (thu-thap, thuong-hieu, review-nam, thi-truong, du-bao, chien-luoc...)
 scripts/          tính chỉ số và dựng báo cáo (Python, không cần thư viện ngoài trừ openpyxl)

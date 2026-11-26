@@ -1,0 +1,45 @@
+{
+  "_ghi_chu": "VÍ DỤ GIẢ ĐỊNH cho skill kenh-cong-dong: thương hiệu thời trang công sở nữ tại TP.HCM. Không phải kết quả nghiên cứu thật; tên kênh, nhóm, Creator, URL, số liệu là ví dụ. Không liên hệ, không tham gia nhóm.",
+  "dot": "@rp",
+  "ban_ghi": [
+    {"tam": "rp", "loai": "RP", "tieu_de": "Kênh, cộng đồng, Creator thời trang công sở nữ TP.HCM", "du_lieu": {
+      "Mục tiêu nghiên cứu": "Tìm nơi nữ công sở tìm, trao đổi, tham khảo đồ đi làm", "Quyết định cần hỗ trợ": "Chọn kênh phân phối và 3–5 Creator thử booking quý 1/2027",
+      "Câu hỏi nghiên cứu": ["Khách tham khảo đồ công sở ở đâu?", "Cộng đồng nào cho phép chia sẻ thương hiệu?", "Creator nào có người xem trùng nhóm khách?"],
+      "Phạm vi": "Thời trang công sở nữ · TP.HCM · 24–35 tuổi · 01/09–26/11/2026", "Mức nghiên cứu": "Chuyên sâu", "Workflow": "07 Phát triển kênh",
+      "Dữ liệu đã có": "Kết quả danh-gia-kenh 90 ngày; nguồn khách CRM", "Dữ liệu còn thiếu": "Giá booking, nhân khẩu học người xem của Creator",
+      "Nguồn nghiên cứu": ["TikTok", "Facebook Group", "Shopee", "Instagram"], "Phương pháp lấy mẫu": "12 Creator, 5 cộng đồng, 3 sàn/điểm bán",
+      "Skill và Subagent": ["kenh-cong-dong (market-researcher)"], "Đầu ra cuối cùng": "KEN 6 bảng", "Điểm chờ duyệt": ["Danh sách ứng viên", "Bản đồ kênh"],
+      "Tiêu chuẩn hoàn thành": "Mỗi vai trò có ≥ 1 kênh hoặc ghi khoảng trống; mỗi Creator có lý do mức phù hợp"}},
+    {"tam": "mau1", "loai": "MAU", "tieu_de": "Mẫu Creator và cộng đồng thời trang công sở", "lien_ket": ["@rp"], "du_lieu": {
+      "Nguồn": "TikTok Search, Facebook Group (công khai), Shopee", "Phạm vi địa lý": "TP.HCM", "Khoảng thời gian": "01/09–26/11/2026", "Nhóm khách hàng": "Nữ công sở 24–35",
+      "Từ khóa": ["đồ công sở nữ", "outfit đi làm", "hội mặc đẹp công sở", "#officeoutfit"], "Phương pháp tìm kiếm": "Tìm theo từ khóa; mỗi Creator xem 10 bài gần nhất, mỗi nhóm đọc 20 bài gần nhất",
+      "Tiêu chí đưa vào": "Nội dung chủ yếu về trang phục đi làm, hoạt động trong 30 ngày gần nhất", "Tiêu chí loại trừ": "Kênh chỉ đăng quảng cáo, nhóm không hoạt động",
+      "Số bản ghi thu thập": 24, "Số bản ghi đọc được": 20, "Số bản ghi sử dụng": 17, "Giới hạn của mẫu": "Không xem được nhân khẩu học người xem; nhóm riêng tư chỉ có thông tin công khai",
+      "Nguồn không truy cập được": "2 nhóm riêng tư (chỉ đọc mô tả và quy định công khai)"}},
+    {"tam": "e1", "loai": "EVD", "tieu_de": "12 video gần nhất của Creator outfit công sở", "du_lieu": {"Nguồn": "https://www.tiktok.com/@vidu-outfit-cong-so", "Nền tảng": "TikTok", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Video phối đồ đi làm theo ngày trong tuần; 112/180 bình luận hỏi size, chất vải, chỗ mua; ít bình luận chung chung", "Loại nguồn": "Công khai", "Phạm vi mẫu": "12 video, 180 bình luận đọc"}},
+    {"tam": "e2", "loai": "EVD", "tieu_de": "Nhóm Facebook mặc đẹp công sở – quy định và bài gần nhất", "du_lieu": {"Nguồn": "https://www.facebook.com/groups/vidu-mac-dep-cong-so", "Nền tảng": "Facebook Group", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Quy định cấm bài bán hàng ngoài ngày thứ 7; 20 bài gần nhất chủ yếu xin nhận xét outfit và hỏi chỗ may", "Loại nguồn": "Công khai", "Phạm vi mẫu": "20 bài, quy định nhóm"}},
+    {"tam": "e3", "loai": "EVD", "tieu_de": "Kênh outfit có tương tác bất thường", "du_lieu": {"Nguồn": "https://www.tiktok.com/@vidu-outfit-b", "Nền tảng": "TikTok", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Lượt xem 200–400k mỗi video nhưng 15–30 bình luận, phần lớn dạng 'đẹp quá' lặp lại", "Loại nguồn": "Công khai", "Phạm vi mẫu": "10 video, 150 bình luận đọc"}},
+    {"tam": "k1", "loai": "KEN", "tieu_de": "Creator outfit công sở theo ngày trong tuần", "lien_ket": ["@e1"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Đã xem 12 video và 180 bình luận; chưa có nhân khẩu học người xem", "du_lieu": {
+      "Bảng": "Kho Creator", "Tên": "Creator outfit công sở ~90k theo dõi (ví dụ)", "URL": "https://www.tiktok.com/@vidu-outfit-cong-so", "Nhóm khách hàng": "Nữ công sở 24–35",
+      "Vai trò": "Thu hút", "Lĩnh vực": "Thời trang", "Chủ đề": "Phối đồ đi làm theo ngày", "Format": "Video dọc 20–40 giây thay đồ nhanh", "Quy mô": "~90k theo dõi (26/11/2026)",
+      "Mức độ hoạt động": "5 video/tuần", "Chỉ số công khai": "Trung vị 12 video: 28k xem, 150 bình luận (26/11/2026)", "Hành vi": "Người xem hỏi size, chất vải, chỗ mua",
+      "Mức độ phù hợp": "Cao — người xem trùng nhóm khách (bình luận nói về đi làm); chủ đề đúng nhu cầu; 62% bình luận thực chất (112/180); giọng gọn gàng hợp thương hiệu",
+      "Hình thức hợp tác": "Booking video phối đồ hoặc gửi sản phẩm trải nghiệm", "Cách tiếp cận": "Người dùng tự liên hệ qua mục liên hệ hợp tác trên hồ sơ",
+      "Cần xác minh": "Giá booking, tỷ lệ người xem tại TP.HCM và độ tuổi, quyền dùng lại video cho quảng cáo", "Nguồn": "TikTok, hồ sơ công khai"}},
+    {"tam": "k2", "loai": "KEN", "tieu_de": "Nhóm Facebook mặc đẹp công sở", "lien_ket": ["@e2"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Đọc 20 bài và quy định công khai; không thấy số thành viên hoạt động", "du_lieu": {
+      "Bảng": "Kho cộng đồng", "Tên": "Nhóm Facebook mặc đẹp công sở ~45k thành viên (ví dụ)", "URL": "https://www.facebook.com/groups/vidu-mac-dep-cong-so", "Nhóm khách hàng": "Nữ công sở 24–35",
+      "Vai trò": "Xây dựng niềm tin", "Chủ đề": "Xin nhận xét outfit, hỏi chỗ may/mua", "Quy mô": "~45k thành viên (26/11/2026)", "Mức độ hoạt động": "10–15 bài/ngày",
+      "Quy định": "Chỉ đăng bài bán hàng vào thứ 7", "Hành vi": "Thành viên đăng ảnh mặc thử xin góp ý", "Mức độ phù hợp": "Trung bình — người xem và chủ đề phù hợp; hạn chế quảng bá; chưa đánh giá được giọng điệu chung",
+      "Cách tiếp cận": "Người dùng tự tham gia, chia sẻ mẹo phối đồ; bài giới thiệu sản phẩm chỉ đăng thứ 7 theo quy định", "Cần xác minh": "Admin có nhận hợp tác tài trợ không", "Nguồn": "Facebook Group, mô tả và quy định công khai"}},
+    {"tam": "k3", "loai": "KEN", "tieu_de": "Kênh outfit có dấu hiệu tương tác ảo", "lien_ket": ["@e3"], "do_tin_cay": "Thấp", "ly_do_tin_cay": "Chỉ dựa trên dấu hiệu công khai, không kiểm tra được nguồn lượt xem", "du_lieu": {
+      "Bảng": "Kho Creator", "Tên": "Kênh outfit tổng hợp ~300k theo dõi (ví dụ)", "URL": "https://www.tiktok.com/@vidu-outfit-b", "Nhóm khách hàng": "Chưa rõ, bình luận không cho thấy nhóm đi làm",
+      "Vai trò": "Thu hút", "Chỉ số công khai": "200–400k xem, 15–30 bình luận mỗi video (26/11/2026)",
+      "Mức độ phù hợp": "Thấp — không xác định được người xem trùng nhóm khách; 8/150 bình luận thực chất; có dấu hiệu tương tác ảo (bình luận chung chung lặp lại, xem cao bất thường so với bình luận)",
+      "Cần xác minh": "Số liệu người xem từ Creator nếu vẫn muốn cân nhắc", "Nguồn": "TikTok, trang công khai"}},
+    {"tam": "k4", "loai": "KEN", "tieu_de": "Định hướng phân phối: TikTok thu hút, Group niềm tin, Shopee chuyển đổi", "lien_ket": ["@e1", "@e2"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Dựa trên KEN-001, KEN-002 và danh-gia-kenh 90 ngày; chưa thử nghiệm", "du_lieu": {
+      "Bảng": "Định hướng phân phối", "Tên": "Phân vai kênh quý 1/2027", "Nhóm khách hàng": "Nữ công sở 24–35", "Vai trò": "Chuyển đổi",
+      "Nội dung": "Video phối đồ trên TikTok và Creator → mẹo phối đồ trong nhóm Facebook → gian hàng Shopee có bảng size chi tiết",
+      "Mức độ phù hợp": "Trung bình — vai trò thu hút và niềm tin có kênh rõ; chuyển đổi dựa trên gian hàng sẵn có, chưa đo tỷ lệ", "Điều kiện": "Gian hàng cập nhật bảng size và ảnh mặc thật trước khi booking",
+      "Nguồn": "KEN-001, KEN-002, danh-gia-kenh"}}
+  ]
+}
