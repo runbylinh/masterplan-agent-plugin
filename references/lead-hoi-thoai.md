@@ -23,16 +23,25 @@ Cách B – Page trên Facebook: chuyển sang trang cá nhân của Page (`face
 Giao diện giống Business Suite; dùng khi người dùng không có quyền Business Suite.
 Cách C – Meta Ads MCP: số "bắt đầu cuộc trò chuyện" từ quảng cáo (`onsite_conversion.messaging_conversation_started_7d`) để đối chiếu `tu_quang_cao`.
 
-### 2. Zalo bản web (Zalo cá nhân/số bán hàng) — mã `zalo_web`
-`chat.zalo.me` → đăng nhập bằng mã QR (người dùng quét trên điện thoại).
-1. Danh sách bên trái: dùng **Phân loại** (thẻ màu: Khách hàng, Gia đình, Công việc, Trả lời sau, Đồng nghiệp hoặc thẻ team tự đặt)
-   → chọn thẻ ứng với nhãn chốt/tư vấn trong cấu hình → đếm.
-2. Bộ lọc **Chưa đọc** → đếm hội thoại chưa xử lý.
-3. Zalo web không có lọc theo ngày: cuộn danh sách, đếm hội thoại có tin cuối nằm trong kỳ (xem mốc thời gian bên phải mỗi hội thoại).
-   Kỳ dài (> 30 ngày) hoặc quá nhiều hội thoại: đếm theo thẻ và ghi rõ "đếm theo thẻ, không lọc được ngày".
-4. Bỏ qua nhóm chat, hội thoại nội bộ (đồng nghiệp, gia đình) và tài khoản OA/hệ thống. Chỉ tính người lạ hoặc khách hàng.
-5. Không có thống kê phản hồi: lấy `phan_hoi_dau_phut` từ mẫu đọc chat (giờ tin đầu của khách → giờ tin trả lời đầu tiên).
-Nếu bản Zalo PC trên máy đang mở cùng tài khoản thì vẫn đọc qua web được; không cần đóng.
+### 2. Zalo cá nhân bản web (số bán hàng, số tư vấn) — mã `zalo_web`
+Dùng cho các số Zalo **cá nhân** mà sale/tư vấn dùng để chat với khách (khác Zalo OA ở mục 3). Một doanh nghiệp có thể có cả hai:
+đếm riêng từng số Zalo cá nhân và riêng OA.
+`chat.zalo.me` → người dùng quét mã QR bằng ứng dụng Zalo trên điện thoại **của đúng số đó**.
+1. **Đồng bộ tin nhắn trước khi đếm**: Zalo web có thể chỉ hiện tin gần đây. Nếu Zalo hỏi "Đồng bộ tin nhắn" thì nhờ người dùng bấm
+   đồng bộ trên điện thoại và đợi xong. Không đồng bộ được: ghi `thieu` = "Zalo web chỉ hiện tin từ <ngày>".
+2. **Tin nhắn từ người lạ**: Zalo gom tin của người chưa kết bạn vào mục riêng (Tin nhắn từ người lạ / Người lạ). Đây thường là khách mới:
+   đếm riêng (`tu_nguoi_la`) rồi cộng vào tổng hội thoại.
+3. **Phân loại (thẻ màu)**: bấm biểu tượng thẻ/bộ lọc ở danh sách → chọn từng thẻ (Khách hàng, Trả lời sau hoặc thẻ team tự đặt như
+   "Đã chốt", "Đang tư vấn") → đếm. Tên thẻ khai trong `hop_thu.nhan_chot`, `nhan_dang_tu_van`, `nhan_khong_phu_hop`.
+4. Bộ lọc **Chưa đọc** → đếm hội thoại chưa xử lý.
+5. Không có lọc theo ngày: cuộn danh sách, đếm hội thoại có tin cuối trong kỳ (mốc thời gian bên phải). Kỳ dài (> 30 ngày) hoặc quá nhiều
+   hội thoại: đếm theo thẻ, ghi rõ "đếm theo thẻ, không lọc được ngày".
+6. Bỏ qua: nhóm chat, cộng đồng, chat nội bộ (đồng nghiệp, gia đình), tài khoản OA/hệ thống, "Cloud của tôi".
+7. Không có thống kê phản hồi: lấy `phan_hoi_dau_phut` từ mẫu đọc chat (giờ tin đầu của khách → giờ trả lời đầu tiên).
+8. **Nhiều số Zalo**: mỗi lần trình duyệt chỉ đăng nhập một số. Làm xong số này, nhờ người dùng đăng xuất trên chat.zalo.me và quét QR số tiếp theo
+   (hoặc dùng hồ sơ Chrome khác cho mỗi số). Mỗi số một dòng: `zalo_web`, `zalo_web_2`... kèm `"ten": "Zalo tư vấn 1"`.
+9. Chỉ đọc: không gửi tin, không thả cảm xúc, không gắn/bỏ thẻ, không ghim, không xoá, không chấp nhận lời mời kết bạn.
+Bản Zalo PC đang mở cùng số vẫn đọc qua web được, không cần đóng.
 
 ### 3. Zalo Official Account — mã `zalo_oa`
 `oa.zalo.me` → chọn đúng OA → **Tin nhắn** (hoặc Zalo OA Chat `oa.zalo.me/chat`).
@@ -83,7 +92,7 @@ Gặp đăng nhập, mã xác minh, CAPTCHA: dừng, nhờ người dùng tự l
   "ky": {"tu": "2026-10-26", "den": "2026-11-24", "ky_truoc_tu": "2026-09-26", "ky_truoc_den": "2026-10-25"},
   "ngay_lay": "2026-11-25",
   "tong_theo_kenh": [
-    {"kenh": "messenger", "hien_tai": {"hoi_thoai": 420, "tu_quang_cao": 300, "chua_tra_loi": 12,
+    {"kenh": "messenger", "hien_tai": {"hoi_thoai": 420, "tu_quang_cao": 300, "tu_nguoi_la": null, "chua_tra_loi": 12,
        "theo_nhan": {"Đã chốt": 38, "Đang tư vấn": 60}, "ty_le_phan_hoi_pct": 96, "phan_hoi_tb_phut": 18,
        "lead_form": 85, "don": 41, "doanh_thu": 205000000},
      "ky_truoc": {"hoi_thoai": 380, "theo_nhan": {"Đã chốt": 30}, "don": 33},

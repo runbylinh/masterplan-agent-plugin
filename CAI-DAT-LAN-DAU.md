@@ -137,7 +137,7 @@ Chỉ cấp quyền **đọc** khi được hỏi, nếu nền tảng cho chọn
 ## Bước 10. Đăng nhập sẵn các trang agent sẽ đọc (trên Chrome)
 Mở mỗi trang một tab và đăng nhập, chọn đúng Page hoặc tài khoản doanh nghiệp:
 - `business.facebook.com` (Meta Business Suite: fanpage, Messenger, Instagram, Insights)
-- `chat.zalo.me` (Zalo web: quét mã QR bằng điện thoại của số bán hàng)
+- `chat.zalo.me` (Zalo cá nhân bản web: quét mã QR bằng điện thoại của số bán hàng/tư vấn; nhiều số thì quét lần lượt khi chạy skill)
 - `oa.zalo.me` (Zalo OA, nếu có)
 - `tiktok.com/tiktokstudio` và `tiktok.com/messages` (TikTok Studio và tin nhắn)
 - `ads.tiktok.com` (nếu chạy TikTok Ads và chưa kết nối ở Bước 9)

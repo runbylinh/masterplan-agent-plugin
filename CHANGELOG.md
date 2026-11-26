@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1 – 2026-11-26
+- Zalo cá nhân bản web là hộp thư riêng (khác Zalo OA): đồng bộ tin nhắn trước khi đếm, đếm riêng "Tin nhắn từ người lạ" (`tu_nguoi_la`),
+  đếm theo thẻ phân loại, bỏ nhóm/chat nội bộ, nhiều số thì quét QR lần lượt (`zalo_web`, `zalo_web_2`...).
+
 ## 0.4.0 – 2026-11-26
 - `lead-hoi-thoai` đọc đủ các hộp thư: Messenger fanpage (Business Suite hoặc hộp thư Page), Instagram Direct, Zalo bản web
   (chat.zalo.me, thẻ phân loại, đếm theo mốc thời gian), Zalo OA, TikTok tin nhắn bản web (tiktok.com/messages, mục yêu cầu tin nhắn),

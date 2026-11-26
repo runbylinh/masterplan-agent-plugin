@@ -1,6 +1,6 @@
 ---
 name: lead-hoi-thoai
-description: Đánh giá hiệu quả lead và tư vấn qua tin nhắn trên mọi hộp thư — tự mở Messenger fanpage (Meta Business Suite hoặc hộp thư Page), Instagram Direct, Zalo bản web (chat.zalo.me), Zalo OA, TikTok tin nhắn bản web (tiktok.com/messages), TikTok Shop/Shopee chat nếu có, trên Chrome để đếm số hội thoại theo kênh, tốc độ phản hồi, chất lượng lead (nóng/ấm/lạnh/không phù hợp), tỷ lệ chốt qua tin nhắn (theo nhãn, theo nội dung chat, đối chiếu file đơn/CRM), lý do không chốt và câu hỏi khách hay hỏi. Xuất báo cáo .md + HTML + Google Sheets, không lưu thông tin cá nhân khách. Dùng khi người dùng gõ /masterplan-agent:lead-hoi-thoai, nói "đánh giá lead", "chất lượng lead", "tỷ lệ chốt inbox", "sale chốt qua mess thế nào", "bao nhiêu hội thoại".
+description: Đánh giá hiệu quả lead và tư vấn qua tin nhắn trên mọi hộp thư — tự mở Messenger fanpage (Meta Business Suite hoặc hộp thư Page), Instagram Direct, Zalo cá nhân bản web (chat.zalo.me, từng số bán hàng/tư vấn), Zalo OA, TikTok tin nhắn bản web (tiktok.com/messages), TikTok Shop/Shopee chat nếu có, trên Chrome để đếm số hội thoại theo kênh, tốc độ phản hồi, chất lượng lead (nóng/ấm/lạnh/không phù hợp), tỷ lệ chốt qua tin nhắn (theo nhãn, theo nội dung chat, đối chiếu file đơn/CRM), lý do không chốt và câu hỏi khách hay hỏi. Xuất báo cáo .md + HTML + Google Sheets, không lưu thông tin cá nhân khách. Dùng khi người dùng gõ /masterplan-agent:lead-hoi-thoai, nói "đánh giá lead", "chất lượng lead", "tỷ lệ chốt inbox", "sale chốt qua mess thế nào", "bao nhiêu hội thoại".
 argument-hint: "[kỳ: 7 | 30 | 90 ngày]"
 ---
 
@@ -16,7 +16,7 @@ Cần `cau-hinh.json` (mục `hop_thu`, `lead`); chưa có thì chạy `masterpl
    | --- | --- | --- |
    | Messenger fanpage (từng Page) | business.facebook.com → đúng Page → Hộp thư → Messenger (hoặc facebook.com/latest/inbox) | Tài khoản Facebook có quyền Page |
    | Instagram Direct | Business Suite → Hộp thư → Instagram | như trên |
-   | Zalo web (từng số) | chat.zalo.me | Quét mã QR bằng điện thoại của số đó |
+   | Zalo cá nhân bản web (từng số sale/tư vấn) | chat.zalo.me | Quét mã QR bằng điện thoại của số đó; đồng bộ tin nhắn nếu Zalo hỏi. Nhiều số thì làm lần lượt từng số |
    | Zalo OA | oa.zalo.me → Tin nhắn | Tài khoản quản trị OA |
    | TikTok tin nhắn web | tiktok.com/messages (hoặc TikTok Business Suite inbox) | Tài khoản kênh TikTok |
    | TikTok Shop / Shopee chat | Seller Center → Chat | Tài khoản người bán |

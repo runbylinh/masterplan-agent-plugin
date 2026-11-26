@@ -117,7 +117,7 @@ def main():
         kenh_ra.append({
             "kenh": k["kenh"], "ten": k.get("ten") or TEN_KENH.get(k["kenh"], k["kenh"]),
             "hoi_thoai": so_ht, "hoi_thoai_ky_truoc": kt.get("hoi_thoai"),
-            "tu_quang_cao": hi.get("tu_quang_cao"), "chua_tra_loi": hi.get("chua_tra_loi"),
+            "tu_quang_cao": hi.get("tu_quang_cao"), "tu_nguoi_la": hi.get("tu_nguoi_la"), "chua_tra_loi": hi.get("chua_tra_loi"),
             "ty_le_phan_hoi_pct": hi.get("ty_le_phan_hoi_pct"), "phan_hoi_tb_phut": hi.get("phan_hoi_tb_phut"),
             "lead_form": hi.get("lead_form"),
             "chot_theo_nhan": chot_nhan, "ty_le_chot_nhan_pct": ty_le(chot_nhan, so_ht),
@@ -158,7 +158,8 @@ def main():
         m = k["mau"] or {}
         nong = ((m.get("muc") or {}).get("nong") or {}).get("pct")
         hang.append([f'<b>{H.e(k["ten"])}</b>', k["hoi_thoai"], H.the_doi(k["hoi_thoai"], k["hoi_thoai_ky_truoc"]),
-                     k["tu_quang_cao"], H.n(k["ty_le_chot_nhan_pct"], "%"), H.n(k["ty_le_chot_don_pct"], "%"),
+                     H.n(k["tu_quang_cao"]) + (f' <span class="muted small">· người lạ {H.n(k["tu_nguoi_la"])}</span>' if k.get("tu_nguoi_la") is not None else ""),
+                     H.n(k["ty_le_chot_nhan_pct"], "%"), H.n(k["ty_le_chot_don_pct"], "%"),
                      H.n(m.get("ty_le_chot_mau_pct"), "%") + (f' <span class="muted small">(n={m["co_mau"]})</span>' if m else ""),
                      H.n(nong, "%"), H.n(k["phan_hoi_tb_phut"] if k["phan_hoi_tb_phut"] is not None else m.get("phan_hoi_trung_vi_phut"), " ph")])
     phan.append(H.section("Theo kênh", H.bang(["Kênh", "Hội thoại", "So kỳ trước", "Từ quảng cáo", "Chốt (nhãn)",
@@ -207,10 +208,10 @@ def main():
 
     ten_ky = f'{ky.get("tu")} → {ky.get("den")}'
     H.ghi_csv(os.path.join(a.thu_muc, "sheets", "lead-theo-kenh.csv"),
-              ["Kỳ", "Kênh", "Hội thoại", "Hội thoại kỳ trước", "Từ quảng cáo", "Chưa trả lời", "Chốt theo nhãn",
+              ["Kỳ", "Kênh", "Hội thoại", "Hội thoại kỳ trước", "Từ quảng cáo", "Từ người lạ (Zalo)", "Chưa trả lời", "Chốt theo nhãn",
                "Tỷ lệ chốt nhãn %", "Đơn", "Tỷ lệ chốt đơn %", "Doanh thu", "Cỡ mẫu đọc", "Tỷ lệ chốt mẫu %",
                "Lead nóng % (mẫu)", "Phản hồi TB (phút)", "Duyệt"],
-              [[ten_ky, k["ten"], k["hoi_thoai"], k["hoi_thoai_ky_truoc"], k["tu_quang_cao"], k["chua_tra_loi"],
+              [[ten_ky, k["ten"], k["hoi_thoai"], k["hoi_thoai_ky_truoc"], k["tu_quang_cao"], k.get("tu_nguoi_la"), k["chua_tra_loi"],
                 k["chot_theo_nhan"], k["ty_le_chot_nhan_pct"], k["don"], k["ty_le_chot_don_pct"], k["doanh_thu"],
                 (k["mau"] or {}).get("co_mau"), (k["mau"] or {}).get("ty_le_chot_mau_pct"),
                 (((k["mau"] or {}).get("muc") or {}).get("nong") or {}).get("pct"),
