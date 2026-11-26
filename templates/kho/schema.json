@@ -1,0 +1,1153 @@
+{
+  "_ghi_chu": "Cấu trúc kho dữ liệu nghiên cứu (scripts/kho.py, references/kho-du-lieu.md). lop: 1 dữ liệu gốc, 2 kết quả phân tích, 3 tài nguyên Marketing. cha: loại cha hợp lệ (cần ít nhất một nếu danh sách không rỗng). han_dung: số ngày trước khi coi là có nguy cơ lỗi thời.",
+  "trang_thai_duyet": [
+    "Chờ duyệt",
+    "Đã duyệt",
+    "Loại"
+  ],
+  "do_tin_cay": [
+    "Cao",
+    "Trung bình",
+    "Thấp",
+    "Chưa xác định"
+  ],
+  "kiem_chung": [
+    "Có căn cứ",
+    "Cần bổ sung",
+    "Chưa đủ căn cứ",
+    "Bị phản bác"
+  ],
+  "nguong_co_can_cu": 2,
+  "loai": {
+    "RP": {
+      "ten": "Research Brief (đợt nghiên cứu)",
+      "lop": 0,
+      "skill": "research",
+      "bat_buoc": [
+        "Mục tiêu nghiên cứu",
+        "Quyết định cần hỗ trợ",
+        "Câu hỏi nghiên cứu",
+        "Phạm vi",
+        "Mức nghiên cứu",
+        "Workflow",
+        "Dữ liệu đã có",
+        "Dữ liệu còn thiếu",
+        "Nguồn nghiên cứu",
+        "Phương pháp lấy mẫu",
+        "Skill và Subagent",
+        "Đầu ra cuối cùng",
+        "Điểm chờ duyệt",
+        "Tiêu chuẩn hoàn thành"
+      ],
+      "tuy_chon": [
+        "Kết quả trung gian",
+        "Giới hạn chi phí và thời gian",
+        "Tiến độ"
+      ],
+      "gia_tri": {
+        "Mức nghiên cứu": [
+          "Nhanh",
+          "Chuyên sâu",
+          "Cập nhật"
+        ]
+      },
+      "cha": [],
+      "han_dung": 0
+    },
+    "MAU": {
+      "ten": "Nhật ký lấy mẫu",
+      "lop": 1,
+      "skill": "*",
+      "bat_buoc": [
+        "Nguồn",
+        "Phạm vi địa lý",
+        "Khoảng thời gian",
+        "Nhóm khách hàng",
+        "Từ khóa",
+        "Phương pháp tìm kiếm",
+        "Tiêu chí đưa vào",
+        "Tiêu chí loại trừ",
+        "Số bản ghi thu thập",
+        "Số bản ghi đọc được",
+        "Số bản ghi sử dụng",
+        "Giới hạn của mẫu"
+      ],
+      "tuy_chon": [
+        "Nguồn không truy cập được",
+        "Mức bão hoà"
+      ],
+      "cha": [],
+      "han_dung": 0
+    },
+    "EVD": {
+      "ten": "Bằng chứng gốc",
+      "lop": 1,
+      "skill": "*",
+      "bat_buoc": [
+        "Nguồn",
+        "Nền tảng",
+        "Ngày thu thập",
+        "Nội dung quan sát",
+        "Loại nguồn"
+      ],
+      "tuy_chon": [
+        "Ngày đăng",
+        "Phạm vi mẫu",
+        "Ảnh chụp",
+        "Ghi chú",
+        "Nguồn gốc dẫn lại"
+      ],
+      "gia_tri": {
+        "Loại nguồn": [
+          "Công khai",
+          "Nội bộ",
+          "Người dùng cung cấp",
+          "Chính thống"
+        ]
+      },
+      "cha": [],
+      "han_dung": 180
+    },
+    "FIND": {
+      "ten": "Phát hiện",
+      "lop": 2,
+      "skill": "*",
+      "bat_buoc": [
+        "Phát hiện",
+        "Phân loại",
+        "Nhóm",
+        "Bằng chứng tóm tắt",
+        "Phạm vi"
+      ],
+      "tuy_chon": [
+        "Giới hạn",
+        "Giai đoạn so sánh",
+        "Số lần xuất hiện"
+      ],
+      "gia_tri": {
+        "Phân loại": [
+          "Dữ kiện",
+          "Quan sát",
+          "Mẫu lặp",
+          "Giả thuyết"
+        ],
+        "Nhóm": [
+          "Doanh nghiệp",
+          "Thị trường",
+          "Khách hàng",
+          "Cạnh tranh",
+          "Từ khóa",
+          "Content",
+          "Format",
+          "Quảng cáo",
+          "Chuyển đổi",
+          "Kênh"
+        ]
+      },
+      "cha": [
+        "EVD"
+      ],
+      "han_dung": 180
+    },
+    "DN": {
+      "ten": "Nội bộ doanh nghiệp",
+      "lop": 2,
+      "skill": "company-analysis",
+      "bat_buoc": [
+        "Bảng",
+        "Nội dung",
+        "Nguồn"
+      ],
+      "gia_tri": {
+        "Bảng": [
+          "Hồ sơ doanh nghiệp",
+          "Ma trận sản phẩm",
+          "Đánh giá Marketing",
+          "Danh sách vấn đề",
+          "Kho lợi thế",
+          "Giới hạn triển khai"
+        ]
+      },
+      "tuy_chon": [
+        "Mô hình",
+        "Mục tiêu",
+        "Ngành hàng",
+        "Địa bàn",
+        "Khách hàng",
+        "Nguồn lực",
+        "Sản phẩm",
+        "Giá",
+        "Lợi ích",
+        "Doanh thu",
+        "Biên lợi nhuận",
+        "Lợi thế",
+        "Kênh",
+        "Chi phí",
+        "Kết quả",
+        "Vấn đề",
+        "Bằng chứng",
+        "Mức ảnh hưởng",
+        "Nguyên nhân giả định",
+        "Căn cứ",
+        "Khách hàng liên quan",
+        "Hướng khai thác",
+        "Ngân sách",
+        "Nhân sự",
+        "Thời gian",
+        "Năng lực",
+        "Điều kiện",
+        "Kỳ dữ liệu"
+      ],
+      "cha": [],
+      "han_dung": 120
+    },
+    "TT": {
+      "ten": "Bản đồ thị trường",
+      "lop": 2,
+      "skill": "xu-huong-mua-vu",
+      "bat_buoc": [
+        "Phân khúc",
+        "Đặc điểm",
+        "Nhu cầu",
+        "Mức độ cạnh tranh",
+        "Nguồn"
+      ],
+      "tuy_chon": [
+        "Quy mô (nếu có nguồn tin cậy)",
+        "Sản phẩm thay thế"
+      ],
+      "cha": [],
+      "han_dung": 365
+    },
+    "XH": {
+      "ten": "Xu hướng",
+      "lop": 2,
+      "skill": "xu-huong-mua-vu",
+      "bat_buoc": [
+        "Xu hướng",
+        "Mô tả",
+        "Thời điểm",
+        "Nhóm khách",
+        "Phân loại",
+        "Đánh giá",
+        "Nguồn"
+      ],
+      "gia_tri": {
+        "Phân loại": [
+          "Dài hạn",
+          "Ngắn hạn",
+          "Mùa vụ",
+          "Tín hiệu mới"
+        ],
+        "Đánh giá": [
+          "Nên khai thác",
+          "Cần thử nghiệm",
+          "Chưa phù hợp"
+        ]
+      },
+      "tuy_chon": [
+        "Nền tảng",
+        "Nguyên nhân giả định",
+        "Bằng chứng phản bác",
+        "Ngày thu thập"
+      ],
+      "cha": [],
+      "han_dung": 60
+    },
+    "MV": {
+      "ten": "Lịch mùa vụ",
+      "lop": 2,
+      "skill": "xu-huong-mua-vu",
+      "bat_buoc": [
+        "Thời điểm",
+        "Sự kiện",
+        "Nhu cầu",
+        "Sản phẩm",
+        "Thời gian chuẩn bị",
+        "Nguồn"
+      ],
+      "cha": [],
+      "han_dung": 365
+    },
+    "BD": {
+      "ten": "Biến động nhu cầu",
+      "lop": 2,
+      "skill": "xu-huong-mua-vu",
+      "bat_buoc": [
+        "Chủ đề",
+        "Giai đoạn",
+        "Chỉ số",
+        "Biến động",
+        "Nguyên nhân giả định",
+        "Nguồn"
+      ],
+      "cha": [],
+      "han_dung": 90
+    },
+    "RR": {
+      "ten": "Rủi ro thị trường",
+      "lop": 2,
+      "skill": "xu-huong-mua-vu",
+      "bat_buoc": [
+        "Yếu tố thay đổi",
+        "Tác động",
+        "Dấu hiệu theo dõi",
+        "Nguồn"
+      ],
+      "cha": [],
+      "han_dung": 90
+    },
+    "KH": {
+      "ten": "Phát biểu / hành vi khách hàng",
+      "lop": 2,
+      "skill": "customer-research",
+      "bat_buoc": [
+        "Nhãn",
+        "Nội dung",
+        "Nhóm khách",
+        "Bối cảnh",
+        "Loại khách",
+        "Nguồn"
+      ],
+      "gia_tri": {
+        "Nhãn": [
+          "Nhu cầu",
+          "Mong muốn",
+          "Nỗi đau",
+          "Động lực",
+          "Rào cản",
+          "Tiêu chí lựa chọn",
+          "Tình huống mua",
+          "Câu hỏi",
+          "Ngôn ngữ khách hàng",
+          "Trải nghiệm sau mua"
+        ],
+        "Loại khách": [
+          "Đã mua",
+          "Chưa mua",
+          "Khách cũ",
+          "Chỉ tương tác",
+          "Quan sát công khai"
+        ]
+      },
+      "tuy_chon": [
+        "Giai đoạn mua",
+        "Tần suất quan sát",
+        "Ảnh hưởng",
+        "Giải pháp hiện tại",
+        "Yếu tố kích thích",
+        "Điều kiện mua",
+        "Lý do",
+        "Ý nghĩa Marketing",
+        "Chủ đề",
+        "Ngày thu thập"
+      ],
+      "cha": [],
+      "han_dung": 180
+    },
+    "SEG": {
+      "ten": "Phân khúc / chân dung khách hàng",
+      "lop": 2,
+      "skill": "customer-research",
+      "bat_buoc": [
+        "Phân khúc",
+        "Bối cảnh",
+        "Nhu cầu",
+        "Động lực",
+        "Rào cản",
+        "Hành vi"
+      ],
+      "tuy_chon": [
+        "Khả năng chi trả (có căn cứ)",
+        "Giải pháp thay thế",
+        "Nhu cầu tái mua",
+        "Nguồn"
+      ],
+      "cha": [
+        "KH",
+        "FIND"
+      ],
+      "han_dung": 365
+    },
+    "HT": {
+      "ten": "Hành trình khách hàng",
+      "lop": 2,
+      "skill": "customer-research",
+      "bat_buoc": [
+        "Phân khúc",
+        "Giai đoạn",
+        "Hành vi",
+        "Điểm chạm",
+        "Câu hỏi",
+        "Rào cản"
+      ],
+      "tuy_chon": [
+        "Dữ liệu chuyển đổi",
+        "Thiếu bằng chứng",
+        "Nguồn"
+      ],
+      "cha": [
+        "KH",
+        "FIND",
+        "SEG"
+      ],
+      "han_dung": 365
+    },
+    "DV": {
+      "ten": "Hồ sơ đối thủ",
+      "lop": 2,
+      "skill": "competitor-research",
+      "bat_buoc": [
+        "Tên",
+        "Phân loại",
+        "Khách hàng",
+        "Sản phẩm",
+        "Giá",
+        "Định vị",
+        "Kênh",
+        "Nguồn"
+      ],
+      "gia_tri": {
+        "Phân loại": [
+          "Trực tiếp",
+          "Gián tiếp",
+          "Thay thế"
+        ]
+      },
+      "tuy_chon": [
+        "Lý do chọn",
+        "Lợi ích",
+        "Điểm khác biệt",
+        "Bằng chứng thương hiệu",
+        "Phản hồi tích cực",
+        "Phản hồi tiêu cực",
+        "Phân khúc giá",
+        "Ngày thu thập"
+      ],
+      "cha": [],
+      "han_dung": 90
+    },
+    "UD": {
+      "ten": "Kho sản phẩm và ưu đãi thị trường",
+      "lop": 2,
+      "skill": "competitor-research",
+      "bat_buoc": [
+        "Đơn vị",
+        "Sản phẩm",
+        "Giá",
+        "Combo",
+        "Chính sách",
+        "Thời gian",
+        "Nguồn"
+      ],
+      "tuy_chon": [
+        "Quà tặng",
+        "Điều kiện",
+        "Cách trình bày",
+        "Ngày thu thập"
+      ],
+      "cha": [],
+      "han_dung": 45
+    },
+    "TN": {
+      "ten": "Thông điệp thị trường",
+      "lop": 2,
+      "skill": "competitor-research",
+      "bat_buoc": [
+        "Thông điệp",
+        "Đơn vị",
+        "Lợi ích",
+        "Nhóm khách",
+        "Kênh",
+        "Bằng chứng",
+        "Nguồn"
+      ],
+      "cha": [],
+      "han_dung": 90,
+      "tuy_chon": [
+        "Ngày thu thập"
+      ]
+    },
+    "KT": {
+      "ten": "Khoảng trống cạnh tranh",
+      "lop": 2,
+      "skill": "competitor-research",
+      "bat_buoc": [
+        "Nhu cầu",
+        "Mức độ được phục vụ",
+        "Bằng chứng",
+        "Giới hạn",
+        "Lợi thế doanh nghiệp",
+        "Điều kiện khai thác"
+      ],
+      "cha": [
+        "DV",
+        "UD",
+        "TN",
+        "FIND",
+        "KH"
+      ],
+      "han_dung": 120
+    },
+    "KEY": {
+      "ten": "Từ khóa",
+      "lop": 2,
+      "skill": "tu-khoa",
+      "bat_buoc": [
+        "Từ khóa",
+        "Nhóm chủ đề",
+        "Nhu cầu",
+        "Mục đích tìm kiếm",
+        "Giai đoạn hành trình",
+        "Nền tảng",
+        "Chỉ số quan tâm",
+        "Tính mùa vụ",
+        "Nhóm khách hàng",
+        "Mức ưu tiên",
+        "Lý do ưu tiên",
+        "Hướng ứng dụng",
+        "Nguồn"
+      ],
+      "gia_tri": {
+        "Mục đích tìm kiếm": [
+          "Thông tin",
+          "So sánh",
+          "Giao dịch",
+          "Điều hướng",
+          "Sau mua"
+        ],
+        "Giai đoạn hành trình": [
+          "Nhận biết vấn đề",
+          "Tìm giải pháp",
+          "So sánh",
+          "Cân nhắc mua",
+          "Sau mua"
+        ]
+      },
+      "tuy_chon": [
+        "Biến thể",
+        "Đơn vị, địa bàn, thời gian đo",
+        "Ngày thu thập"
+      ],
+      "cha": [],
+      "han_dung": 120
+    },
+    "CNT": {
+      "ten": "Content nghiên cứu",
+      "lop": 2,
+      "skill": "nghien-cuu-content",
+      "bat_buoc": [
+        "URL",
+        "Nền tảng",
+        "Kênh",
+        "Ngày đăng",
+        "Ngày thu thập",
+        "Nhóm khách hàng",
+        "Mục tiêu",
+        "Chủ đề",
+        "Hook",
+        "Góc khai thác",
+        "Thông điệp",
+        "Cấu trúc nội dung",
+        "Format",
+        "Chỉ số công khai",
+        "Mức mẫu",
+        "Yếu tố có thể học hỏi",
+        "Hướng ứng dụng"
+      ],
+      "gia_tri": {
+        "Mức mẫu": [
+          "Nổi bật",
+          "Thông thường",
+          "Ít tương tác"
+        ],
+        "Kênh nguồn": [
+          "Đơn vị cùng ngành",
+          "Creator",
+          "Ngành khác",
+          "Nội bộ",
+          "Người dùng"
+        ]
+      },
+      "tuy_chon": [
+        "Content Pillar",
+        "Nhu cầu hoặc Insight giả định",
+        "CTA",
+        "Phản hồi đáng chú ý",
+        "Điểm mạnh",
+        "Hạn chế",
+        "Giả thuyết cần kiểm chứng",
+        "Kênh nguồn"
+      ],
+      "cha": [],
+      "han_dung": 120
+    },
+    "QC": {
+      "ten": "Thư viện quảng cáo",
+      "lop": 2,
+      "skill": "quang-cao-chuyen-doi",
+      "bat_buoc": [
+        "URL",
+        "Đơn vị",
+        "Sản phẩm",
+        "Thời gian",
+        "Format",
+        "Nội dung",
+        "Nguồn"
+      ],
+      "tuy_chon": [
+        "Khách hàng",
+        "Nhu cầu",
+        "Góc tiếp cận",
+        "Hook",
+        "Lợi ích",
+        "Bằng chứng",
+        "Ưu đãi",
+        "CTA",
+        "Điểm đến",
+        "Nhất quán với điểm đến"
+      ],
+      "cha": [],
+      "han_dung": 60
+    },
+    "LP": {
+      "ten": "Ma trận landing page / bản đồ chuyển đổi",
+      "lop": 2,
+      "skill": "quang-cao-chuyen-doi",
+      "bat_buoc": [
+        "Bảng",
+        "Trang hoặc điểm chạm",
+        "Nội dung",
+        "Nguồn"
+      ],
+      "gia_tri": {
+        "Bảng": [
+          "Ma trận landing page",
+          "Bản đồ chuyển đổi"
+        ]
+      },
+      "tuy_chon": [
+        "Section",
+        "Mục đích",
+        "Thông điệp",
+        "Bằng chứng",
+        "CTA",
+        "Hành động",
+        "Rào cản",
+        "Dữ liệu"
+      ],
+      "cha": [],
+      "han_dung": 90
+    },
+    "INS": {
+      "ten": "Insight",
+      "lop": 2,
+      "skill": "insight",
+      "bat_buoc": [
+        "Nhóm khách hàng",
+        "Bối cảnh",
+        "Hành vi quan sát",
+        "Nhu cầu",
+        "Mong muốn",
+        "Động lực",
+        "Rào cản",
+        "Mâu thuẫn",
+        "Insight đúc kết",
+        "Bằng chứng ủng hộ",
+        "Bằng chứng trái chiều",
+        "Hướng ứng dụng Marketing",
+        "Nội dung cần kiểm chứng"
+      ],
+      "cha": [
+        "FIND",
+        "KH",
+        "SEG",
+        "CNT",
+        "KEY",
+        "QC",
+        "EVD"
+      ],
+      "han_dung": 365
+    },
+    "OPP": {
+      "ten": "Cơ hội Marketing",
+      "lop": 2,
+      "skill": "marketing-opportunities",
+      "bat_buoc": [
+        "Loại cơ hội",
+        "Nhu cầu thị trường",
+        "Nhóm khách hàng",
+        "Khoảng trống cạnh tranh",
+        "Lợi thế doanh nghiệp",
+        "Cách khai thác",
+        "Tiềm năng kinh doanh",
+        "Điều kiện và nguồn lực",
+        "Rủi ro",
+        "Mức ưu tiên",
+        "Lý do ưu tiên",
+        "Phương án thử nghiệm"
+      ],
+      "gia_tri": {
+        "Loại cơ hội": [
+          "Phân khúc khách hàng",
+          "Sản phẩm và dịch vụ",
+          "Tình huống sử dụng",
+          "Mùa vụ",
+          "Định vị",
+          "Truyền thông",
+          "Content và quảng cáo",
+          "Hệ thống kênh",
+          "Chuyển đổi",
+          "Tái mua"
+        ],
+        "Mức ưu tiên": [
+          "Cao",
+          "Trung bình",
+          "Thấp"
+        ]
+      },
+      "tuy_chon": [
+        "Thời điểm",
+        "Chất lượng bằng chứng",
+        "Tiềm năng",
+        "Tính khả thi"
+      ],
+      "cha": [
+        "INS",
+        "FIND",
+        "KT",
+        "XH",
+        "MV"
+      ],
+      "han_dung": 180
+    },
+    "GT": {
+      "ten": "Giả thuyết / thử nghiệm",
+      "lop": 2,
+      "skill": "kiem-chung",
+      "bat_buoc": [
+        "Giả thuyết",
+        "Bằng chứng ủng hộ",
+        "Bằng chứng phản bác",
+        "Phương pháp kiểm chứng",
+        "Chỉ số",
+        "Điều kiện kết luận"
+      ],
+      "tuy_chon": [
+        "Kết quả thử nghiệm",
+        "Quyết định",
+        "Biến thể"
+      ],
+      "cha": [],
+      "han_dung": 180
+    },
+    "MT": {
+      "ten": "Mâu thuẫn dữ liệu",
+      "lop": 2,
+      "skill": "kiem-chung",
+      "bat_buoc": [
+        "Phát hiện",
+        "Nguồn A",
+        "Nguồn B",
+        "Điểm khác biệt",
+        "Cách xử lý"
+      ],
+      "cha": [],
+      "han_dung": 180
+    },
+    "TH": {
+      "ten": "Dữ liệu còn thiếu",
+      "lop": 2,
+      "skill": "kiem-chung",
+      "bat_buoc": [
+        "Câu hỏi",
+        "Dữ liệu cần có",
+        "Nguồn bổ sung"
+      ],
+      "tuy_chon": [
+        "Người cung cấp",
+        "Ảnh hưởng nếu thiếu"
+      ],
+      "cha": [],
+      "han_dung": 90
+    },
+    "OFFER": {
+      "ten": "Sản phẩm và ưu đãi đề xuất",
+      "lop": 3,
+      "skill": "san-pham-uu-dai",
+      "bat_buoc": [
+        "Loại",
+        "Nhóm khách hàng",
+        "Nhu cầu",
+        "Sản phẩm liên quan",
+        "Đề xuất",
+        "Lợi ích",
+        "Lợi thế cạnh tranh",
+        "Điều kiện kinh tế",
+        "Rủi ro",
+        "Phương án kiểm chứng"
+      ],
+      "gia_tri": {
+        "Loại": [
+          "Sản phẩm mới",
+          "Cải tiến sản phẩm",
+          "Combo và gói dịch vụ",
+          "Ưu đãi và quà tặng",
+          "Lead Magnet",
+          "Giả thuyết giá"
+        ]
+      },
+      "cha": [
+        "INS",
+        "OPP",
+        "KH",
+        "KT"
+      ],
+      "han_dung": 180,
+      "tuy_chon": [
+        "Mức ưu tiên",
+        "Lý do ưu tiên"
+      ]
+    },
+    "TD": {
+      "ten": "Định vị và thông điệp",
+      "lop": 3,
+      "skill": "dinh-vi-thong-diep",
+      "bat_buoc": [
+        "Bảng",
+        "Nhóm khách",
+        "Nội dung"
+      ],
+      "gia_tri": {
+        "Bảng": [
+          "Phương án định vị",
+          "Ma trận thông điệp",
+          "Kho thông điệp bán hàng",
+          "Kho bằng chứng",
+          "Thông điệp theo hành trình"
+        ]
+      },
+      "tuy_chon": [
+        "Nhu cầu",
+        "Bối cảnh cạnh tranh",
+        "Khác biệt",
+        "Lời hứa",
+        "Insight",
+        "Lợi ích",
+        "Thông điệp",
+        "Bằng chứng",
+        "Sản phẩm",
+        "Lý do lựa chọn",
+        "Giai đoạn",
+        "Câu hỏi",
+        "Rào cản",
+        "Khả năng chứng minh"
+      ],
+      "cha": [
+        "INS",
+        "OPP",
+        "SEG",
+        "KT"
+      ],
+      "han_dung": 365
+    },
+    "IDEA": {
+      "ten": "Ý tưởng Content",
+      "lop": 3,
+      "skill": "y-tuong-content",
+      "bat_buoc": [
+        "Nhóm khách hàng",
+        "Content Pillar",
+        "Chủ đề",
+        "Góc khai thác",
+        "Hook",
+        "Mục tiêu",
+        "Thông điệp",
+        "Format",
+        "Nền tảng",
+        "CTA",
+        "Mức ưu tiên"
+      ],
+      "tuy_chon": [
+        "Từ khóa",
+        "Series",
+        "Tái định dạng"
+      ],
+      "cha": [
+        "INS",
+        "OPP",
+        "KEY",
+        "CNT",
+        "FIND"
+      ],
+      "han_dung": 180
+    },
+    "FMT": {
+      "ten": "Format sáng tạo",
+      "lop": 3,
+      "skill": "format-sang-tao",
+      "bat_buoc": [
+        "Loại format",
+        "Tên format",
+        "Mục tiêu",
+        "Nhóm khách hàng",
+        "Công thức Hook hoặc tiêu đề",
+        "Cấu trúc",
+        "CTA",
+        "Mẫu tham khảo",
+        "Yêu cầu nguyên liệu",
+        "Mức độ khó và nguồn lực",
+        "Hướng ứng dụng"
+      ],
+      "gia_tri": {
+        "Loại format": [
+          "Video",
+          "Hình ảnh"
+        ]
+      },
+      "tuy_chon": [
+        "Nhu cầu hoặc tình huống",
+        "Trình tự phân đoạn và thời lượng",
+        "Cảnh quay và góc máy",
+        "Nhịp dựng",
+        "Chữ trên video",
+        "Âm thanh và hiệu ứng",
+        "Bố cục tổng thể",
+        "Thứ tự thông tin",
+        "Hình ảnh chủ đạo",
+        "Cách thể hiện lợi ích và bằng chứng",
+        "Tỷ lệ khung hình",
+        "Yếu tố phụ thuộc ngữ cảnh"
+      ],
+      "cha": [
+        "CNT",
+        "QC",
+        "EVD"
+      ],
+      "han_dung": 365
+    },
+    "ADS": {
+      "ten": "Ý tưởng quảng cáo",
+      "lop": 3,
+      "skill": "y-tuong-quang-cao",
+      "bat_buoc": [
+        "Sản phẩm",
+        "Khách hàng",
+        "Nhu cầu, động lực hoặc rào cản",
+        "Góc tiếp cận",
+        "Hook",
+        "Thông điệp",
+        "Lợi ích",
+        "Bằng chứng",
+        "Offer",
+        "Concept",
+        "Format",
+        "CTA",
+        "Giả thuyết",
+        "Biến thể thử nghiệm",
+        "Chỉ số đánh giá"
+      ],
+      "cha": [
+        "INS",
+        "OPP",
+        "QC",
+        "KH"
+      ],
+      "han_dung": 180
+    },
+    "CAM": {
+      "ten": "Ý tưởng chiến dịch",
+      "lop": 3,
+      "skill": "y-tuong-chien-dich",
+      "bat_buoc": [
+        "Tên chiến dịch",
+        "Bối cảnh",
+        "Cơ hội khai thác",
+        "Mục tiêu",
+        "Nhóm khách hàng",
+        "Ý tưởng chủ đạo",
+        "Thông điệp",
+        "Sản phẩm",
+        "Ưu đãi",
+        "Hoạt động thu hút",
+        "Hoạt động tương tác",
+        "Hoạt động nuôi dưỡng",
+        "Hoạt động chuyển đổi",
+        "Vai trò từng kênh",
+        "Cơ chế tạo kết quả",
+        "Nguồn lực sơ bộ",
+        "Rủi ro",
+        "Chỉ số kiểm chứng"
+      ],
+      "tuy_chon": [
+        "Hoạt động hợp tác",
+        "Thời điểm"
+      ],
+      "cha": [
+        "OPP",
+        "INS"
+      ],
+      "han_dung": 180
+    },
+    "CRO": {
+      "ten": "Tối ưu chuyển đổi",
+      "lop": 3,
+      "skill": "toi-uu-chuyen-doi",
+      "bat_buoc": [
+        "Bảng",
+        "Giai đoạn",
+        "Vấn đề",
+        "Đề xuất",
+        "Căn cứ"
+      ],
+      "gia_tri": {
+        "Bảng": [
+          "Bản đồ điểm nghẽn",
+          "Kho FAQ",
+          "Kho xử lý từ chối",
+          "Định hướng landing page",
+          "Định hướng Sales",
+          "Định hướng CRM",
+          "Kho thử nghiệm"
+        ]
+      },
+      "tuy_chon": [
+        "Nhóm khách",
+        "Dữ liệu",
+        "Nguyên nhân giả định",
+        "Chỉ số",
+        "Điều kiện đánh giá",
+        "Mức ưu tiên",
+        "Loại căn cứ"
+      ],
+      "cha": [
+        "INS",
+        "OPP",
+        "KH",
+        "LP",
+        "HT"
+      ],
+      "han_dung": 180
+    },
+    "KEN": {
+      "ten": "Kênh, cộng đồng, Creator",
+      "lop": 3,
+      "skill": "kenh-cong-dong",
+      "bat_buoc": [
+        "Bảng",
+        "Tên",
+        "Nhóm khách hàng",
+        "Vai trò",
+        "Mức độ phù hợp",
+        "Nguồn"
+      ],
+      "gia_tri": {
+        "Bảng": [
+          "Bản đồ kênh",
+          "Kho cộng đồng",
+          "Kho Creator",
+          "Kho kênh vệ tinh",
+          "Kho cơ hội hợp tác",
+          "Định hướng phân phối"
+        ],
+        "Vai trò": [
+          "Thu hút",
+          "Nuôi dưỡng",
+          "Xây dựng niềm tin",
+          "Chuyển đổi"
+        ]
+      },
+      "tuy_chon": [
+        "URL",
+        "Chủ đề",
+        "Lĩnh vực",
+        "Format",
+        "Quy mô",
+        "Mức độ hoạt động",
+        "Quy định",
+        "Chỉ số công khai",
+        "Hành vi",
+        "Hình thức hợp tác",
+        "Điều kiện",
+        "Cách tiếp cận",
+        "Cần xác minh",
+        "Lý do phù hợp",
+        "Nội dung"
+      ],
+      "cha": [],
+      "han_dung": 90
+    }
+  },
+  "can_nguon": [
+    "DN",
+    "TT",
+    "XH",
+    "MV",
+    "BD",
+    "RR",
+    "KH",
+    "DV",
+    "UD",
+    "TN",
+    "KEY",
+    "CNT",
+    "QC",
+    "LP",
+    "KEN"
+  ],
+  "co_kiem_chung": [
+    "FIND",
+    "INS",
+    "OPP",
+    "KT",
+    "XH"
+  ],
+  "khoa_trung": {
+    "EVD": [
+      "Nguồn",
+      "Nội dung quan sát"
+    ],
+    "KEY": [
+      "Từ khóa",
+      "Nền tảng"
+    ],
+    "CNT": [
+      "URL"
+    ],
+    "QC": [
+      "URL"
+    ],
+    "DV": [
+      "Tên"
+    ],
+    "XH": [
+      "Xu hướng"
+    ],
+    "KH": [
+      "Nhãn",
+      "Nội dung"
+    ],
+    "FIND": [
+      "Phát hiện"
+    ],
+    "INS": [
+      "Insight đúc kết"
+    ],
+    "FMT": [
+      "Loại format",
+      "Tên format"
+    ],
+    "MV": [
+      "Thời điểm",
+      "Sự kiện"
+    ],
+    "IDEA": [
+      "Chủ đề",
+      "Góc khai thác"
+    ],
+    "ADS": [
+      "Nhu cầu, động lực hoặc rào cản",
+      "Góc tiếp cận"
+    ]
+  }
+}

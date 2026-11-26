@@ -1,0 +1,42 @@
+{
+  "_ghi_chu": "VÍ DỤ GIẢ ĐỊNH để kiểm thử skill tu-khoa: xưởng nội thất gỗ cho căn hộ nhỏ tại Hà Nội. Khoảng lượng tìm kiếm, chỉ số Trends, URL đều là ví dụ, không phải số liệu thật.",
+  "dot": "@rp",
+  "ban_ghi": [
+    {"tam": "rp", "loai": "RP", "tieu_de": "Từ khóa nội thất căn hộ nhỏ", "du_lieu": {
+      "Mục tiêu nghiên cứu": "Xây bộ từ khóa theo hành trình cho nội thất căn hộ nhỏ",
+      "Quyết định cần hỗ trợ": "Chọn chủ đề SEO website, video giải đáp và nhóm từ khóa quảng cáo tìm kiếm quý 1/2027",
+      "Câu hỏi nghiên cứu": ["Khách căn hộ nhỏ tìm nội thất bằng chữ gì?", "Câu hỏi nào lặp lại trước khi mua?", "Nền tảng nào khách tìm cách bố trí?"],
+      "Phạm vi": "Nội thất gỗ căn hộ 45–70 m² · Hà Nội · 11/2025–11/2026", "Mức nghiên cứu": "Nhanh", "Workflow": "03 Content Marketing (bước tu-khoa)",
+      "Dữ liệu đã có": "Keyword Planner tài khoản doanh nghiệp, KH câu hỏi từ Messenger", "Dữ liệu còn thiếu": "Search Console website mới",
+      "Nguồn nghiên cứu": ["Google Search", "Keyword Planner", "Google Trends", "YouTube Search", "TikTok Search"], "Phương pháp lấy mẫu": "15 từ gốc, mở rộng gợi ý a–z, 42 cụm sau loại trùng",
+      "Skill và Subagent": ["tu-khoa (market-researcher)"], "Đầu ra cuối cùng": "Kho KEY có hành trình, ưu tiên, hướng ứng dụng",
+      "Điểm chờ duyệt": ["Từ khóa gốc", "Bảng KEY"], "Tiêu chuẩn hoàn thành": "30–50 KEY, đủ 5 giai đoạn hoặc ghi giai đoạn trống, kiem-tra 0 lỗi"}},
+
+    {"tam": "mau1", "loai": "MAU", "tieu_de": "Gợi ý Google + Keyword Planner", "lien_ket": ["@rp"], "du_lieu": {
+      "Nguồn": "Google Search (gợi ý, Mọi người cũng hỏi), Google Keyword Planner", "Phạm vi địa lý": "Việt Nam; gợi ý tìm từ Hà Nội", "Khoảng thời gian": "11/2025–10/2026 (Planner); gợi ý ngày 26/11/2026",
+      "Nhóm khách hàng": "Người mới nhận căn hộ nhỏ", "Từ khóa": ["sofa phòng khách nhỏ", "giường cho phòng ngủ nhỏ", "bố trí nội thất chung cư 50m2"],
+      "Phương pháp tìm kiếm": "Gõ từ gốc + a–z và + cho/có/nên/giá/ở đâu, trình duyệt ẩn danh; Planner lọc Việt Nam, tiếng Việt",
+      "Tiêu chí đưa vào": "Liên quan nội thất gỗ cho căn hộ nhỏ", "Tiêu chí loại trừ": "Tên thương hiệu khác, nội thất văn phòng, đồ cũ",
+      "Số bản ghi thu thập": 160, "Số bản ghi đọc được": 160, "Số bản ghi sử dụng": 42, "Giới hạn của mẫu": "Planner cho khoảng lượng, không phải số chính xác; gợi ý thay đổi theo vị trí và thời điểm"}},
+    {"tam": "mau2", "loai": "MAU", "tieu_de": "Gợi ý YouTube và TikTok Search", "lien_ket": ["@rp"], "du_lieu": {
+      "Nguồn": "YouTube Search, TikTok Search", "Phạm vi địa lý": "Việt Nam", "Khoảng thời gian": "Ngày 26/11/2026", "Nhóm khách hàng": "Người mới nhận căn hộ nhỏ",
+      "Từ khóa": ["bố trí căn hộ nhỏ", "decor chung cư nhỏ"], "Phương pháp tìm kiếm": "Ghi gợi ý ô tìm kiếm và mục Mọi người cũng tìm",
+      "Tiêu chí đưa vào": "Gợi ý liên quan bố trí, chọn nội thất", "Tiêu chí loại trừ": "Gợi ý về người nổi tiếng, nhạc",
+      "Số bản ghi thu thập": 48, "Số bản ghi đọc được": 48, "Số bản ghi sử dụng": 14, "Giới hạn của mẫu": "Nền tảng không công bố lượng tìm kiếm; chỉ ghi nhận gợi ý"}},
+
+    {"tam": "e1", "loai": "EVD", "tieu_de": "Keyword Planner: nhóm sofa và giường căn hộ nhỏ", "du_lieu": {"Nguồn": "Google Keyword Planner (tài khoản doanh nghiệp)", "Nền tảng": "Keyword Planner", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "\"sofa cho phòng khách nhỏ\" 1.000–10.000 lượt/tháng; \"giường gấp thông minh\" 1.000–10.000; \"bàn ăn gấp gọn\" 100–1.000", "Loại nguồn": "Người dùng cung cấp", "Phạm vi mẫu": "42 cụm, Việt Nam, 11/2025–10/2026"}},
+    {"tam": "e2", "loai": "EVD", "tieu_de": "Gợi ý YouTube Search: bố trí căn hộ nhỏ", "du_lieu": {"Nguồn": "https://www.youtube.com/results?search_query=bo+tri+can+ho+nho", "Nền tảng": "YouTube Search", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Gợi ý: bố trí căn hộ nhỏ 50m2, sofa cho phòng khách nhỏ, mẹo làm nhà nhỏ rộng hơn", "Loại nguồn": "Công khai"}},
+    {"tam": "e3", "loai": "EVD", "tieu_de": "Google Mọi người cũng hỏi: giường gấp", "du_lieu": {"Nguồn": "https://www.google.com/search?q=giuong+gap+thong+minh", "Nền tảng": "Google Search", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Câu hỏi: giường gấp thông minh có bền không, có êm không, giá bao nhiêu; kết quả top là trang bán và bài review", "Loại nguồn": "Công khai"}},
+    {"tam": "e4", "loai": "EVD", "tieu_de": "Gợi ý TikTok Search: decor chung cư nhỏ", "du_lieu": {"Nguồn": "https://www.tiktok.com/search?q=decor+chung+cu+nho", "Nền tảng": "TikTok Search", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Gợi ý: decor chung cư nhỏ giá rẻ, decor phòng khách chung cư nhỏ, trước sau cải tạo căn hộ", "Loại nguồn": "Công khai"}},
+
+    {"tam": "w1", "loai": "KEY", "tieu_de": "sofa cho phòng khách nhỏ", "lien_ket": ["@e1", "@e2"], "do_tin_cay": "Cao", "ly_do_tin_cay": "Có số Keyword Planner và xuất hiện ở YouTube",
+     "du_lieu": {"Từ khóa": "sofa cho phòng khách nhỏ", "Biến thể": ["sofa phòng khách nhỏ", "sofa nhỏ gọn chung cư"], "Nhóm chủ đề": "Sofa", "Nhu cầu": "Chọn sofa vừa diện tích căn hộ", "Mục đích tìm kiếm": "So sánh", "Giai đoạn hành trình": "So sánh", "Nền tảng": "Google Search", "Chỉ số quan tâm": "1.000–10.000 lượt/tháng", "Đơn vị, địa bàn, thời gian đo": "Keyword Planner, Việt Nam, 11/2025–10/2026", "Tính mùa vụ": "Chưa xác định", "Nhóm khách hàng": "Cặp đôi mới nhận căn hộ", "Mức ưu tiên": "Cao", "Lý do ưu tiên": "Khớp dòng sofa 1m6, có số tìm kiếm, xuất hiện cả YouTube", "Hướng ứng dụng": "SEO website, nội dung landing page", "Nguồn": "Google Keyword Planner (tài khoản doanh nghiệp)"}},
+    {"tam": "w2", "loai": "KEY", "tieu_de": "giường gấp thông minh có bền không", "lien_ket": ["@e3", "@e1"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Câu hỏi PAA; số Planner là của từ gốc, không của câu hỏi",
+     "du_lieu": {"Từ khóa": "giường gấp thông minh có bền không", "Biến thể": ["giường gấp có êm không"], "Nhóm chủ đề": "Giường đa năng", "Nhu cầu": "Yên tâm độ bền trước khi mua", "Mục đích tìm kiếm": "Thông tin", "Giai đoạn hành trình": "Cân nhắc mua", "Nền tảng": "Google Search", "Chỉ số quan tâm": "Không có số riêng cho câu hỏi (từ gốc \"giường gấp thông minh\" 1.000–10.000 lượt/tháng)", "Đơn vị, địa bàn, thời gian đo": "Keyword Planner, Việt Nam, 11/2025–10/2026", "Tính mùa vụ": "Chưa xác định", "Nhóm khách hàng": "Người ở căn hộ 1 phòng ngủ", "Mức ưu tiên": "Cao", "Lý do ưu tiên": "Rào cản trực tiếp trước khi mua, khớp sản phẩm chủ lực", "Hướng ứng dụng": "FAQ, video giải đáp", "Nguồn": "https://www.google.com/search?q=giuong+gap+thong+minh"}},
+    {"tam": "w3", "loai": "KEY", "tieu_de": "decor chung cư nhỏ", "lien_ket": ["@e4"], "do_tin_cay": "Thấp", "ly_do_tin_cay": "Chỉ có gợi ý TikTok, không có số",
+     "du_lieu": {"Từ khóa": "decor chung cư nhỏ", "Biến thể": ["decor phòng khách chung cư nhỏ", "decor chung cư nhỏ giá rẻ"], "Nhóm chủ đề": "Bố trí, trang trí", "Nhu cầu": "Ý tưởng làm nhà nhỏ đẹp, rộng hơn", "Mục đích tìm kiếm": "Thông tin", "Giai đoạn hành trình": "Nhận biết vấn đề", "Nền tảng": "TikTok Search", "Chỉ số quan tâm": "Không có số (chỉ ghi nhận gợi ý tự động)", "Tính mùa vụ": "Chưa xác định", "Nhóm khách hàng": "Người mới nhận căn hộ", "Mức ưu tiên": "Trung bình", "Lý do ưu tiên": "Đúng nhóm khách nhưng xa quyết định mua; một nền tảng", "Hướng ứng dụng": "SEO Social, Content Pillar (trước sau cải tạo)", "Nguồn": "https://www.tiktok.com/search?q=decor+chung+cu+nho"}},
+    {"tam": "f1", "loai": "FIND", "tieu_de": "Google nghiêng về câu hỏi mua, TikTok nghiêng về ý tưởng bố trí", "lien_ket": ["@e1", "@e3", "@e4"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "3 nguồn, mẫu gợi ý một ngày",
+     "du_lieu": {"Phát hiện": "Trên Google, 18/28 cụm thuộc So sánh và Cân nhắc mua; trên TikTok, 10/14 gợi ý thuộc Nhận biết vấn đề và Tìm giải pháp", "Phân loại": "Mẫu lặp", "Nhóm": "Từ khóa", "Bằng chứng tóm tắt": "Planner + gợi ý Google 28 cụm; gợi ý TikTok/YouTube 14 cụm", "Phạm vi": "Việt Nam, 26/11/2026", "Giới hạn": "Gợi ý thay đổi theo thời điểm; chưa có Search Console", "Số lần xuất hiện": "18/28 và 10/14"}},
+    {"tam": "th1", "loai": "TH", "tieu_de": "Thiếu Search Console", "du_lieu": {"Câu hỏi": "Website đang được tìm thấy bằng từ khóa nào?", "Dữ liệu cần có": "Search Console 3 tháng", "Nguồn bổ sung": "Quản trị website", "Người cung cấp": "Chủ xưởng", "Ảnh hưởng nếu thiếu": "Chưa biết KEY nào đã có thứ hạng"}}
+  ]
+}

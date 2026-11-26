@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.6.0 – 2026-11-26
+Nâng cấp **Agent Market Research** theo đặc tả 20 năng lực (nhánh `nang-cap-market-research`). Chi tiết: `NANG-CAP-MARKET-RESEARCH.md`.
+- **Kho dữ liệu nghiên cứu** 3 lớp: `scripts/kho.py` (cấp mã, chống trùng, liên kết, kiểm tra schema/liên kết/dữ liệu cá nhân/lỗi thời,
+  truy vết, không ghi đè bản đã duyệt, kiểm chứng, tiến độ đợt, xuất CSV/XLSX, báo cáo, báo cáo thay đổi), `templates/kho/schema.json`
+  (34 loại bản ghi: EVD, MAU, FIND, SEG, INS, OPP, KEY, IDEA, FMT, ADS, CAM, OFFER, CRO...), ví dụ giả định `templates/kho/vi-du*.json`.
+- **Skill mới**: `xu-huong-mua-vu`, `tu-khoa`, `nghien-cuu-content`, `format-sang-tao`, `quang-cao-chuyen-doi`, `kenh-cong-dong`, `insight`,
+  `san-pham-uu-dai`, `dinh-vi-thong-diep`, `y-tuong-content`, `y-tuong-quang-cao`, `y-tuong-chien-dich`, `toi-uu-chuyen-doi`, `kiem-chung`, `kho-du-lieu`.
+- **Nâng cấp** (giữ chế độ 3C cũ): `research` (điều phối theo đầu ra, 9 workflow, 3 mức, tiếp tục khi gián đoạn), `company-analysis`,
+  `customer-research`, `competitor-research`, `marketing-opportunities`. Mọi skill nghiên cứu có 8 phần A–H.
+- **Subagent**: thêm `market-researcher`, `content-researcher`, `research-verifier`; nâng cấp `customer-researcher`, `competitor-researcher` (thêm chế độ kho).
+- **Tài liệu**: `references/nghien-cuu/` (quy tắc lấy mẫu, phân loại phát hiện, độ tin cậy; workflow; khuôn skill; chế độ 3C),
+  `references/nen-tang/` (13 nền tảng), `references/kho-du-lieu.md`.
+- **Kiểm thử**: `tests/` (cấu trúc, kho, 9 case mô phỏng F&B Tết, thời trang, đào tạo, quảng cáo, cập nhật, thiếu dữ liệu, mâu thuẫn,
+  tái sử dụng kho, tương thích ngược).
+- `dieu-phoi`, `quy-tac.md`, README, HUONG-DAN nối nhóm Market Research; `.gitignore` thêm `kho/`, `nghien-cuu/`.
+
 ## 0.5.0 – 2026-11-26
 Gộp plugin **research-agent** (Agent Research Marketing 3C, 0.1.0) vào masterplan-agent.
 - 6 skill: `research` (điều phối 3C theo chủ đề/dịp), `company-analysis`, `customer-research`, `competitor-research`,

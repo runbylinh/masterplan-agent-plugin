@@ -1,0 +1,75 @@
+{
+  "_ghi_chu": "VÍ DỤ GIẢ ĐỊNH để kiểm thử skill company-analysis: trung tâm tiếng Anh giao tiếp cho người đi làm tại TP.HCM. Mọi con số, tên khoá học và đường dẫn file là giả định, không phải dữ liệu doanh nghiệp thật.",
+  "dot": "@rp",
+  "ban_ghi": [
+    {"tam": "rp", "loai": "RP", "tieu_de": "Nghiên cứu nội bộ trước kế hoạch tuyển sinh quý 1/2027", "du_lieu": {
+      "Mục tiêu nghiên cứu": "Hiểu vì sao số học viên đăng ký mới giảm và nguồn lực hiện có cho quý 1/2027",
+      "Quyết định cần hỗ trợ": "Chọn khoá học và nhóm khách ưu tiên cho kế hoạch tuyển sinh quý 1/2027",
+      "Câu hỏi nghiên cứu": ["Khoá nào đóng góp doanh thu chính?", "Số đăng ký giảm ở khâu nào của hành trình?", "Trung tâm có lợi thế gì có căn cứ?"],
+      "Phạm vi": "Trung tâm tiếng Anh giao tiếp · TP.HCM · người đi làm 22–35 tuổi · 01/2025–10/2026",
+      "Mức nghiên cứu": "Nhanh", "Workflow": "01 Nghiên cứu toàn diện (bước company-analysis)",
+      "Dữ liệu đã có": "Kết quả bao-cao-kinh-doanh, chi-phi-ads, lead-hoi-thoai 30 ngày", "Dữ liệu còn thiếu": "Giá vốn theo khoá",
+      "Nguồn nghiên cứu": ["File bán hàng", "CRM", "Meta Ads", "Messenger"], "Phương pháp lấy mẫu": "Toàn bộ đơn 01/2025–10/2026, 30 ngày hội thoại",
+      "Skill và Subagent": ["company-analysis"], "Đầu ra cuối cùng": "6 bảng DN + câu hỏi cho nghiên cứu ngoài",
+      "Điểm chờ duyệt": ["Kiểm kê dữ liệu", "Hồ sơ đầu vào nghiên cứu ngoài"], "Tiêu chuẩn hoàn thành": "Đủ 6 bảng DN hoặc có TH cho bảng thiếu, kiem-tra 0 lỗi"}},
+
+    {"tam": "mau1", "loai": "MAU", "tieu_de": "Dữ liệu bán hàng và CRM 01/2025–10/2026", "lien_ket": ["@rp"], "du_lieu": {
+      "Nguồn": "File bán hàng xuất từ phần mềm quản lý lớp + CRM", "Phạm vi địa lý": "2 cơ sở TP.HCM", "Khoảng thời gian": "01/2025–10/2026",
+      "Nhóm khách hàng": "Học viên đã đăng ký", "Từ khóa": "Không áp dụng (dữ liệu nội bộ)",
+      "Phương pháp tìm kiếm": "Đọc kết quả kinh-doanh/2026-11-20_12-thang và file gốc trong nhap/; chuẩn hoá khoá học theo 4 mã, khách theo Mới/Cũ/Tái mua",
+      "Tiêu chí đưa vào": "Đơn đã thanh toán", "Tiêu chí loại trừ": "Đơn huỷ, đơn thử nghiệm nội bộ",
+      "Số bản ghi thu thập": 1460, "Số bản ghi đọc được": 1460, "Số bản ghi sử dụng": 1412,
+      "Giới hạn của mẫu": "Chưa có giá vốn theo khoá; nguồn khách trong CRM bỏ trống 18% đơn"}},
+
+    {"tam": "e1", "loai": "EVD", "tieu_de": "Doanh thu theo khoá 01–10/2026", "du_lieu": {
+      "Nguồn": "kinh-doanh/2026-11-20_12-thang/chi-so-kd.json", "Nền tảng": "File bán hàng nội bộ", "Ngày thu thập": "2026-11-26",
+      "Nội dung quan sát": "Tổng doanh thu 2,6 tỷ; khoá Giao tiếp 3 tháng 1,51 tỷ (58%), AOV 6,1 triệu", "Loại nguồn": "Nội bộ", "Phạm vi mẫu": "1.412 đơn"}},
+    {"tam": "e2", "loai": "EVD", "tieu_de": "Đăng ký mới quý 3/2026 so cùng kỳ", "du_lieu": {
+      "Nguồn": "kinh-doanh/2026-11-20_12-thang/chi-so-kd.json", "Nền tảng": "CRM", "Ngày thu thập": "2026-11-26",
+      "Nội dung quan sát": "Đăng ký mới Q3/2026: 182; Q3/2025: 236 (giảm 22,9%)", "Loại nguồn": "Nội bộ", "Phạm vi mẫu": "Đơn khách mới hai quý"}},
+    {"tam": "e3", "loai": "EVD", "tieu_de": "Lead và tỷ lệ chốt qua Messenger 30 ngày", "du_lieu": {
+      "Nguồn": "lead-hoi-thoai/2026-11-18_30/chi-so-lead.json", "Nền tảng": "Messenger", "Ngày thu thập": "2026-11-26",
+      "Nội dung quan sát": "412 hội thoại, 61 đăng ký học thử, 19 đăng ký khoá; thời gian phản hồi trung vị 3,5 giờ ngoài giờ hành chính", "Loại nguồn": "Nội bộ", "Phạm vi mẫu": "30 ngày, 412 hội thoại"}},
+    {"tam": "e4", "loai": "EVD", "tieu_de": "Chi phí Meta Ads quý 3/2026", "du_lieu": {
+      "Nguồn": "chi-phi-ads/2026-11-19_quy/chi-so-chi-phi.json", "Nền tảng": "Meta Ads", "Ngày thu thập": "2026-11-26",
+      "Nội dung quan sát": "Chi 96 triệu Q3/2026, 1.050 tin nhắn, chi phí/tin nhắn 91 nghìn", "Loại nguồn": "Nội bộ", "Phạm vi mẫu": "Toàn bộ chiến dịch Q3"}},
+    {"tam": "e5", "loai": "EVD", "tieu_de": "Nhân sự và lịch lớp theo hồ sơ", "du_lieu": {
+      "Nguồn": "company-context.md", "Nền tảng": "Hồ sơ doanh nghiệp", "Ngày thu thập": "2026-11-26",
+      "Nội dung quan sát": "1 người phụ trách Marketing kiêm tư vấn; 6 giáo viên; lớp tối 19h–21h, sĩ số tối đa 8", "Loại nguồn": "Người dùng cung cấp"}},
+
+    {"tam": "dn1", "loai": "DN", "tieu_de": "Hồ sơ: trung tâm tiếng Anh giao tiếp cho người đi làm", "lien_ket": ["@e5"], "do_tin_cay": "Cao", "ly_do_tin_cay": "Người dùng xác nhận trong hồ sơ",
+     "du_lieu": {"Bảng": "Hồ sơ doanh nghiệp", "Nội dung": "Dạy giao tiếp nhóm nhỏ buổi tối, bán qua Messenger và tư vấn tại cơ sở",
+       "Mô hình": "Lớp offline nhóm nhỏ, học phí trọn khoá", "Mục tiêu": "Tăng đăng ký mới quý 1/2027", "Ngành hàng": "Đào tạo ngoại ngữ người lớn",
+       "Địa bàn": "TP.HCM (2 cơ sở)", "Khách hàng": "Người đi làm 22–35 tuổi", "Nguồn lực": "1 Marketing kiêm tư vấn, 6 giáo viên", "Kỳ dữ liệu": "11/2026", "Nguồn": "company-context.md"}},
+    {"tam": "dn2", "loai": "DN", "tieu_de": "Khoá giao tiếp 3 tháng đóng góp 58% doanh thu", "lien_ket": ["@e1"], "do_tin_cay": "Cao", "ly_do_tin_cay": "Số từ file bán hàng nội bộ, khớp CRM",
+     "du_lieu": {"Bảng": "Ma trận sản phẩm", "Nội dung": "Khoá chủ lực, AOV cao nhất", "Sản phẩm": "Giao tiếp 3 tháng", "Giá": "6,5 triệu",
+       "Lợi ích": "Nói được trong tình huống công việc sau 12 tuần", "Doanh thu": "1,51 tỷ (58%)", "Biên lợi nhuận": null,
+       "Khách hàng": "Người đi làm 24–32 tuổi", "Lợi thế": "Lớp tối, sĩ số tối đa 8", "Kỳ dữ liệu": "01/2026–10/2026", "Nguồn": "kinh-doanh/2026-11-20_12-thang/chi-so-kd.json"}},
+    {"tam": "dn3", "loai": "DN", "tieu_de": "Meta Ads tạo nhiều tin nhắn nhưng chốt thấp", "lien_ket": ["@e3", "@e4"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Hai nguồn nội bộ, kỳ lead chỉ 30 ngày",
+     "du_lieu": {"Bảng": "Đánh giá Marketing", "Nội dung": "Kênh tạo lead chính, khâu chốt yếu", "Kênh": "Meta Ads → Messenger", "Mục tiêu": "Tin nhắn tư vấn",
+       "Chi phí": "96 triệu (Q3/2026)", "Kết quả": "1.050 tin nhắn; 30 ngày gần nhất 19/412 hội thoại đăng ký khoá (4,6%)", "Vấn đề": "Phản hồi chậm ngoài giờ hành chính",
+       "Kỳ dữ liệu": "Q3/2026 và 30 ngày đến 18/11/2026", "Nguồn": "chi-phi-ads/2026-11-19_quy/chi-so-chi-phi.json; lead-hoi-thoai/2026-11-18_30/chi-so-lead.json"}},
+    {"tam": "dn4", "loai": "DN", "tieu_de": "Đăng ký mới giảm 22,9% so cùng kỳ", "lien_ket": ["@e2", "@e3"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Hiện tượng có số; nguyên nhân mới là giả thuyết",
+     "du_lieu": {"Bảng": "Danh sách vấn đề", "Nội dung": "Số đăng ký mới giảm trong khi chi quảng cáo không giảm", "Vấn đề": "Đăng ký mới Q3 giảm từ 236 xuống 182",
+       "Bằng chứng": "EVD CRM hai quý; tỷ lệ chốt hội thoại 4,6%", "Mức ảnh hưởng": "Cao — khách mới chiếm 64% doanh thu",
+       "Nguyên nhân giả định": "Phản hồi chậm ngoài giờ làm việc làm mất lead; chưa loại trừ yếu tố cạnh tranh", "Kỳ dữ liệu": "Q3/2025 và Q3/2026", "Nguồn": "CRM; lead-hoi-thoai"}},
+    {"tam": "dn5", "loai": "DN", "tieu_de": "Lợi thế: lớp tối sĩ số nhỏ", "lien_ket": ["@e5", "@e3"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Tài sản thực có; mức khách coi trọng mới thấy trong hội thoại",
+     "du_lieu": {"Bảng": "Kho lợi thế", "Nội dung": "Lịch 19h–21h và sĩ số tối đa 8 phù hợp người đi làm", "Lợi thế": "Lớp tối, sĩ số nhỏ",
+       "Căn cứ": "Hồ sơ doanh nghiệp; câu hỏi về lịch học và sĩ số lặp lại trong hội thoại", "Khách hàng liên quan": "Người đi làm bận giờ hành chính",
+       "Hướng khai thác": "Đưa vào thông điệp và kịch bản tư vấn", "Nguồn": "company-context.md; lead-hoi-thoai"}},
+    {"tam": "dn6", "loai": "DN", "tieu_de": "Giới hạn: một người vừa làm Marketing vừa tư vấn", "lien_ket": ["@e5"], "do_tin_cay": "Cao", "ly_do_tin_cay": "Người dùng xác nhận",
+     "du_lieu": {"Bảng": "Giới hạn triển khai", "Nội dung": "Không đủ người trực tin nhắn buổi tối", "Ngân sách": "Quảng cáo khoảng 30 triệu/tháng (giữ mức hiện tại)",
+       "Nhân sự": "1 người Marketing kiêm tư vấn", "Thời gian": "Không trực sau 21h", "Năng lực": "Chưa có người dựng video", "Điều kiện": "Cơ hội mới phải làm được với nhân sự hiện có hoặc cần thêm người trực",
+       "Nguồn": "company-context.md"}},
+
+    {"tam": "f1", "loai": "FIND", "tieu_de": "Đăng ký mới Q3/2026 giảm 22,9% so cùng kỳ", "lien_ket": ["@e2"], "do_tin_cay": "Cao", "ly_do_tin_cay": "Dữ liệu CRM đầy đủ hai quý",
+     "du_lieu": {"Phát hiện": "Đăng ký mới giảm 236 → 182 (−22,9%)", "Phân loại": "Dữ kiện", "Nhóm": "Doanh nghiệp", "Bằng chứng tóm tắt": "CRM Q3/2025 và Q3/2026",
+       "Phạm vi": "2 cơ sở TP.HCM", "Giai đoạn so sánh": "Q3/2025 với Q3/2026"}},
+    {"tam": "f2", "loai": "FIND", "tieu_de": "Giả thuyết: phản hồi chậm ngoài giờ làm mất lead", "lien_ket": ["@e3"], "do_tin_cay": "Thấp", "ly_do_tin_cay": "Một nguồn, 30 ngày, chưa so tỷ lệ chốt theo giờ nhắn",
+     "du_lieu": {"Phát hiện": "Lead nhắn sau 18h chờ trung vị 3,5 giờ", "Phân loại": "Giả thuyết", "Nhóm": "Chuyển đổi", "Bằng chứng tóm tắt": "lead-hoi-thoai 30 ngày",
+       "Phạm vi": "412 hội thoại", "Giới hạn": "Chưa tách tỷ lệ chốt theo khung giờ"}},
+    {"tam": "th1", "loai": "TH", "tieu_de": "Thiếu giá vốn theo khoá", "du_lieu": {"Câu hỏi": "Biên lợi nhuận từng khoá là bao nhiêu?",
+      "Dữ liệu cần có": "Chi phí giáo viên, mặt bằng, tài liệu theo khoá", "Nguồn bổ sung": "Kế toán trung tâm", "Người cung cấp": "Chủ doanh nghiệp",
+      "Ảnh hưởng nếu thiếu": "Không xếp được khoá ưu tiên theo lợi nhuận"}}
+  ]
+}

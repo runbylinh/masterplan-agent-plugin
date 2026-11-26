@@ -1,0 +1,49 @@
+{
+  "_ghi_chu": "VÍ DỤ GIẢ ĐỊNH cho skill quang-cao-chuyen-doi: đơn vị đào tạo khoá Excel cho người đi làm. Không phải kết quả nghiên cứu thật; tên đơn vị, URL, số liệu là ví dụ. Không có số ngân sách/ROAS/CPA của đơn vị khác.",
+  "dot": "@rp",
+  "ban_ghi": [
+    {"tam": "rp", "loai": "RP", "tieu_de": "Quảng cáo và chuyển đổi khoá Excel cho người đi làm", "du_lieu": {
+      "Mục tiêu nghiên cứu": "Hiểu thị trường quảng cáo khoá Excel bằng góc nào và dẫn khách đăng ký ra sao", "Quyết định cần hỗ trợ": "Chọn góc quảng cáo và cấu trúc landing page học thử",
+      "Câu hỏi nghiên cứu": ["Góc nào đang được khai thác nhiều?", "Quảng cáo và landing page có nhất quán không?", "Khách dừng ở bước nào?"],
+      "Phạm vi": "Đào tạo Excel · toàn quốc · nhân viên văn phòng 22–30 · 01/10–26/11/2026", "Mức nghiên cứu": "Nhanh", "Workflow": "04 Quảng cáo",
+      "Dữ liệu đã có": "Lý do chưa đăng ký từ Sales 30 ngày", "Dữ liệu còn thiếu": "Tỷ lệ chuyển đổi landing page của chính doanh nghiệp",
+      "Nguồn nghiên cứu": ["Meta Ads Library", "TikTok Creative Center", "Landing page"], "Phương pháp lấy mẫu": "24 quảng cáo, 6 đơn vị, 6 landing page",
+      "Skill và Subagent": ["quang-cao-chuyen-doi"], "Đầu ra cuối cùng": "QC, LP, GT", "Điểm chờ duyệt": ["Danh sách đơn vị", "Kho góc và giả thuyết"],
+      "Tiêu chuẩn hoàn thành": "Ma trận góc có số mẫu, ≥ 2 GT có điều kiện kết luận"}},
+    {"tam": "mau1", "loai": "MAU", "tieu_de": "Mẫu quảng cáo khoá Excel trên Meta Ads Library", "lien_ket": ["@rp"], "du_lieu": {
+      "Nguồn": "Meta Ads Library (Việt Nam, đang chạy), TikTok Creative Center", "Phạm vi địa lý": "Việt Nam", "Khoảng thời gian": "01/10–26/11/2026", "Nhóm khách hàng": "Nhân viên văn phòng 22–30",
+      "Từ khóa": ["khoá học excel", "excel cho người đi làm", "học thử excel"], "Phương pháp tìm kiếm": "Tìm theo từ khóa và tên 6 đơn vị đã duyệt; lấy cả quảng cáo chạy lâu và mới",
+      "Tiêu chí đưa vào": "Quảng cáo khoá Excel/tin học văn phòng còn chạy hoặc chạy trong khoảng thời gian", "Tiêu chí loại trừ": "Quảng cáo trùng nội dung, quảng cáo phần mềm",
+      "Số bản ghi thu thập": 31, "Số bản ghi đọc được": 28, "Số bản ghi sử dụng": 24, "Giới hạn của mẫu": "Không thấy quảng cáo đã tắt trước 01/10; Creative Center ít mẫu ngành đào tạo"}},
+    {"tam": "e1", "loai": "EVD", "tieu_de": "Ads học thử Excel trên Ads Library", "du_lieu": {"Nguồn": "https://www.facebook.com/ads/library/?id=vidu-201", "Nền tảng": "Meta Ads Library", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Video người đi làm ở lại muộn làm báo cáo, ưu đãi học thử 0đ, dẫn tới landing page", "Loại nguồn": "Công khai", "Ảnh chụp": "nghien-cuu/2026-11-26-ads-excel/anh/ads-201.png"}},
+    {"tam": "e2", "loai": "EVD", "tieu_de": "Landing page học thử của đơn vị A", "du_lieu": {"Nguồn": "https://vidu-trung-tam-a.vn/hoc-thu-excel", "Nền tảng": "Website", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Trang mở bằng giới thiệu trung tâm, form 3 trường ở cuối trang, không nhắc báo cáo cuối tháng", "Loại nguồn": "Công khai"}},
+    {"tam": "e3", "loai": "EVD", "tieu_de": "Ghi chú Sales lý do chưa đăng ký", "du_lieu": {"Nguồn": "File Sales nội bộ 30 ngày (đã ẩn danh)", "Nền tảng": "CRM nội bộ", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "14/40 lead nói chưa biết lịch học có phù hợp giờ làm không", "Loại nguồn": "Nội bộ", "Phạm vi mẫu": "40 lead"}},
+    {"tam": "q1", "loai": "QC", "tieu_de": "Ads học thử Excel 0đ – nỗi sợ báo cáo cuối tháng", "lien_ket": ["@e1"], "do_tin_cay": "Cao", "ly_do_tin_cay": "Mở trực tiếp trên Ads Library, đã xem cả điểm đến", "du_lieu": {
+      "URL": "https://www.facebook.com/ads/library/?id=vidu-201", "Đơn vị": "Trung tâm tin học A (ví dụ)", "Sản phẩm": "Khoá Excel cho người đi làm",
+      "Thời gian": "Hiển thị từ 2026-10-05, còn chạy ngày 2026-11-26", "Format": "Video dọc 20 giây", "Nội dung": "Người đi làm ngồi muộn làm báo cáo, chuyển sang dùng hàm có sẵn",
+      "Khách hàng": "Nhân viên văn phòng 22–30", "Nhu cầu": "Làm báo cáo nhanh", "Góc tiếp cận": "Nỗi đau ở lại muộn cuối tháng", "Hook": "Cuối tháng lại ngồi đến 9 giờ tối?",
+      "Lợi ích": "Giảm thời gian làm báo cáo", "Bằng chứng": "Ảnh chụp nhận xét học viên", "Ưu đãi": "Học thử 1 buổi 0đ", "CTA": "Đăng ký học thử",
+      "Điểm đến": "Landing page form 3 trường", "Nhất quán với điểm đến": "Lệch: trang không nhắc nội dung báo cáo cuối tháng", "Nguồn": "Meta Ads Library"}},
+    {"tam": "l1", "loai": "LP", "tieu_de": "Ma trận landing page học thử đơn vị A – section mở đầu", "lien_ket": ["@e2"], "do_tin_cay": "Cao", "ly_do_tin_cay": "Đã mở trang trực tiếp", "du_lieu": {
+      "Bảng": "Ma trận landing page", "Trang hoặc điểm chạm": "Landing page học thử đơn vị A", "Section": "Màn hình đầu", "Mục đích": "Giới thiệu đơn vị",
+      "Nội dung": "Ảnh trung tâm, số năm hoạt động, nút đăng ký dẫn xuống cuối trang", "Thông điệp": "Trung tâm uy tín nhiều năm", "Bằng chứng": "Số năm hoạt động (tự công bố)",
+      "CTA": "Đăng ký ngay", "Nguồn": "https://vidu-trung-tam-a.vn/hoc-thu-excel"}},
+    {"tam": "l2", "loai": "LP", "tieu_de": "Bản đồ chuyển đổi: quảng cáo → form học thử", "lien_ket": ["@e1", "@e2", "@e3"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Các bước quan sát công khai; rào cản đối chiếu với 40 lead nội bộ", "du_lieu": {
+      "Bảng": "Bản đồ chuyển đổi", "Trang hoặc điểm chạm": "Quảng cáo → landing page → form 3 trường → Sales gọi lại", "Hành động": "Bấm quảng cáo, cuộn hết trang, điền form",
+      "Nội dung": "Phải cuộn qua 5 section mới thấy form; lịch học không hiển thị trên trang", "Rào cản": "Giả thuyết điểm nghẽn: không thấy lịch học phù hợp giờ làm",
+      "Dữ liệu": "14/40 lead nội bộ hỏi lịch học (Sales, 30 ngày)", "Nguồn": "Landing page công khai + file Sales nội bộ"}},
+    {"tam": "f1", "loai": "FIND", "tieu_de": "Góc nỗi đau báo cáo cuối tháng chiếm đa số mẫu", "lien_ket": ["@e1"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Đếm trên 24 quảng cáo của 6 đơn vị, mẫu định tính", "du_lieu": {
+      "Phát hiện": "10/24 quảng cáo dùng góc ở lại muộn/báo cáo cuối tháng; 0/24 nói về lịch học linh hoạt cho người đi làm", "Phân loại": "Mẫu lặp", "Nhóm": "Quảng cáo",
+      "Bằng chứng tóm tắt": "QC-001 và 9 quảng cáo cùng góc; ma trận góc trong lô", "Phạm vi": "24 quảng cáo, 6 đơn vị, 10–11/2026", "Số lần xuất hiện": "10/24",
+      "Giới hạn": "Chỉ trong mẫu đã xem, không phải toàn thị trường"}},
+    {"tam": "g1", "loai": "GT", "tieu_de": "Hiển thị lịch học ngay màn hình đầu tăng tỷ lệ điền form", "lien_ket": ["@l2"], "du_lieu": {
+      "Giả thuyết": "Đưa lịch học buổi tối/cuối tuần lên màn hình đầu landing page làm tăng tỷ lệ điền form học thử", "Bằng chứng ủng hộ": "LP-002: 14/40 lead hỏi lịch học",
+      "Bằng chứng phản bác": "Chưa có; dữ liệu chỉ từ 30 ngày Sales", "Phương pháp kiểm chứng": "A/B landing page: biến thể A giữ nguyên; biến thể B thêm khối lịch học + form ngay màn hình đầu",
+      "Chỉ số": "Tỷ lệ điền form / lượt xem trang; tỷ lệ lead hỏi lại lịch học", "Điều kiện kết luận": "Mỗi biến thể ≥ 1.000 lượt xem trong 14 ngày; B cao hơn A ≥ 20% tương đối"}},
+    {"tam": "g2", "loai": "GT", "tieu_de": "Góc lịch học linh hoạt cho người đi làm", "lien_ket": ["@f1"], "du_lieu": {
+      "Giả thuyết": "Quảng cáo góc 'học sau giờ làm, không phải nghỉ' có chi phí/lead thấp hơn góc báo cáo cuối tháng trên tài khoản của doanh nghiệp",
+      "Bằng chứng ủng hộ": "FIND-001: 0/24 mẫu dùng góc này; LP-002 rào cản lịch học", "Bằng chứng phản bác": "Góc báo cáo cuối tháng phổ biến có thể vì đang hiệu quả (chưa biết)",
+      "Phương pháp kiểm chứng": "Cùng nhóm đối tượng và ngân sách, 2 biến thể: góc báo cáo cuối tháng vs góc lịch học linh hoạt", "Chỉ số": "Chi phí/lead, tỷ lệ lead đủ điều kiện (nội bộ)",
+      "Điều kiện kết luận": "Mỗi biến thể ≥ 30 lead hoặc 7 ngày; chênh chi phí/lead ≥ 15%"}}
+  ]
+}

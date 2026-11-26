@@ -106,20 +106,27 @@ Agent đọc thư mục, cho biết phần nào đã có, phần nào thiếu, p
 
 Gõ lệnh không kèm tham số cũng được, agent sẽ hỏi kỳ.
 
-**Research 3C theo chủ đề hoặc dịp** (gộp từ agent Research Marketing cũ): dùng khi có một bài toán cụ thể, không phải lập Masterplan năm.
+**Agent Market Research — nói yêu cầu, agent tự chọn quy trình**
 ```
-/masterplan-agent:research mùa lễ cuối năm
+/masterplan-agent:research tìm cơ hội Marketing dịp Tết
 ```
-| Giai đoạn | Kết quả trong `research-3c/<ngày>-<chủ đề>/` | Bạn làm gì |
+| Bạn nói | Agent làm (workflow) | Bạn nhận |
 | --- | --- | --- |
-| 1 Company | `01-brief.md` | Duyệt Brief |
-| 2 Customer + Competitor (2 subagent chạy song song) | `02-customer.md`, `03-competitor.md` | Duyệt bảng, hoặc yêu cầu đọc thêm nguồn |
-| 3 Tổng hợp 3C | `04-tong-hop-3c.md` | Chọn cơ hội đi tiếp |
-| 4 Giao việc | `05-giao-viec.md` (giữ / sửa / bổ sung / giảm ưu tiên) | Duyệt việc |
-| 5 Lưu | Sheets tab `3C – ...` hoặc `06-bang-dan-vao-sheets.csv` | — |
-Agent dùng `company-context.md` làm hồ sơ và chỉ hỏi thêm phần thiếu: mốc so sánh, bài toán, dịp. Muốn tập thử trước,
-chọn **case mẫu LÁ É QUÁN** (case giả định) khi agent hỏi. Chạy lẻ từng bước: `company-analysis`, `customer-research`,
-`competitor-research`, `marketing-opportunities`, `marketing-recommendations`.
+| "Tìm cơ hội Marketing dịp Tết" | 02 Chiến dịch theo mùa vụ | Bản đồ cơ hội + ý tưởng chiến dịch, sản phẩm/ưu đãi, Content, quảng cáo |
+| "Vì sao khách chưa mua" | 06 Tối ưu chuyển đổi | Kho rào cản, FAQ, xử lý từ chối, thử nghiệm |
+| "30 ý tưởng Content dựa trên nghiên cứu" | 03 Content (dùng lại kho nếu đã có) | Content Pillar, chủ đề, ý tưởng, Hook, format |
+| "10 format video phù hợp ngành" | Content → Format | Thư viện format video |
+| "Nghiên cứu quảng cáo, đề xuất góc mới" | 04 Quảng cáo | Kho góc quảng cáo, concept, biến thể thử nghiệm |
+| "Ý tưởng combo sản phẩm" | 05 Phát triển sản phẩm | Combo, ưu đãi cần thử nghiệm |
+| "Tìm kênh tiếp cận khách hàng" | 07 Phát triển kênh | Bản đồ kênh, cộng đồng, Creator |
+| "Cập nhật thị trường tháng này" | 08 Cập nhật | Báo cáo thay đổi + cơ hội mới |
+| "Insight này có căn cứ không" | 09 Kiểm chứng | Bảng kiểm chứng + đề xuất giữ/sửa/loại/thử nghiệm |
+Agent lập **Research Brief** (mục tiêu, câu hỏi, phạm vi, nguồn, cách lấy mẫu, đầu ra, điểm duyệt) và DỪNG để bạn duyệt, rồi mới thu thập.
+Kết quả ghi vào **kho** trong thư mục làm việc; báo cáo ở `nghien-cuu/<ngày>-<chủ đề>/`. Phiên bị ngắt: gõ `/masterplan-agent:research tiep-tuc RP-…`.
+Hỏi "ý tưởng này từ đâu ra": `/masterplan-agent:kho-du-lieu truy-vet IDEA-…`.
+
+**Chế độ 3C cũ** vẫn dùng được: `/masterplan-agent:research 3c mùa lễ cuối năm` (5 giai đoạn, file `01-brief.md` … `05-giao-viec.md`
+trong `research-3c/`, case mẫu LÁ É QUÁN khi chạy thử).
 
 ### B3. Mỗi skill chạy thế nào
 1. **Chốt phạm vi.** Agent hỏi kỳ, kênh, nguồn rồi DỪNG chờ bạn trả lời "Bắt đầu".

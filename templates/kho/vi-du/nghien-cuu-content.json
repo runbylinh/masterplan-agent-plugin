@@ -1,0 +1,58 @@
+{
+  "_ghi_chu": "VÍ DỤ GIẢ ĐỊNH cho skill nghien-cuu-content: thương hiệu mỹ phẩm chăm sóc da dầu mụn, nhóm khách nữ 20–28 tại Việt Nam. Không phải kết quả nghiên cứu thật; URL, kênh, số liệu là ví dụ.",
+  "dot": "@rp",
+  "ban_ghi": [
+    {"tam": "rp", "loai": "RP", "tieu_de": "Nghiên cứu Content chăm sóc da dầu mụn Q4/2026", "du_lieu": {
+      "Mục tiêu nghiên cứu": "Tìm chủ đề, góc và cấu trúc Content thu hút nữ 20–28 da dầu mụn", "Quyết định cần hỗ trợ": "Chọn Content Pillar và series tháng 12",
+      "Câu hỏi nghiên cứu": ["Nhóm khách đang xem chủ đề gì về da dầu?", "Công thức nào lặp lại ở nội dung nổi bật?", "Người xem còn hỏi gì chưa được trả lời?"],
+      "Phạm vi": "Mỹ phẩm da dầu mụn · toàn quốc · nữ 20–28 · 01/09–26/11/2026", "Mức nghiên cứu": "Nhanh", "Workflow": "03 Content Marketing",
+      "Dữ liệu đã có": "Số liệu kênh TikTok của doanh nghiệp 90 ngày", "Dữ liệu còn thiếu": "Khảo sát khách về chủ đề muốn xem",
+      "Nguồn nghiên cứu": ["TikTok", "Instagram", "YouTube"], "Phương pháp lấy mẫu": "36 Content, 3 mức tương tác, 10 kênh",
+      "Skill và Subagent": ["nghien-cuu-content"], "Đầu ra cuối cùng": "Kho CNT + FIND mẫu lặp", "Điểm chờ duyệt": ["Danh sách kênh", "Bảng chủ đề và công thức"],
+      "Tiêu chuẩn hoàn thành": "≥ 30 CNT đủ 3 mức mẫu, ≥ 2 FIND mẫu lặp có số lần"}},
+    {"tam": "mau1", "loai": "MAU", "tieu_de": "Mẫu Content da dầu trên TikTok, Instagram, YouTube", "lien_ket": ["@rp"], "du_lieu": {
+      "Nguồn": "TikTok Search, Instagram Reels, YouTube Shorts", "Phạm vi địa lý": "Việt Nam", "Khoảng thời gian": "01/09–26/11/2026", "Nhóm khách hàng": "Nữ 20–28 da dầu mụn",
+      "Từ khóa": ["da dầu mụn nên dùng gì", "routine da dầu", "review kem chống nắng da dầu", "#dadaumun"], "Phương pháp tìm kiếm": "Tìm theo từ khóa, sắp theo liên quan; trong mỗi kênh lấy bài nổi bật, quanh trung vị và ít tương tác",
+      "Tiêu chí đưa vào": "Nội dung về chăm sóc da dầu/mụn, đăng trong khoảng thời gian", "Tiêu chí loại trừ": "Quảng cáo thuần, bài trùng, kênh bán hàng không có nội dung",
+      "Số bản ghi thu thập": 52, "Số bản ghi đọc được": 44, "Số bản ghi sử dụng": 36, "Giới hạn của mẫu": "Mẫu định tính, nghiêng TikTok; chỉ số đọc một thời điểm",
+      "Nguồn không truy cập được": "8 video bị giới hạn khu vực hoặc đã xoá", "Mức bão hoà": "12 mẫu cuối không thêm chủ đề mới"}},
+    {"tam": "e1", "loai": "EVD", "tieu_de": "Bình luận video routine da dầu 3 bước", "du_lieu": {"Nguồn": "https://www.tiktok.com/@vidu-creator/video/101", "Nền tảng": "TikTok", "Ngày đăng": "2026-10-28", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Nhiều bình luận hỏi da dầu có cần kem dưỡng không, xin tên sản phẩm", "Loại nguồn": "Công khai", "Phạm vi mẫu": "1 video, 40 bình luận đọc"}},
+    {"tam": "e2", "loai": "EVD", "tieu_de": "Reels lỗi chăm sóc da dầu", "du_lieu": {"Nguồn": "https://www.instagram.com/reel/vidu-202", "Nền tảng": "Instagram", "Ngày đăng": "2026-11-05", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Reels dạng '3 lỗi khiến da dầu đổ dầu nhiều hơn', bình luận kể lỗi của chính mình", "Loại nguồn": "Công khai", "Phạm vi mẫu": "1 Reels, 25 bình luận đọc"}},
+    {"tam": "e3", "loai": "EVD", "tieu_de": "Shorts review kem chống nắng ít tương tác", "du_lieu": {"Nguồn": "https://www.youtube.com/shorts/vidu-303", "Nền tảng": "YouTube", "Ngày đăng": "2026-10-12", "Ngày thu thập": "2026-11-26", "Nội dung quan sát": "Review liệt kê thành phần, không mở đầu bằng vấn đề, 6 bình luận", "Loại nguồn": "Công khai", "Phạm vi mẫu": "1 Shorts, 6 bình luận"}},
+    {"tam": "c1", "loai": "CNT", "tieu_de": "Video routine da dầu 3 bước buổi sáng", "lien_ket": ["@e1"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Đã xem toàn bộ video và 40 bình luận; chỉ số một thời điểm", "du_lieu": {
+      "URL": "https://www.tiktok.com/@vidu-creator/video/101", "Nền tảng": "TikTok", "Kênh": "Creator chăm sóc da ~80k theo dõi", "Ngày đăng": "2026-10-28", "Ngày thu thập": "2026-11-26",
+      "Nhóm khách hàng": "Nữ 20–28, da dầu mụn", "Mục tiêu": "Thu hút", "Content Pillar": "Kiến thức chăm sóc da", "Chủ đề": "Routine buổi sáng cho da dầu",
+      "Nhu cầu hoặc Insight giả định": "Muốn routine ngắn, sợ bôi nhiều lớp gây bí", "Hook": "Da dầu thì sáng chỉ cần 3 bước thôi", "Góc khai thác": "Rút gọn, ít mà đúng",
+      "Thông điệp": "Ít bước nhưng đúng thứ tự thì da vẫn ổn", "Cấu trúc nội dung": "Hook phủ định thói quen → 3 bước theo loại sản phẩm → lỗi hay gặp → CTA lưu video",
+      "Format": "Video dọc 45 giây, nói thẳng camera", "CTA": "Lưu lại để làm theo", "Chỉ số công khai": "182k xem, 9,1k lưu, 310 bình luận (đọc 26/11/2026); trung vị kênh ~25k xem",
+      "Mức mẫu": "Nổi bật", "Phản hồi đáng chú ý": "Nhiều câu hỏi da dầu có cần kem dưỡng không", "Điểm mạnh": "Hook chạm nỗi lo bôi nhiều lớp", "Hạn chế": "Không nêu thời gian thấy kết quả",
+      "Yếu tố có thể học hỏi": "Khung số bước cụ thể + lỗi hay gặp", "Giả thuyết cần kiểm chứng": "Hook có con số bước tăng tỷ lệ lưu", "Hướng ứng dụng": "Series routine theo loại da, mỗi video một lỗi hay gặp"}},
+    {"tam": "c2", "loai": "CNT", "tieu_de": "Reels 3 lỗi khiến da dầu đổ dầu nhiều hơn", "lien_ket": ["@e2"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Đã xem Reels và 25 bình luận; Instagram không hiển thị lượt lưu", "du_lieu": {
+      "URL": "https://www.instagram.com/reel/vidu-202", "Nền tảng": "Instagram", "Kênh": "Tài khoản chuyên viên da liễu ~40k theo dõi", "Ngày đăng": "2026-11-05", "Ngày thu thập": "2026-11-26",
+      "Nhóm khách hàng": "Nữ 20–28, da dầu mụn", "Mục tiêu": "Niềm tin", "Content Pillar": "Sai lầm thường gặp", "Chủ đề": "Lỗi chăm sóc da dầu",
+      "Hook": "3 lỗi khiến da dầu đổ dầu nhiều hơn", "Góc khai thác": "Chỉ ra lỗi người xem đang mắc", "Thông điệp": "Rửa mặt quá nhiều và bỏ dưỡng ẩm làm da tiết dầu hơn",
+      "Cấu trúc nội dung": "Hook số lỗi → từng lỗi kèm giải thích ngắn → cách sửa → CTA theo dõi", "Format": "Reels 35 giây, chữ trên màn hình", "CTA": "Theo dõi để xem phần 2",
+      "Chỉ số công khai": "96k xem, 4,2k thích, 210 bình luận (đọc 26/11/2026); lượt lưu không hiển thị", "Mức mẫu": "Thông thường",
+      "Phản hồi đáng chú ý": "Người xem kể lại lỗi của chính mình", "Điểm mạnh": "Người xem tự nhận ra mình", "Hạn chế": "Không có bằng chứng trước sau",
+      "Yếu tố có thể học hỏi": "Khung 'N lỗi khiến [hậu quả]'", "Hướng ứng dụng": "Pillar Sai lầm thường gặp, kết hợp chuyên gia của thương hiệu"}},
+    {"tam": "c3", "loai": "CNT", "tieu_de": "Shorts review kem chống nắng liệt kê thành phần", "lien_ket": ["@e3"], "do_tin_cay": "Thấp", "ly_do_tin_cay": "Một mẫu, ít bình luận để đối chiếu phản hồi", "du_lieu": {
+      "URL": "https://www.youtube.com/shorts/vidu-303", "Nền tảng": "YouTube", "Kênh": "Kênh review mỹ phẩm ~15k đăng ký", "Ngày đăng": "2026-10-12", "Ngày thu thập": "2026-11-26",
+      "Nhóm khách hàng": "Nữ 20–28, da dầu mụn", "Mục tiêu": "Chuyển đổi", "Content Pillar": "Review sản phẩm", "Chủ đề": "Review kem chống nắng cho da dầu",
+      "Hook": "Kem chống nắng này có gì?", "Góc khai thác": "Liệt kê thành phần", "Thông điệp": "Thành phần phù hợp da dầu",
+      "Cấu trúc nội dung": "Cầm sản phẩm → đọc bảng thành phần → kết luận nên mua", "Format": "Shorts 50 giây, quay cận sản phẩm", "CTA": "Link trong mô tả",
+      "Chỉ số công khai": "2,1k xem, 6 bình luận (đọc 26/11/2026); trung vị kênh ~3k xem", "Mức mẫu": "Ít tương tác",
+      "Điểm mạnh": "Thông tin chi tiết", "Hạn chế": "Hook không nêu vấn đề của người xem", "Yếu tố có thể học hỏi": "Đối chứng: thiếu vấn đề ở mở đầu",
+      "Hướng ứng dụng": "Review sản phẩm nên mở bằng tình huống da dầu cụ thể trước khi nói thành phần"}},
+    {"tam": "f1", "loai": "FIND", "tieu_de": "Hook có con số và lỗi cụ thể lặp ở nội dung nổi bật", "lien_ket": ["@e1", "@e2", "@e3"], "do_tin_cay": "Trung bình", "ly_do_tin_cay": "Lặp ở 2 nền tảng, 7 kênh; mẫu định tính 36 Content", "du_lieu": {
+      "Phát hiện": "11/14 Content nổi bật và thông thường mở bằng con số bước hoặc số lỗi cụ thể; 1/8 Content ít tương tác có Hook dạng này", "Phân loại": "Mẫu lặp", "Nhóm": "Content",
+      "Bằng chứng tóm tắt": "CNT-001, CNT-002 cùng khung; CNT-003 đối chứng không có", "Phạm vi": "36 Content, 10 kênh, 09–11/2026", "Số lần xuất hiện": "12/36",
+      "Giới hạn": "Chưa tách ảnh hưởng của cỡ kênh"}},
+    {"tam": "f2", "loai": "FIND", "tieu_de": "Giả thuyết: mở bằng vấn đề người xem tăng tỷ lệ lưu", "lien_ket": ["@e1", "@e3"], "do_tin_cay": "Thấp", "ly_do_tin_cay": "Suy luận từ so sánh 2 nhóm mức mẫu, chưa thử nghiệm", "du_lieu": {
+      "Phát hiện": "Nội dung mở bằng vấn đề của người xem có tỷ lệ lưu/xem cao hơn nội dung mở bằng sản phẩm", "Phân loại": "Giả thuyết", "Nhóm": "Content",
+      "Bằng chứng tóm tắt": "CNT-001 so với CNT-003 cùng nền tảng video ngắn, so với trung vị kênh", "Phạm vi": "Video ngắn TikTok/YouTube, 09–11/2026"}},
+    {"tam": "g1", "loai": "GT", "tieu_de": "Thử Hook con số bước cho series routine", "lien_ket": ["@f2"], "du_lieu": {
+      "Giả thuyết": "Hook nêu con số bước giúp video routine có tỷ lệ lưu cao hơn Hook nêu tên sản phẩm", "Bằng chứng ủng hộ": "FIND-001, FIND-002",
+      "Bằng chứng phản bác": "Chưa có dữ liệu trên kênh của doanh nghiệp", "Phương pháp kiểm chứng": "Đăng 2 phiên bản cùng nội dung, khác Hook, cách nhau 1 tuần",
+      "Chỉ số": "Tỷ lệ lưu/xem, tỷ lệ xem hết", "Điều kiện kết luận": "Mỗi phiên bản ≥ 5.000 lượt xem; chênh ≥ 20% ở tỷ lệ lưu"}}
+  ]
+}
