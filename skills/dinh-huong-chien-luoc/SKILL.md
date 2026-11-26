@@ -7,7 +7,7 @@ argument-hint: "[năm kế hoạch, ví dụ 2027]"
 # /masterplan-agent:dinh-huong-chien-luoc [năm]
 
 Đọc trước: `${CLAUDE_PLUGIN_ROOT}/references/quy-tac.md`, `${CLAUDE_PLUGIN_ROOT}/references/quy-tac-bang-chung.md`,
-`${CLAUDE_PLUGIN_ROOT}/references/chien-luoc.md`, `${CLAUDE_PLUGIN_ROOT}/references/ket-qua-json.md`.
+`${CLAUDE_PLUGIN_ROOT}/references/chien-luoc.md`, `${CLAUDE_PLUGIN_ROOT}/references/ket-qua-json.md`, `${CLAUDE_PLUGIN_ROOT}/references/bo-mau.md` (khuôn bảng đầu ra).
 
 ## Bước 0 – Kiểm tra đầu vào
 Cần: `company-context.md`, Marketing Audit (`review/*/`), Market Research (`thi-truong/*/`), Dự báo (`du-bao/*/`), đã duyệt.
@@ -33,14 +33,20 @@ Tiêu chí thiếu dữ liệu: ghi "chưa đủ căn cứ" thay vì đoán.
 ## Bước 4 – Tài liệu một trang
 Ghi `ket-qua.json` (loai `chien-luoc`, `tieu_de` "Strategic Marketing Direction <năm> – <doanh nghiệp>",
 `cau_chot` = câu định hướng, `nhan_cau_chot` = "Hướng đi chiến lược <năm>", 4 bảng theo `chien-luoc.md`,
-`can_kiem_chung` = giả định còn mở), chạy:
+`can_kiem_chung` = giả định còn mở; bảng Định hướng 8 dòng đúng mẫu, có phương án thử nghiệm và mã UT làm căn cứ), chạy:
 ```
 python3 ${CLAUDE_PLUGIN_ROOT}/scripts/dung_bao_cao_nghien_cuu.py chien-luoc/<năm>_YYYY-MM-DD
 ```
 Hết CẢNH BÁO thì chỉnh `bao-cao.md` gọn trong một trang, mở `bao-cao.html`.
 
 DỪNG. Trình câu định hướng + bảng so sánh + điểm cần kiểm chứng. Người dùng quyết định hướng đi; agent chỉ đề xuất.
-Sau duyệt ghi Sheets tab `CL – ...` (append, `Chờ duyệt`). Nếu người dùng muốn bản Google Docs/Notion: hỏi nơi lưu, chỉ tạo khi được phép.
+Sau duyệt ghi Sheets tab `CL – ...` (append, `Chờ duyệt`).
+**Xuất theo bộ mẫu** (sau khi duyệt):
+```
+python3 ${CLAUDE_PLUGIN_ROOT}/scripts/xuat_bo_mau.py du-bao-dinh-huong --nam <năm review> --nam-ke-hoach <năm> --doanh-nghiep "<tên>" --ket-qua chien-luoc/<năm>_YYYY-MM-DD/ket-qua.json du-bao/<thư mục>/ket-qua.json -o chien-luoc/<năm>_YYYY-MM-DD/<tên file>.xlsx
+```
+Hỏi người dùng có muốn đưa lên Google Drive (thư mục họ chỉ định, dạng Google Sheets) không; chỉ tạo khi được phép.
+
 Bước tiếp (chưa có skill): lập Marketing Masterplan (mục tiêu, KPI, ngân sách, chiến dịch) từ tài liệu này.
 
 ## Không được

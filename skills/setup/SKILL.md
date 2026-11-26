@@ -16,9 +16,9 @@ description: Cài Agent Masterplan cho một doanh nghiệp — tạo thư mục
 
 ## Bước 2 – Hỏi theo nhóm (mỗi nhóm một lần hỏi, không tự điền)
 1. **Doanh nghiệp → `company-context.md`**: chép `${CLAUDE_PLUGIN_ROOT}/templates/company-context-mau.md` thành
-   `company-context.md` rồi hỏi lần lượt 7 nhóm (doanh nghiệp, sản phẩm và giá, khách hàng, kênh, mục tiêu, nhân sự và nguồn lực,
-   vấn đề muốn giải quyết), mỗi lần một nhóm câu ngắn. Người dùng có sẵn tài liệu (Business Context, file Drive) thì đọc và điền
-   từ đó, hỏi lại phần thiếu. Không có số thì ghi "chưa có". Tóm tắt ngắn sang `cau-hinh.json` (`nganh`, `muc_tieu_kinh_doanh`, `nguon_luc`).
+   `company-context.md` (đúng Mẫu bối cảnh doanh nghiệp) rồi hỏi lần lượt 6 mục (tổng quan; sản phẩm và dịch vụ; khách hàng hiện tại;
+   mục tiêu và vấn đề cần giải quyết; kênh marketing và quy trình mua; nguồn lực và tài liệu hiện có), mỗi lần một mục, câu ngắn. Người dùng có sẵn tài liệu (Business Context, file Drive) thì đọc và điền
+   từ đó, hỏi lại phần thiếu. Không có số thì ghi "Chưa có dữ liệu"; thông tin là nhận định thì ghi "Cần kiểm chứng". Điền ngày cập nhật và người cung cấp. Tóm tắt ngắn sang `cau-hinh.json` (`nganh`, `muc_tieu_kinh_doanh`, `nguon_luc`).
 2. **Kênh của mình**: link từng kênh đang dùng (Page, Group, TikTok, IG, Threads, YouTube, Zalo OA)
    và vai trò (gợi ý mặc định theo `khung-danh-gia.md`, người dùng sửa).
 3. **Đối thủ**: 3–5 đối thủ + link kênh. Chưa có thì để trống, skill `danh-gia-kenh` / `quet-doi-thu` sẽ đề xuất.

@@ -6,7 +6,8 @@ argument-hint: "[yêu cầu, ví dụ: tổng thể 2027]"
 
 # /masterplan-agent:dieu-phoi [yêu cầu]
 
-Đọc trước: `${CLAUDE_PLUGIN_ROOT}/references/quy-tac.md`, `${CLAUDE_PLUGIN_ROOT}/references/quy-tac-bang-chung.md`.
+Đọc trước: `${CLAUDE_PLUGIN_ROOT}/references/quy-tac.md`, `${CLAUDE_PLUGIN_ROOT}/references/quy-tac-bang-chung.md`,
+`${CLAUDE_PLUGIN_ROOT}/references/bo-mau.md` (bộ mẫu 5 file là chuẩn đầu ra của từng giai đoạn).
 
 ## Bản đồ skill
 | Phần | Skill | Đầu ra |
@@ -33,7 +34,8 @@ argument-hint: "[yêu cầu, ví dụ: tổng thể 2027]"
    `review/`, `thi-truong/`, `du-bao/`, `chien-luoc/`. Mỗi mục: lần chạy mới nhất, kỳ dữ liệu, có `bao-cao.md` chưa.
 3. Kết quả **còn dùng được** khi: cùng năm review/kế hoạch, kỳ phủ đủ (Review: ưu tiên cả năm), không quá 60 ngày
    (riêng `doi-thu` không quá 30 ngày). Nếu người dùng nói đã có thay đổi lớn thì coi là cũ.
-4. Kiểm tra nguồn: Chrome, Meta Ads, TikTok Ads (connector hoặc Chrome), LadiPage, Google Drive, Google Sheets.
+4. Mẫu trống để người dùng tự điền: `xuat_bo_mau.py <mau> --nam <năm>` (không `--ket-qua`); bối cảnh dùng `templates/company-context-mau.md`.
+5. Kiểm tra nguồn: Chrome, Meta Ads, TikTok Ads (connector hoặc Chrome), LadiPage, Google Drive, Google Sheets.
 
 ## Bước 2 – Trình kế hoạch chạy
 Bảng: Phần · Skill · Trạng thái (Đã có / Cũ / Thiếu) · Việc sẽ làm · Nguồn cần. Ghi rõ phần chạy được ngay, phần cần người dùng chuẩn bị
@@ -48,7 +50,8 @@ DỪNG. Hỏi xác nhận trước khi chạy.
 - Phần 2 có thể giao song song cho subagent (ngành, khách hàng, đơn vị cùng ngành) như hướng dẫn trong skill đó.
 
 ## Bước 4 – Báo cáo tổng
-Khi chạy tổng thể: tóm tắt 1 trang ở `tong-hop/<năm>_YYYY-MM-DD/bao-cao.md` gồm đường dẫn 4 báo cáo, kết luận chính mỗi phần,
+Khi chạy tổng thể: xuất đủ bộ mẫu (`xuat_bo_mau.py` cho đánh giá hiện trạng, nghiên cứu thị trường, dự báo và định hướng)
+và tóm tắt 1 trang ở `tong-hop/<năm>_YYYY-MM-DD/bao-cao.md` gồm đường dẫn 4 báo cáo, kết luận chính mỗi phần,
 câu định hướng chiến lược, giới hạn dữ liệu và việc cần kiểm chứng. Không tự lập Marketing Plan, phân bổ ngân sách hay chốt chiến dịch.
 
 ## Không được

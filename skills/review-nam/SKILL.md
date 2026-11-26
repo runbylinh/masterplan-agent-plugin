@@ -7,7 +7,7 @@ argument-hint: "[năm review, ví dụ 2026]"
 # /masterplan-agent:review-nam [năm]
 
 Đọc trước: `${CLAUDE_PLUGIN_ROOT}/references/quy-tac.md`, `${CLAUDE_PLUGIN_ROOT}/references/quy-tac-bang-chung.md`,
-`${CLAUDE_PLUGIN_ROOT}/references/review-nam.md`, `${CLAUDE_PLUGIN_ROOT}/references/ket-qua-json.md`.
+`${CLAUDE_PLUGIN_ROOT}/references/review-nam.md`, `${CLAUDE_PLUGIN_ROOT}/references/ket-qua-json.md`, `${CLAUDE_PLUGIN_ROOT}/references/bo-mau.md` (khuôn bảng đầu ra).
 
 ## Bước 0 – Kiểm kê đầu vào
 1. Năm review: từ tham số, mặc định năm hiện tại (tính từ 01/01 đến hôm qua).
@@ -22,7 +22,9 @@ DỪNG. Hỏi: chạy bổ sung skill còn thiếu trước, hay tổng hợp ng
 - Viết 5 phần theo `review-nam.md`; mỗi phần: Kết quả · Đang làm tốt · Vấn đề · Bằng chứng · Kỳ dữ liệu · Còn thiếu.
 - Tổng chi Marketing: chỉ cộng khi các nguồn không trùng (đã kiểm ở `chi-phi-ads`).
 - Mối liên hệ Marketing – kinh doanh: chỉ nêu khi có dữ liệu ghép (lead → đơn → doanh thu theo kênh).
-- Kết luận: 3 điểm mạnh, 3–5 vấn đề ưu tiên (bảng `review-van-de`), câu hỏi chuyển sang Market Research.
+- Kết luận theo mục "Kết luận đánh giá và các ưu tiên" của mẫu: điểm đang làm tốt, vấn đề ảnh hưởng, 3–5 ưu tiên có mã **UT1…UT5**;
+  câu hỏi chuyển sang Market Research.
+- Bảng số (hội thoại, kênh, quảng cáo, doanh thu, chi phí khác) dùng đúng cột của mẫu Đánh giá hiện trạng (`review-nam.md`).
 
 ## Bước 2 – Báo cáo
 Tạo `review/<năm>/`, ghi `ket-qua.json` (loai `review-nam`, `tieu_de` "Marketing Audit <năm> – <doanh nghiệp>"), chạy:
@@ -33,8 +35,13 @@ Hết CẢNH BÁO thì chỉnh `bao-cao.md` cho chủ doanh nghiệp đọc nhan
 Mở `bao-cao.html` cho người dùng xem.
 
 DỪNG. Báo cáo 5 dòng: điểm mạnh, vấn đề ưu tiên, phần thiếu, đường dẫn. Hỏi duyệt.
-Sau duyệt: ghi Sheets tab `Audit – Tổng quan`, `Audit – Vấn đề` (append, `Chờ duyệt`). Nếu người dùng muốn bản Google Docs/Sheets
-"MARKETING AUDIT <năm> — <doanh nghiệp>" trong thư mục Drive riêng: hỏi thư mục, chỉ tạo khi được phép.
+Sau duyệt: ghi Sheets các tab `ĐG – ...` (append, `Chờ duyệt`).
+**Xuất theo bộ mẫu** (sau khi duyệt):
+```
+python3 ${CLAUDE_PLUGIN_ROOT}/scripts/xuat_bo_mau.py danh-gia-hien-trang --nam <năm review> --doanh-nghiep "<tên>" --ket-qua review/<năm>/ket-qua.json -o review/<năm>/<tên file>.xlsx
+```
+Hỏi người dùng có muốn đưa lên Google Drive (thư mục họ chỉ định, dạng Google Sheets) không; chỉ tạo khi được phép.
+
 Gợi ý bước tiếp: `/masterplan-agent:nghien-cuu-thi-truong`.
 
 ## Không được

@@ -60,9 +60,22 @@ Căn cứ lựa chọn + bảng so sánh cơ hội · Điểm cần kiểm chứ
 **Ranh giới**: không đặt mục tiêu, KPI, ngân sách, chiến dịch, lịch nội dung, phân công. Đó là bước lập Masterplan.
 
 ## Bảng đầu ra (`ket-qua.json`, loai `chien-luoc`)
-| Phần | csv / tab |
+| Phần | `muc_mau` | csv / tab Sheets |
+| --- | --- | --- |
+| Khoảng trống thị trường | (chỉ trong báo cáo) | `khoang-trong` / `CL – Khoảng trống` |
+| So sánh cơ hội | (chỉ trong báo cáo) | `so-sanh-co-hoi` / `CL – So sánh cơ hội` |
+| Phản biện hướng đi | (chỉ trong báo cáo) | `phan-bien-huong-di` / `CL – Phản biện` |
+| Định hướng chiến lược | `Định hướng chiến lược` | `dinh-huong` / `CL – Định hướng` |
+
+Bảng **Định hướng chiến lược** khớp mẫu: cột **Nội dung · Quyết định · Bằng chứng hoặc dữ liệu còn thiếu**, 8 dòng cố định:
+| Nội dung | Ghi gì |
 | --- | --- |
-| Khoảng trống thị trường | `khoang-trong` / `CL – Khoảng trống` |
-| So sánh cơ hội | `so-sanh-co-hoi` / `CL – So sánh cơ hội` |
-| Phản biện hướng đi | `phan-bien-huong-di` / `CL – Phản biện` |
-| Định hướng (cau_chot + bảng 7 dòng) | `dinh-huong` / `CL – Định hướng` |
+| Định hướng chiến lược ưu tiên | Câu định hướng (bước 3) |
+| Nhóm khách ưu tiên | Nhóm khách cụ thể |
+| Nhu cầu chưa được đáp ứng | Nhu cầu/vấn đề khai thác |
+| Giá trị thương hiệu mang lại | Giá trị cung cấp |
+| Lý do khách hàng lựa chọn | Điểm khác biệt nhìn từ phía khách: vì sao chọn mình thay vì lựa chọn khác |
+| Căn cứ và khả năng thực hiện | Bằng chứng chính + năng lực, nguồn lực (kết quả phản biện) |
+| Phương án thử nghiệm và tiêu chí đánh giá | Một thử nghiệm nhỏ để kiểm giả định yếu nhất: làm gì, trong bao lâu, đo bằng chỉ số nào, ngưỡng nào thì giữ/đổi hướng |
+| Phát hiện hoặc vấn đề ưu tiên làm căn cứ | Mã UT từ Audit + phát hiện Market Research/Dự báo đã dùng |
+Thử nghiệm không phải kế hoạch chiến dịch: chỉ đủ để kiểm chứng hướng đi trước khi lập Masterplan.

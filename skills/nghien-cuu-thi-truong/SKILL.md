@@ -7,7 +7,7 @@ argument-hint: "[nganh | khach-hang | don-vi | tong-hop | tat-ca] [năm]"
 # /masterplan-agent:nghien-cuu-thi-truong [phần] [năm]
 
 Đọc trước: `${CLAUDE_PLUGIN_ROOT}/references/quy-tac.md`, `${CLAUDE_PLUGIN_ROOT}/references/quy-tac-bang-chung.md`,
-`${CLAUDE_PLUGIN_ROOT}/references/thi-truong.md`, `${CLAUDE_PLUGIN_ROOT}/references/ket-qua-json.md`.
+`${CLAUDE_PLUGIN_ROOT}/references/thi-truong.md`, `${CLAUDE_PLUGIN_ROOT}/references/ket-qua-json.md`, `${CLAUDE_PLUGIN_ROOT}/references/bo-mau.md` (khuôn bảng đầu ra).
 Đối thủ: `${CLAUDE_PLUGIN_ROOT}/references/quet-doi-thu.md` (cách xem offer, ads).
 
 ## Bước 0 – Chốt phạm vi
@@ -31,7 +31,8 @@ truyền đường dẫn `thi-truong.md`, `quy-tac-bang-chung.md`, `pham-vi.md` 
 Không truy cập được thì ghi `thieu`; gặp CAPTCHA/đăng nhập thì nhờ người dùng hoặc bỏ qua.
 
 ## Bước 2 – Tổng hợp và báo cáo
-Đối chiếu ba phần theo mục 4, ghi `ket-qua.json` (loai `thi-truong`, 4 bảng), chạy:
+Đối chiếu ba phần theo mục 4, ghi `ket-qua.json` (loai `thi-truong`, 6 bảng đúng khuôn mẫu Nghiên cứu thị trường: 3 bảng chính +
+3 bảng kết luận có cột "Quyết định có thể thay đổi"/"Lựa chọn marketing cần xem xét" và mã UT liên quan), chạy:
 ```
 python3 ${CLAUDE_PLUGIN_ROOT}/scripts/dung_bao_cao_nghien_cuu.py thi-truong/YYYY-MM-DD
 ```
@@ -39,7 +40,13 @@ Hết CẢNH BÁO thì chỉnh `bao-cao.md`: 5 phát hiện ngành, nhu cầu ch
 điểm khách chưa hài lòng, câu hỏi và tín hiệu cần theo dõi cho dự báo. Mở `bao-cao.html` cho người dùng xem.
 
 DỪNG. Báo cáo 5 dòng, hỏi duyệt. Sau duyệt ghi Sheets tab `MR – Ngành hàng`, `MR – Khách hàng`,
-`MR – Đơn vị cùng ngành`, `MR – Tổng hợp` (append, `Chờ duyệt`). Đơn vị mới được duyệt: hỏi có thêm vào `cau-hinh.json → doi_thu`
+`MR – Đơn vị cùng ngành` (append, `Chờ duyệt`).
+**Xuất theo bộ mẫu** (sau khi duyệt):
+```
+python3 ${CLAUDE_PLUGIN_ROOT}/scripts/xuat_bo_mau.py nghien-cuu-thi-truong --nam <năm review> --doanh-nghiep "<tên>" --ket-qua thi-truong/YYYY-MM-DD/ket-qua.json -o thi-truong/YYYY-MM-DD/<tên file>.xlsx
+```
+Hỏi người dùng có muốn đưa lên Google Drive (thư mục họ chỉ định, dạng Google Sheets) không; chỉ tạo khi được phép.
+ Đơn vị mới được duyệt: hỏi có thêm vào `cau-hinh.json → doi_thu`
 để `quet-doi-thu` theo dõi định kỳ không.
 Gợi ý bước tiếp: `/masterplan-agent:du-bao-xu-huong`.
 

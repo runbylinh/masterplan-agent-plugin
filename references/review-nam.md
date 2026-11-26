@@ -34,8 +34,17 @@ Mỗi phần: Kết quả · Đang làm tốt · Vấn đề · Bằng chứng (
 - **Câu hỏi chuyển sang Market Research**: khách đang đổi nhu cầu thế nào, thị trường và đơn vị cùng ngành có diễn biến gì,
   vấn đề Marketing nào cần giải quyết, cơ hội nào đáng xem.
 
-## Bảng đầu ra (`ket-qua.json`, loai `review-nam`)
-| Phần | Cột | csv / tab |
-| --- | --- | --- |
-| Tổng quan theo mảng | Mảng · Kết quả · Đang làm tốt · Vấn đề · Bằng chứng · Kỳ dữ liệu · Còn thiếu | `review-tong-quan` / `Audit – Tổng quan` |
-| Vấn đề ưu tiên | Vấn đề · Bằng chứng · Ảnh hưởng · Cần nghiên cứu thêm | `review-van-de` / `Audit – Vấn đề` |
+## Bảng đầu ra (`ket-qua.json`, loai `review-nam`) — khớp mẫu "Đánh giá hiện trạng marketing"
+Mỗi phần có `muc_mau` = `Đánh giá hiện trạng/<mục>`; cột đúng tên mẫu (xem `bo-mau.md`). Có thể thêm cột `Tin cậy` cho báo cáo.
+| Mục mẫu | Cột | Lấy từ | csv / tab Sheets |
+| --- | --- | --- | --- |
+| Hội thoại và phản hồi khách hàng | Nhóm khách hoặc nguồn phản hồi · Câu hỏi hoặc nhu cầu lặp lại · Lý do mua hoặc chưa mua · Nhu cầu chưa được đáp ứng · Bằng chứng | `lead-hoi-thoai`, `ra-soat-thuong-hieu` | `dg-hoi-thoai` / `ĐG – Hội thoại` |
+| Kênh và nội dung | Kỳ quan sát · Kênh · Nội dung hoặc định dạng đáng chú ý · Chỉ số · Giá trị ghi nhận · Nguồn · Nhận định và nội dung cần rà soát | `danh-gia-kenh`, `ra-soat-thuong-hieu` | `dg-kenh-noi-dung` / `ĐG – Kênh` |
+| Kết quả quảng cáo | Kỳ quan sát · Nền tảng · Chiến dịch · Chi tiêu (đồng) · Loại kết quả · Số kết quả · Chi phí mỗi kết quả (đồng) · Nguồn | `chi-phi-ads` | `dg-quang-cao` / `ĐG – Quảng cáo` |
+| Doanh thu, đơn hàng và sản phẩm | Kỳ ghi nhận · Doanh thu (đồng) · Số đơn · Sản phẩm bán tốt hoặc bán chậm · Biến động đáng chú ý · Nguồn số liệu | `bao-cao-kinh-doanh` | `dg-doanh-thu` / `ĐG – Doanh thu` |
+| Chi phí marketing ngoài quảng cáo | Kỳ ghi nhận · Khoản chi · Số tiền (đồng) · Nguồn hoặc chứng từ | `chi-phi-ads` (`ngan_sach` hạng mục khác) | `dg-chi-phi-khac` / `ĐG – Chi phí khác` |
+| Kết luận đánh giá và các ưu tiên năm {năm kế hoạch} | Nhóm kết luận · Phát hiện · Bằng chứng và kỳ dữ liệu · Điều cần kiểm chứng · Vấn đề hoặc việc ưu tiên | tổng hợp | `dg-ket-luan` / `ĐG – Kết luận` |
+
+Mục Kết luận có dòng cố định: **Điểm đang làm tốt · Vấn đề ảnh hưởng đến hiệu quả · Ưu tiên thứ nhất … Ưu tiên thứ năm nếu có**.
+Cột "Vấn đề hoặc việc ưu tiên" của các dòng Ưu tiên ghi mã + câu ngắn: `UT1 · …` (sợi chỉ nối sang các giai đoạn sau).
+Phần Nguồn lực & giới hạn vận hành không có trong mẫu: giữ trong báo cáo .md/.html (không đặt `muc_mau`).

@@ -7,7 +7,7 @@ argument-hint: "[năm kế hoạch, ví dụ 2027]"
 # /masterplan-agent:du-bao-xu-huong [năm]
 
 Đọc trước: `${CLAUDE_PLUGIN_ROOT}/references/quy-tac.md`, `${CLAUDE_PLUGIN_ROOT}/references/quy-tac-bang-chung.md`,
-`${CLAUDE_PLUGIN_ROOT}/references/du-bao.md`, `${CLAUDE_PLUGIN_ROOT}/references/ket-qua-json.md`.
+`${CLAUDE_PLUGIN_ROOT}/references/du-bao.md`, `${CLAUDE_PLUGIN_ROOT}/references/ket-qua-json.md`, `${CLAUDE_PLUGIN_ROOT}/references/bo-mau.md` (khuôn bảng đầu ra).
 
 ## Bước 0 – Kiểm tra đầu vào
 1. Năm kế hoạch: từ tham số, mặc định năm sau.
@@ -29,18 +29,19 @@ Với 3–6 tín hiệu quan trọng nhất, quay lại nguồn phù hợp (Tren
 Ghi bảng phản ứng khách hàng. Không khẳng định nhân quả.
 
 ## Bước 3 – Dự báo và phản biện
-Viết dự báo theo `du-bao.md` bước 4, rồi tự phản biện từng dự báo theo bước 5 và chấm lại tin cậy.
+Viết dự báo theo `du-bao.md` bước 4 (kèm dấu hiệu để triển khai và phương án thực hiện khi xuất hiện tín hiệu), rồi tự phản biện từng dự báo theo bước 5 và chấm lại tin cậy.
 Dự báo không qua được phản biện: chuyển thành "Chưa đủ căn cứ" + dấu hiệu cần theo dõi.
 Nếu người dùng muốn một góc nhìn độc lập: giao phản biện cho một subagent chỉ nhận bảng dự báo và nguồn (không nhận lập luận của mình).
 
 ## Bước 4 – Báo cáo
-Ghi `ket-qua.json` (loai `du-bao`, 3 bảng, `diem_chinh` = 3–5 dự báo quan trọng nhất), chạy:
+Ghi `ket-qua.json` (loai `du-bao`, 3 bảng đúng khuôn mẫu Dự báo, `diem_chinh` = 3–5 dự báo quan trọng nhất), chạy:
 ```
 python3 ${CLAUDE_PLUGIN_ROOT}/scripts/dung_bao_cao_nghien_cuu.py du-bao/<năm>_YYYY-MM-DD
 ```
 Hết CẢNH BÁO thì chỉnh `bao-cao.md`, mở `bao-cao.html`.
 
-DỪNG. Báo cáo 5 dòng, hỏi duyệt. Sau duyệt ghi Sheets tab `Tín hiệu thị trường`, `Dự báo xu hướng` (append, `Chờ duyệt`).
+DỪNG. Báo cáo 5 dòng, hỏi duyệt. Sau duyệt ghi Sheets các tab `DB – ...` (append, `Chờ duyệt`). File .xlsx theo mẫu xuất chung với định hướng chiến lược (skill `dinh-huong-chien-luoc`),
+hoặc xuất riêng ngay: `xuat_bo_mau.py du-bao-dinh-huong --nam <năm review> --ket-qua du-bao/<thư mục>/ket-qua.json`.
 Hỏi người dùng có muốn hẹn cập nhật tín hiệu định kỳ (ví dụ đầu mỗi quý) không; chỉ tạo lịch khi đồng ý.
 Gợi ý bước tiếp: `/masterplan-agent:dinh-huong-chien-luoc`.
 

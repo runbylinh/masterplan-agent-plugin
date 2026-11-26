@@ -64,10 +64,16 @@ Không suy đoán doanh thu, thị phần, ngân sách; không kết luận đơ
 Mỗi phát hiện: bằng chứng, nguồn, ngày, **mức tin cậy**; tách phát hiện nhiều bằng chứng với giả thuyết.
 Cuối: câu hỏi và tín hiệu cần theo dõi khi dự báo năm sau.
 
-## Bảng đầu ra (`ket-qua.json`, loai `thi-truong`)
-| Phần | csv / tab |
-| --- | --- |
-| 01. Ngành hàng | `mr-nganh-hang` / `MR – Ngành hàng` |
-| 02. Khách hàng | `mr-khach-hang` / `MR – Khách hàng` |
-| 03. Đơn vị cùng ngành | `mr-don-vi-cung-nganh` / `MR – Đơn vị cùng ngành` |
-| 04. Tổng hợp | `mr-tong-hop` / `MR – Tổng hợp` (Phát hiện · Bằng chứng · Nguồn · Ngày · Loại · Tin cậy) |
+## Bảng đầu ra (`ket-qua.json`, loai `thi-truong`) — khớp mẫu "Nghiên cứu thị trường"
+| Phần | `muc_mau` | Cột (đúng tên mẫu; có thể thêm `Loại`, `Tin cậy`, `Loại khách`, `Lý do chọn`) | csv / tab Sheets |
+| --- | --- | --- | --- |
+| Ngành hàng | `Ngành hàng` | Góc độ · Phát hiện · Bằng chứng · Nguồn hoặc đường dẫn · Ngày đăng hoặc ngày kiểm tra. Dòng cố định: Nhu cầu · Sản phẩm · Giá · Mùa vụ · Kênh mua · Thay đổi trong ngành (thêm dòng cùng góc độ nếu nhiều phát hiện) | `mr-nganh-hang` / `MR – Ngành hàng` |
+| Phát hiện ngành có ảnh hưởng | `Ngành hàng/Phát hiện có ảnh hưởng đến quyết định` | Phát hiện · Căn cứ · Quyết định có thể thay đổi · Vấn đề hoặc việc ưu tiên liên quan | `mr-nganh-quyet-dinh` |
+| Khách hàng | `Khách hàng` | Nhóm khách · Hoàn cảnh phát sinh nhu cầu · Vấn đề · Mong muốn · Động lực mua · Rào cản · Tiêu chí lựa chọn · Bằng chứng hoặc nguồn | `mr-khach-hang` / `MR – Khách hàng` |
+| Kết luận khách hàng | `Khách hàng/Kết luận về nhu cầu và quyết định mua` | Nội dung · Kết luận · Bằng chứng hoặc nguồn · Lựa chọn marketing cần xem xét · Vấn đề hoặc việc ưu tiên liên quan. Dòng cố định: Nhóm có nhu cầu rõ · Vấn đề hoặc mong muốn lặp lại · Yếu tố ảnh hưởng quyết định mua · Nhu cầu chưa được đáp ứng | `mr-khach-hang-ket-luan` |
+| Đơn vị cùng ngành | `Đơn vị cùng ngành` | Đơn vị hoặc phương án thay thế · Sản phẩm · Nhóm khách · Giá công khai nếu có · Lợi ích hoặc khác biệt · Kênh · Nội dung nổi bật · Phản hồi khách hàng · Nguồn | `mr-don-vi` / `MR – Đơn vị cùng ngành` |
+| Kết luận đơn vị | `Đơn vị cùng ngành/Kết luận về các lựa chọn trên thị trường` | Nội dung · Kết luận · Nguồn hoặc ví dụ · Lựa chọn marketing cần xem xét · Vấn đề hoặc việc ưu tiên liên quan. Dòng cố định: Lựa chọn trực tiếp và thay thế · Yếu tố thu hút khách hàng · Điểm khách hàng chưa hài lòng · Khác biệt giữa các đơn vị | `mr-don-vi-ket-luan` |
+
+- **Quyết định có thể thay đổi** / **Lựa chọn marketing cần xem xét**: phát hiện này có thể làm đổi quyết định nào (giá, gói, kênh,
+  thông điệp, mùa chạy chiến dịch, nhóm khách). Viết dạng "cân nhắc…", không phải kế hoạch.
+- **Vấn đề hoặc việc ưu tiên liên quan**: mã UT từ Marketing Audit (`bo-mau.md`), hoặc "Mới".

@@ -11,7 +11,7 @@
       "name": "masterplan-agent",
       "source": "./",
       "description": "Agent Masterplan Marketing (Run By Linh): một agent điều phối quy trình Review doanh nghiệp (kênh social, lead và hội thoại, thương hiệu và Website, kinh doanh, chi phí quảng cáo → Marketing Audit) → Market Research (ngành hàng, khách hàng, đơn vị cùng ngành) → Dự báo xu hướng tiêu dùng năm sau → Định hướng chiến lược Marketing, làm đầu vào cho Masterplan và plan quý/tháng. Mọi kết luận có nguồn, ngày, mức tin cậy; chỉ đọc, dừng chờ duyệt.",
-      "version": "0.2.0"
+      "version": "0.3.0"
     }
   ]
 }

@@ -71,8 +71,9 @@ def kiem_tra(kq):
             if chi_so_nguon and all(not o_text(d[i]).strip() for i in chi_so_nguon):
                 canh_bao.append(f'"{p.get("tieu_de")}" dòng {j + 1}: thiếu nguồn/bằng chứng')
             for i in chi_so_tin_cay:
-                if o_text(d[i]).strip().lower() not in ("cao", "trung bình", "thấp", ""):
-                    canh_bao.append(f'"{p.get("tieu_de")}" dòng {j + 1}: mức tin cậy "{d[i]}" phải là Cao / Trung bình / Thấp')
+                gt = o_text(d[i]).strip().lower()
+                if gt and not gt.startswith(("cao", "trung bình", "thấp")):
+                    canh_bao.append(f'"{p.get("tieu_de")}" dòng {j + 1}: mức tin cậy "{d[i]}" phải bắt đầu bằng Cao / Trung bình / Thấp')
     return canh_bao
 
 

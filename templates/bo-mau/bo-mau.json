@@ -1,0 +1,151 @@
+{
+  "_ghi_chu": "Bộ mẫu Marketing Masterplan (khoá Masterplan, Run By Linh). Mỗi file = một Google Sheets; mỗi tab gồm các mục (tiêu đề mục + dòng tiêu đề cột + dòng cố định ở cột đầu nếu có + số dòng trống để điền). Script xuat_bo_mau.py dựng file .xlsx đúng khuôn này và điền từ ket-qua.json. {nam} = năm review, {nam_ke_hoach} = năm kế hoạch.",
+  "files": {
+    "danh-gia-hien-trang": {
+      "ten_file": "Mẫu đánh giá hiện trạng marketing {nam}",
+      "giai_doan": "Đánh giá hiện trạng",
+      "skill": ["review-nam"],
+      "tabs": [
+        {"ten": "Đánh giá hiện trạng", "tieu_de": "Đánh giá hiện trạng marketing {nam}", "muc": [
+          {"ten": "Hội thoại và phản hồi khách hàng", "dong_trong": 6,
+           "cot": ["Nhóm khách hoặc nguồn phản hồi", "Câu hỏi hoặc nhu cầu lặp lại", "Lý do mua hoặc chưa mua", "Nhu cầu chưa được đáp ứng", "Bằng chứng"]},
+          {"ten": "Kênh và nội dung", "dong_trong": 7,
+           "cot": ["Kỳ quan sát", "Kênh", "Nội dung hoặc định dạng đáng chú ý", "Chỉ số", "Giá trị ghi nhận", "Nguồn", "Nhận định và nội dung cần rà soát"]},
+          {"ten": "Kết quả quảng cáo", "dong_trong": 7,
+           "cot": ["Kỳ quan sát", "Nền tảng", "Chiến dịch", "Chi tiêu (đồng)", "Loại kết quả", "Số kết quả", "Chi phí mỗi kết quả (đồng)", "Nguồn"]},
+          {"ten": "Doanh thu, đơn hàng và sản phẩm", "dong_trong": 7,
+           "cot": ["Kỳ ghi nhận", "Doanh thu (đồng)", "Số đơn", "Sản phẩm bán tốt hoặc bán chậm", "Biến động đáng chú ý", "Nguồn số liệu"]},
+          {"ten": "Chi phí marketing ngoài quảng cáo", "dong_trong": 6,
+           "cot": ["Kỳ ghi nhận", "Khoản chi", "Số tiền (đồng)", "Nguồn hoặc chứng từ"]},
+          {"ten": "Kết luận đánh giá và các ưu tiên năm {nam_ke_hoach}",
+           "cot": ["Nhóm kết luận", "Phát hiện", "Bằng chứng và kỳ dữ liệu", "Điều cần kiểm chứng", "Vấn đề hoặc việc ưu tiên"],
+           "dong_co_dinh": ["Điểm đang làm tốt", "Vấn đề ảnh hưởng đến hiệu quả", "Ưu tiên thứ nhất", "Ưu tiên thứ hai", "Ưu tiên thứ ba", "Ưu tiên thứ tư nếu có", "Ưu tiên thứ năm nếu có"]}
+        ]}
+      ]
+    },
+    "nghien-cuu-thi-truong": {
+      "ten_file": "Mẫu nghiên cứu thị trường {nam}",
+      "giai_doan": "Nghiên cứu thị trường",
+      "skill": ["nghien-cuu-thi-truong"],
+      "tabs": [
+        {"ten": "Ngành hàng", "tieu_de": "Nghiên cứu ngành hàng {nam}", "muc": [
+          {"ten": null,
+           "cot": ["Góc độ", "Phát hiện", "Bằng chứng", "Nguồn hoặc đường dẫn", "Ngày đăng hoặc ngày kiểm tra"],
+           "dong_co_dinh": ["Nhu cầu", "Sản phẩm", "Giá", "Mùa vụ", "Kênh mua", "Thay đổi trong ngành"], "dong_trong": 4},
+          {"ten": "Phát hiện có ảnh hưởng đến quyết định", "dong_trong": 5,
+           "cot": ["Phát hiện", "Căn cứ", "Quyết định có thể thay đổi", "Vấn đề hoặc việc ưu tiên liên quan"]}
+        ]},
+        {"ten": "Khách hàng", "tieu_de": "Nghiên cứu khách hàng {nam}", "muc": [
+          {"ten": null, "dong_trong": 11,
+           "cot": ["Nhóm khách", "Hoàn cảnh phát sinh nhu cầu", "Vấn đề", "Mong muốn", "Động lực mua", "Rào cản", "Tiêu chí lựa chọn", "Bằng chứng hoặc nguồn"]},
+          {"ten": "Kết luận về nhu cầu và quyết định mua",
+           "cot": ["Nội dung", "Kết luận", "Bằng chứng hoặc nguồn", "Lựa chọn marketing cần xem xét", "Vấn đề hoặc việc ưu tiên liên quan"],
+           "dong_co_dinh": ["Nhóm có nhu cầu rõ", "Vấn đề hoặc mong muốn lặp lại", "Yếu tố ảnh hưởng quyết định mua", "Nhu cầu chưa được đáp ứng"]}
+        ]},
+        {"ten": "Đơn vị cùng ngành", "tieu_de": "Nghiên cứu đơn vị cùng ngành {nam}", "muc": [
+          {"ten": null, "dong_trong": 10,
+           "cot": ["Đơn vị hoặc phương án thay thế", "Sản phẩm", "Nhóm khách", "Giá công khai nếu có", "Lợi ích hoặc khác biệt", "Kênh", "Nội dung nổi bật", "Phản hồi khách hàng", "Nguồn"]},
+          {"ten": "Kết luận về các lựa chọn trên thị trường",
+           "cot": ["Nội dung", "Kết luận", "Nguồn hoặc ví dụ", "Lựa chọn marketing cần xem xét", "Vấn đề hoặc việc ưu tiên liên quan"],
+           "dong_co_dinh": ["Lựa chọn trực tiếp và thay thế", "Yếu tố thu hút khách hàng", "Điểm khách hàng chưa hài lòng", "Khác biệt giữa các đơn vị"]}
+        ]}
+      ]
+    },
+    "du-bao-dinh-huong": {
+      "ten_file": "Mẫu dự báo xu hướng và định hướng marketing {nam_ke_hoach}",
+      "giai_doan": "Dự báo và định hướng",
+      "skill": ["du-bao-xu-huong", "dinh-huong-chien-luoc"],
+      "tabs": [
+        {"ten": "Dự báo xu hướng", "tieu_de": "Dự báo xu hướng tiêu dùng {nam_ke_hoach}", "muc": [
+          {"ten": "Tín hiệu và phản ứng quan sát được", "dong_trong": 6,
+           "cot": ["Thay đổi có thể tác động", "Nhóm khách", "Phản ứng đã quan sát", "Nguồn và thời điểm", "Thông tin cần kiểm chứng"]},
+          {"ten": "Dự báo, tác động và phương án ứng phó", "dong_trong": 6,
+           "cot": ["Xu hướng hiện tại", "Yếu tố tác động", "Bằng chứng", "Dự báo và kỳ dự kiến", "Nhóm khách chịu ảnh hưởng", "Tác động và cơ hội marketing", "Mức tin cậy và lý do", "Dấu hiệu để triển khai phương án", "Phương án thực hiện khi xuất hiện tín hiệu"]}
+        ]},
+        {"ten": "Định hướng chiến lược", "tieu_de": "Định hướng chiến lược marketing {nam_ke_hoach}", "muc": [
+          {"ten": null,
+           "cot": ["Nội dung", "Quyết định", "Bằng chứng hoặc dữ liệu còn thiếu"],
+           "dong_co_dinh": ["Định hướng chiến lược ưu tiên", "Nhóm khách ưu tiên", "Nhu cầu chưa được đáp ứng", "Giá trị thương hiệu mang lại", "Lý do khách hàng lựa chọn", "Căn cứ và khả năng thực hiện", "Phương án thử nghiệm và tiêu chí đánh giá", "Phát hiện hoặc vấn đề ưu tiên làm căn cứ"]}
+        ]},
+        {"ten": "Kiểm tra tín hiệu", "tieu_de": "Kiểm tra tín hiệu và phản ứng khách hàng", "phu": true, "muc": [
+          {"ten": null, "dong_trong": 6,
+           "cot": ["Thay đổi cần theo dõi", "Nhóm khách", "Nguồn và ngày", "Phản ứng đã quan sát", "Bằng chứng đối chiếu", "Điều còn thiếu", "Kết luận để đưa vào dự báo"]}
+        ]}
+      ]
+    },
+    "ke-hoach-tong-the": {
+      "ten_file": "Mẫu kế hoạch marketing tổng thể {nam_ke_hoach}",
+      "giai_doan": "Chiến lược → Nguồn lực → KPI → Triển khai → Theo dõi",
+      "skill": [],
+      "_ghi_chu": "Dùng cho các skill lập Masterplan sau này (chưa có). Agent chỉ điền khi người dùng yêu cầu và đã có Định hướng chiến lược được duyệt.",
+      "tabs": [
+        {"ten": "Danh mục biểu mẫu", "tieu_de": "Bộ mẫu lập kế hoạch marketing tổng thể {nam_ke_hoach}", "muc": [
+          {"ten": null, "cot": ["Giai đoạn", "Kết quả cần hoàn thành", "Biểu mẫu"],
+           "dong_co_dinh": ["Bối cảnh doanh nghiệp", "Đánh giá hiện trạng", "Nghiên cứu thị trường", "Dự báo và định hướng", "Chiến lược", "Hoạch định nguồn lực", "Xác lập KPI", "Triển khai", "Theo dõi và điều chỉnh"],
+           "gia_tri_co_dinh": [
+             ["Bối cảnh doanh nghiệp", "Mẫu bối cảnh doanh nghiệp"],
+             ["Đánh giá hiện trạng và các ưu tiên", "Đánh giá hiện trạng"],
+             ["Phát hiện về thị trường và khách hàng", "Nghiên cứu thị trường"],
+             ["Dự báo, ứng phó và định hướng", "Dự báo và định hướng"],
+             ["Hướng tăng trưởng, định hướng thương hiệu, phễu và chiến thuật", "Chiến lược marketing"],
+             ["Phân bổ nguồn lực và lập dự toán", "Nguồn lực và ngân sách"],
+             ["Chốt KPI chung và phân bổ cho từng người", "KPI số lượng và chất lượng"],
+             ["Lộ trình theo quý và kế hoạch chiến dịch", "Kế hoạch triển khai"],
+             ["Tiến độ, chi phí, chỉ tiêu và quyết định điều chỉnh", "Theo dõi kết quả"]]}
+        ]},
+        {"ten": "Chiến lược marketing", "tieu_de": "Chiến lược marketing", "muc": [
+          {"ten": "Hướng tăng trưởng và thương hiệu",
+           "cot": ["Nội dung cần chốt", "Quyết định", "Căn cứ hoặc bằng chứng", "Vấn đề ưu tiên liên quan"],
+           "dong_co_dinh": ["Hướng tăng trưởng chính và hướng hỗ trợ", "Thị trường và nhóm khách ưu tiên", "Nhu cầu cần giải quyết", "Sản phẩm hoặc dịch vụ trọng tâm", "Mục tiêu tăng trưởng định hướng", "Định vị và giá trị cung cấp", "Điểm khác biệt và lợi thế", "Bằng chứng thương hiệu"]},
+          {"ten": "Giải pháp, khả năng tiếp cận, giá trị và thông tin",
+           "cot": ["Cấu phần", "Hiện trạng hoặc vướng mắc", "Quyết định", "Điều cần kiểm chứng"],
+           "dong_co_dinh": ["Giải pháp cho nhu cầu của khách hàng", "Khả năng tiếp cận và mua", "Giá trị khách hàng nhận được", "Thông tin hỗ trợ quyết định mua"]},
+          {"ten": "Hành trình hiện tại và quyết định về phễu",
+           "cot": ["Giai đoạn", "Hành vi của khách", "Điểm chạm hiện tại", "Bằng chứng", "Điểm nghẽn", "Quyết định", "Lý do"],
+           "dong_co_dinh": ["Nhận biết", "Quan tâm và cân nhắc", "Chuyển đổi", "Trải nghiệm và mua lại", "Trung thành và giới thiệu"]},
+          {"ten": "Phễu xây dựng thương hiệu và thúc đẩy chuyển đổi",
+           "cot": ["Giai đoạn", "Mục tiêu", "Hành vi cần tạo ra", "Vai trò xây dựng thương hiệu", "Vai trò thúc đẩy chuyển đổi", "Điểm chạm", "Hành động chuyển tiếp", "Chỉ số theo dõi nếu có"],
+           "dong_co_dinh": ["Nhận biết", "Quan tâm và cân nhắc", "Chuyển đổi", "Trải nghiệm và mua lại", "Trung thành và giới thiệu"]},
+          {"ten": "Chiến thuật và kênh ưu tiên", "dong_trong": 6,
+           "cot": ["Tên hoạt động", "Vấn đề ưu tiên liên quan", "Điểm nghẽn cần xử lý", "Phạm vi triển khai", "Kênh chính", "Kênh hỗ trợ", "Nguồn lực cần có"]}
+        ]},
+        {"ten": "Nguồn lực và ngân sách", "tieu_de": "Nguồn lực và ngân sách", "muc": [
+          {"ten": "Công suất khả dụng theo người và kỳ", "dong_trong": 9,
+           "cot": ["Tháng báo cáo", "Người phụ trách", "Vị trí", "Giờ thực có", "Giờ đã phân bổ", "Giờ còn lại", "Phương án nếu thiếu công suất"]},
+          {"ten": "Phân bổ thời gian theo hoạt động", "dong_trong": 13,
+           "cot": ["Tháng báo cáo", "Người phụ trách", "Tên hoạt động", "Đầu việc", "Giờ phân bổ", "Khối lượng khả thi theo số giờ phân bổ", "Chỉ tiêu số lượng dự kiến", "Đơn vị"]},
+          {"ten": "Trần ngân sách theo kỳ", "dong_trong": 9,
+           "cot": ["Tháng báo cáo", "Phạm vi ngân sách", "Trần chi (đồng)", "Đã cam kết trong trần (đồng)", "Còn có thể phân bổ (đồng)", "Phân bổ mới và dự phòng (đồng)", "Còn chưa phân bổ (đồng)"]},
+          {"ten": "Dự toán và tỷ trọng chi theo hoạt động", "dong_trong": 16,
+           "cot": ["Tháng báo cáo", "Tên khoản dự toán", "Tên hoạt động", "Nội dung chi", "Cách phát sinh", "Mục đích", "Trạng thái", "Dự toán (đồng)", "Tỷ trọng trên tổng mức chi tối đa", "Tiêu chí chất lượng hoặc điều kiện giải ngân"]},
+          {"ten": "Khung phân bổ năm và quý",
+           "cot": ["Kỳ kế hoạch", "Ưu tiên kinh doanh", "Mùa vụ và căn cứ phân bổ", "Nguồn lực cần bố trí", "Hạn mức dự kiến (đồng)", "Điều kiện điều chỉnh"],
+           "dong_co_dinh": ["Cả năm {nam_ke_hoach}", "Quý I", "Quý II", "Quý III", "Quý IV"]}
+        ]},
+        {"ten": "KPI số lượng và chất lượng", "tieu_de": "KPI số lượng và chất lượng", "muc": [
+          {"ten": "KPI chung theo hoạt động", "dong_trong": 14,
+           "cot": ["Tháng kế hoạch", "Tên hoạt động", "Tên KPI", "Nhóm KPI", "Mức chung đã duyệt", "Cách đo và đơn vị", "Mức giao cho từng người", "Tình trạng phân bổ"]},
+          {"ten": "KPI giao cho từng người", "dong_trong": 14,
+           "cot": ["Tháng kế hoạch", "Tên hoạt động", "Tên KPI", "Người phụ trách", "Mức được giao hoặc tiêu chuẩn chất lượng", "Cách kiểm tra và nguồn đối chiếu", "Giờ thực hiện", "Điều kiện điều chỉnh"]}
+        ]},
+        {"ten": "Kế hoạch triển khai", "tieu_de": "Kế hoạch triển khai", "muc": [
+          {"ten": "Lộ trình theo quý",
+           "cot": ["Quý", "Mục tiêu", "Tên chiến dịch", "Trọng tâm triển khai", "Tháng hoặc mùa vụ", "Chỉ tiêu theo dõi", "Người phụ trách"],
+           "dong_co_dinh": ["Quý I", "Quý II", "Quý III", "Quý IV"]},
+          {"ten": "Đầu việc theo tháng và chiến dịch", "dong_trong": 14,
+           "cot": ["Tháng báo cáo", "Tên chiến dịch", "Tên hoạt động", "Tên chỉ tiêu", "Đầu việc hoặc sản phẩm bàn giao", "Người phụ trách", "Hạn hoàn thành", "Mốc đánh giá", "Trạng thái", "Khoản dự toán liên quan nếu có"]}
+        ]},
+        {"ten": "Theo dõi kết quả", "tieu_de": "Theo dõi kết quả và điều chỉnh", "muc": [
+          {"ten": "Kỳ báo cáo", "cot": ["Tháng báo cáo", "Cách ghi kỳ"],
+           "dong_co_dinh": [""], "gia_tri_co_dinh": [["Nhập năm và tháng theo dạng {nam_ke_hoach}-01. Dùng cùng cách ghi kỳ ở các bảng liên quan."]]},
+          {"ten": "Bảng điều hành theo kỳ", "dong_trong": 2,
+           "cot": ["Đầu việc", "Hoàn thành", "Quá hạn", "Dự toán triển khai (đồng)", "Dự phòng (đồng)", "Thực chi (đồng)", "Chênh lệch thực chi so với dự toán (đồng)"]},
+          {"ten": "Rà soát chỉ tiêu theo kỳ", "dong_trong": 13,
+           "cot": ["Tháng báo cáo", "Tên chiến dịch", "Tên chỉ tiêu", "Mức cần đạt", "Kết quả thực tế", "Nguồn dữ liệu", "Quyết định và việc kỳ tới", "Người phụ trách", "Hạn kiểm tra lại"]},
+          {"ten": "Sổ thực chi theo chứng từ", "dong_trong": 14,
+           "cot": ["Tháng báo cáo", "Số chứng từ hoặc số tham chiếu giao dịch", "Tên chiến dịch", "Tên khoản dự toán liên quan", "Nội dung chi", "Số tiền (đồng)", "Nguồn hoặc chứng từ", "Kiểm tra dữ liệu", "Số tiền được tổng hợp (đồng)"]}
+        ]}
+      ]
+    }
+  }
+}

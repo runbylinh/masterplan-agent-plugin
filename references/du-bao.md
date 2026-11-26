@@ -36,10 +36,16 @@ Thêm nhóm **Sự kiện** nếu có (lễ hội, sự kiện thể thao, mùa 
    yếu tố nào khiến xu hướng không xảy ra hoặc đảo chiều? dữ liệu có lệch về một nền tảng/nhóm khách?
    dấu hiệu nào xác nhận hoặc bác bỏ? → chấm lại tin cậy; chưa đủ căn cứ thì ghi "Chưa đủ căn cứ", không cố kết luận.
 
-## Bảng đầu ra (`ket-qua.json`, loai `du-bao`)
-| Phần | Cột | csv / tab |
-| --- | --- | --- |
-| Tín hiệu thị trường | Nhóm tín hiệu · Phát hiện · Bằng chứng · Nguồn · Ngày công bố · Trạng thái · Tác động có thể có · Tin cậy | `tin-hieu-thi-truong` / `Tín hiệu thị trường` |
-| Phản ứng khách hàng | Yếu tố tác động · Phản ứng khách hàng · Bằng chứng · Nhận định · Điều cần kiểm chứng | `phan-ung-khach-hang` / `Dự báo – Phản ứng khách` |
-| Dự báo | Xu hướng hiện tại · Yếu tố tác động · Bằng chứng · Dự báo · Khách hàng chịu ảnh hưởng · Tác động Marketing · Cơ hội doanh nghiệp · Tin cậy · Dấu hiệu cần theo dõi | `du-bao-xu-huong` / `Dự báo xu hướng` |
+## Bảng đầu ra (`ket-qua.json`, loai `du-bao`) — khớp mẫu "Dự báo xu hướng và định hướng marketing", tab Dự báo xu hướng
+| Phần | `muc_mau` | Cột (đúng tên mẫu) | csv / tab Sheets |
+| --- | --- | --- | --- |
+| Tín hiệu và phản ứng | `Dự báo xu hướng/Tín hiệu và phản ứng quan sát được` | Thay đổi có thể tác động · Nhóm khách · Phản ứng đã quan sát · Nguồn và thời điểm · Thông tin cần kiểm chứng (+ `Nhóm tín hiệu`, `Trạng thái`, `Tin cậy` cho báo cáo) | `db-tin-hieu` / `DB – Tín hiệu` |
+| Kiểm tra tín hiệu (phụ) | `Kiểm tra tín hiệu` | Thay đổi cần theo dõi · Nhóm khách · Nguồn và ngày · Phản ứng đã quan sát · Bằng chứng đối chiếu · Điều còn thiếu · Kết luận để đưa vào dự báo | `db-kiem-tra` / `DB – Kiểm tra tín hiệu` |
+| Dự báo và phương án ứng phó | `Dự báo xu hướng/Dự báo, tác động và phương án ứng phó` | Xu hướng hiện tại · Yếu tố tác động · Bằng chứng · Dự báo và kỳ dự kiến · Nhóm khách chịu ảnh hưởng · Tác động và cơ hội marketing · Mức tin cậy và lý do · Dấu hiệu để triển khai phương án · Phương án thực hiện khi xuất hiện tín hiệu | `db-du-bao` / `DB – Dự báo` |
+
+- **Bằng chứng đối chiếu** gồm cả nguồn **khác chiều** (không ủng hộ dự báo) nếu có.
+- **Dự báo và kỳ dự kiến**: Tiếp tục / Chững lại / Suy giảm / Xuất hiện mới / Chưa đủ căn cứ + khoảng thời gian (ví dụ "Quý II–III").
+- **Mức tin cậy và lý do**: bắt đầu bằng Cao / Trung bình / Thấp rồi lý do ngắn.
+- **Dấu hiệu để triển khai phương án** + **Phương án thực hiện khi xuất hiện tín hiệu**: khi thấy dấu hiệu X (đo được, nguồn nào)
+  thì làm gì ở mức hướng xử lý (đổi gói, đẩy kênh, đổi thông điệp…), không lập chiến dịch chi tiết.
 Không gán xác suất chính xác, không dự báo doanh thu khi không có dữ liệu và phương pháp phù hợp.

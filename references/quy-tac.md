@@ -89,11 +89,12 @@ rồi chạy `dung_bao_cao_nghien_cuu.py` (tự ra HTML, CSV, bản nháp .md v�
 Một file `Masterplan [Tên doanh nghiệp]` dùng chung cho mọi skill. Tab theo skill:
 1 `Chỉ số kênh`, `Top bài`, `Đối thủ` · 2 `Lead & hội thoại`, `Lý do không chốt` · 3 `Đối thủ – Offer`, `Đối thủ – Ads`,
 `Đối thủ – Thay đổi` · 4 `KD theo tháng`, `KD theo sản phẩm`, `KD theo kênh`, `KPI` · 5 `Ads theo tháng`, `Ads chiến dịch`, `Ngân sách`
-· thương hiệu `TH – Website`, `TH – Phản hồi` · review năm `Audit – Tổng quan`, `Audit – Vấn đề`
-· thị trường `MR – Ngành hàng`, `MR – Khách hàng`, `MR – Đơn vị cùng ngành`, `MR – Tổng hợp`
-· dự báo `Tín hiệu thị trường`, `Dự báo – Phản ứng khách`, `Dự báo xu hướng` · chiến lược `CL – Khoảng trống`, `CL – So sánh cơ hội`,
+· thương hiệu `TH – Website`, `TH – Phản hồi` · review năm `ĐG – Hội thoại`, `ĐG – Kênh`, `ĐG – Quảng cáo`, `ĐG – Doanh thu`,
+`ĐG – Chi phí khác`, `ĐG – Kết luận` · thị trường `MR – Ngành hàng`, `MR – Khách hàng`, `MR – Đơn vị cùng ngành`
+· dự báo `DB – Tín hiệu`, `DB – Kiểm tra tín hiệu`, `DB – Dự báo` · chiến lược `CL – Khoảng trống`, `CL – So sánh cơ hội`,
 `CL – Phản biện`, `CL – Định hướng`.
 Mỗi file `sheets/*.csv` của skill ứng với một tab.
+Ngoài file Sheets theo dõi này, kết quả cuối mỗi giai đoạn xuất thêm theo **bộ mẫu 5 file** (`bo-mau.md`, `xuat_bo_mau.py`).
 Mỗi lần đánh giá thêm dòng mới (không ghi đè kỳ cũ) để theo dõi xu hướng qua các kỳ.
 Agent chỉ ghi `Duyệt = Chờ duyệt`. Người dùng đổi sang `Đã duyệt` hoặc `Loại`.
 

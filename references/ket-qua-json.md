@@ -31,6 +31,7 @@ Sửa `ket-qua.json` đến khi hết cảnh báo, hoặc ghi lý do vào `thieu
       },
       "ds": ["Gạch đầu dòng nếu cần"],
       "csv": "nganh-hang",
+      "muc_mau": "Ngành hàng",
       "tab_sheets": "MR – Ngành hàng"
     }
   ],
@@ -43,10 +44,11 @@ Sửa `ket-qua.json` đến khi hết cảnh báo, hoặc ghi lý do vào `thieu
 ```
 
 Quy ước:
+- `muc_mau`: vị trí trong bộ mẫu (`<Tab>/<Mục>`), để `xuat_bo_mau.py` điền vào file .xlsx đúng khuôn. Xem `bo-mau.md`.
 - `loai`: `thuong-hieu` · `review-nam` · `thi-truong` · `du-bao` · `chien-luoc`.
 - Ô bảng có thể là chữ, số, danh sách hoặc URL (tự thành link).
 - Cột có chữ "Nguồn", "Bằng chứng" hoặc "Căn cứ" phải có giá trị ở ít nhất một cột mỗi dòng.
-- Cột có chữ "Tin cậy": chỉ `Cao` / `Trung bình` / `Thấp`.
+- Cột có chữ "Tin cậy": bắt đầu bằng `Cao` / `Trung bình` / `Thấp` (có thể thêm lý do sau, ví dụ "Trung bình – 1 nguồn").
 - Giá trị `Cao`, `Đạt`, `Dữ kiện`, `Tiếp tục` hiện màu xanh; `Trung bình`, `Nhận định`, `Tín hiệu`, `Cần bổ sung`,
   `Chững lại` hiện màu nhấn; `Thấp`, `Giả định`, `Suy giảm`, `Chưa đủ căn cứ` hiện màu đỏ.
 - Không đưa tên, SĐT, email khách vào bất kỳ ô nào.

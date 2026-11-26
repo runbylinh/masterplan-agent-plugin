@@ -48,6 +48,8 @@ Mỗi skill xuất: `bao-cao.md` (bản chữ), `bao-cao.html` (có biểu đồ
 Chốt phạm vi → Lấy số (có nguồn, ngày) → Script tính / dựng bảng → Agent nhận định
 → Báo cáo .md + .html → [bạn duyệt] → Ghi Google Sheets ("Chờ duyệt")
 ```
+Đầu ra cuối mỗi giai đoạn khớp **bộ mẫu Marketing Masterplan** (`references/bo-mau.md`):
+`scripts/xuat_bo_mau.py` dựng file .xlsx đúng tab, mục, tên cột của mẫu (hoặc mẫu trống để tự điền).
 Các skill nghiên cứu tách rõ **dữ kiện / nhận định / giả định** và chấm **mức tin cậy Cao / Trung bình / Thấp**;
 script báo cảnh báo khi một dòng thiếu nguồn.
 
@@ -64,7 +66,9 @@ skills/           dieu-phoi, setup + 11 skill theo 4 phần
 references/       quy-tac.md, quy-tac-bang-chung.md, ket-qua-json.md, khung-danh-gia.md, nguong.json,
                   hướng dẫn từng skill (thu-thap, thuong-hieu, review-nam, thi-truong, du-bao, chien-luoc...)
 scripts/          tính chỉ số và dựng báo cáo (Python, không cần thư viện ngoài trừ openpyxl)
-templates/        cau-hinh-mau.json, company-context-mau.md (ví dụ Brand mẫu)
+templates/        cau-hinh-mau.json, company-context-mau.md (Mẫu bối cảnh doanh nghiệp),
+                  bo-mau/bo-mau.json (khuôn bộ mẫu 5 file: đánh giá hiện trạng, nghiên cứu thị trường,
+                  dự báo và định hướng, kế hoạch tổng thể)
 ```
 
 ## Lưu ý

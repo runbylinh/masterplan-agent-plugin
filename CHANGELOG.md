@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.0 – 2026-11-26
+Đưa bộ mẫu Marketing Masterplan (5 file) vào agent làm chuẩn đầu ra.
+- `templates/bo-mau/bo-mau.json`: khuôn Đánh giá hiện trạng, Nghiên cứu thị trường, Dự báo và định hướng, Kế hoạch tổng thể
+  (tab, mục, tên cột, dòng cố định).
+- `templates/company-context-mau.md` thay bằng Mẫu bối cảnh doanh nghiệp (6 mục, "Chưa có dữ liệu" / "Cần kiểm chứng", lưu ý cho AI).
+- Script mới `xuat_bo_mau.py`: xuất .xlsx đúng khuôn từ `ket-qua.json` (khoá `muc_mau`) hoặc mẫu trống.
+- `references/bo-mau.md`: bảng giai đoạn → file mẫu → skill; sợi chỉ mã ưu tiên UT1–UT5 nối Audit → Research → Định hướng.
+- Khớp cột với mẫu: `review-nam` (6 mục), `nghien-cuu-thi-truong` (thêm 3 bảng kết luận: quyết định có thể thay đổi, lựa chọn marketing
+  cần xem xét), `du-bao-xu-huong` (dấu hiệu triển khai + phương án ứng phó, bảng kiểm tra tín hiệu), `dinh-huong-chien-luoc`
+  (8 dòng, thêm lý do khách chọn và phương án thử nghiệm).
+- `setup` hỏi theo 6 mục của mẫu bối cảnh; `dieu-phoi` xuất đủ bộ mẫu khi chạy tổng thể.
+- Kiểm tra mức tin cậy chấp nhận "Cao/Trung bình/Thấp + lý do".
+
 ## 0.2.0 – 2026-11-26
 Bổ sung quy trình nghiên cứu 4 phần (Review → Market Research → Dự báo → Định hướng chiến lược).
 - Skill mới `dieu-phoi`: đọc trạng thái thư mục làm việc, chọn và chạy skill đúng thứ tự, kiểm đầu ra trước khi chuyển bước.
